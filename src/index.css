@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-body: Roboto, sans-serif;
+  --font-head: Montserrat, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  --font-roboto: 'Roboto', sans-serif;
+  --color-primary: #ffffff;
+  --color-bg-primary: green;
+
+  --color-dark-bg: #141414;
+  --color-dark-card-color: #222222;
+  --color-dark-text-color: #ffffff;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}

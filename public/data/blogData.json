@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "AI in Fintech",
+    "category": "AI",
+    "author": "John Doe",
+    "date": "2025-09-01",
+    "excerpt": "How AI is transforming the fintech industry...",
+    "content": "Full article content goes here..."
+  },
+  {
+    "id": 2,
+    "title": "Cloud Migration Best Practices",
+    "category": "Cloud",
+    "author": "Jane Smith",
+    "date": "2025-08-25",
+    "excerpt": "Steps to ensure a smooth migration...",
+    "content": "Full article content goes here..."
+  },
+  {
+    "id": 3,
+    "title": "Cloud Migration Best Practices",
+    "category": "Cloud",
+    "author": "Jane Smith",
+    "date": "2025-08-25",
+    "excerpt": "Steps to ensure a smooth migration...",
+    "content": "Full article content goes here..."
+  },
+  {
+    "id": 4,
+    "title": "Cloud Migration Best Practices",
+    "category": "Cloud",
+    "author": "Jane Smith",
+    "date": "2025-08-25",
+    "excerpt": "Steps to ensure a smooth migration...",
+    "content": "Full article content goes here..."
+  }
+]
