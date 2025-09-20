@@ -9,10 +9,10 @@ const Hero = () => {
     >
       <div className="container">
         <div className="flex gap-5">
-          <div className="w-[50%]">
+          <div className="md:w-[50%]">
             <div className="h-[70vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
-                <h1 className="text-5xl text-white font-head">
+                <h1 className="text-2xl md:text-2xl lg:text-5xl text-white font-head">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry
                 </h1>

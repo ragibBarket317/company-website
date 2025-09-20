@@ -71,7 +71,7 @@ const Services = () => {
           quas alias
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {servicesData.map((data, inex) => (
           <div
             key={inex}
@@ -81,12 +81,12 @@ const Services = () => {
             }}
           >
             <div
-              className="w-16 h-16 rounded-full"
+              className="w-12 h-12 md:w-16 md:h-16 rounded-full"
               style={{ backgroundColor: data.borderColor }}
             >
               <div className="h-full flex justify-center items-center">
                 <data.icon
-                  className="w-10 h-10"
+                  className="w-8 h-8 md:w-10 md:h-10"
                   style={{ color: data.color }}
                 />
               </div>

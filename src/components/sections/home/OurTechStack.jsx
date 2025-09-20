@@ -23,7 +23,7 @@ const OurTechStack = () => {
   return (
     <div className="container py-[60px]">
       <div className="text-center py-12">
-        <h2 className="text-3xl md:text-3xl font-bold text-indigo-900">
+        <h2 className="text-3xl md:text-3xl font-bold dark:text-white">
           Our Tech Stack for Innovative Business Solutions
         </h2>
         <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
@@ -37,7 +37,7 @@ const OurTechStack = () => {
           {stackData.map((item, i) => (
             <div
               key={i}
-              className="w-40 h-32 flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 transition"
+              className="w-40 h-32 flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 dark:shadow-slate-600 transition dark:text-white"
             >
               <item.icon size={40} />
               <p className="mt-2 font-medium">{item.label}</p>

@@ -3,8 +3,8 @@ import React from 'react'
 const GetFreeQuote = () => {
   return (
     <div className="container py-[60px]">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-14 p-10">
-        <div className="col-span-3 bg-green-500 text-white rounded-3xl p-10 flex flex-col justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-14">
+        <div className="md:col-span-3 bg-gradient-to-tl from-green-400 to-green-700 text-white rounded-3xl p-10 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-bold leading-snug">
             Ready to Innovate Together? Let’s <br /> Connect
           </h2>
@@ -16,7 +16,7 @@ const GetFreeQuote = () => {
           </p>
         </div>
 
-        <div className="col-span-2 bg-white shadow-2xl rounded-3xl p-8">
+        <div className="md:col-span-2 bg-white shadow-2xl rounded-3xl p-8">
           <div className=" mb-4">
             <h3 className="text-lg font-semibold text-center">
               Get A Free Quote

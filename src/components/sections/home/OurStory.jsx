@@ -2,10 +2,10 @@ import React from 'react'
 
 const OurStory = () => {
   return (
-    <div className="bg-gray-100/50 dark:bg-dark-bg">
+    <div className="bg-gray-50 dark:bg-dark-bg">
       <div className="container py-[60px] p-6">
-        <div className="flex gap-5">
-          <div className="w-[50%]">
+        <div className="md:flex gap-5">
+          <div className="w-full md:w-[50%]">
             <div className="h-full flex flex-col justify-center">
               <div className="space-y-10">
                 <h2 className="text-3xl font-bold dark:text-white">
@@ -32,25 +32,25 @@ const OurStory = () => {
                 </div>
               </div> */}
                 <div className="">
-                  <button className="w-[50%] bg-blue-300 text-white py-3 px-7 rounded-lg">
+                  <button className="w-full md:w-[50%] bg-blue-300 text-white py-3 px-7 rounded-lg">
                     Learn More About XYZ
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-[50%]">
+          <div className="w-full md:w-[50%]">
             <div className="flex justify-center py-10">
-              <div className="relative bg-blue-100 h-[400px] w-[400px]  rounded-xl p-8 flex flex-col gap-6">
-                <div className="absolute left-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-blue-500">
+              <div className="relative bg-blue-100 shadow-lg h-[400px] w-[400px]  rounded-xl p-8 flex flex-col gap-6">
+                <div className="absolute left-2 md:left-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-blue-500">
                   <h2 className="text-3xl font-bold text-blue-600">800+</h2>
                   <p className="text-gray-800">Successful Implementations</p>
                 </div>
-                <div className="absolute top-[38%] right-[60px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-pink-500">
+                <div className="absolute top-[38%] left-2 md:right-[60px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-pink-500">
                   <h2 className="text-3xl font-bold text-blue-600">1000+</h2>
                   <p className="text-gray-800">Successful Implementations</p>
                 </div>
-                <div className="absolute bottom-[7%] right-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-green-500">
+                <div className="absolute bottom-[7%] left-2 md:right-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-green-500">
                   <h2 className="text-3xl font-bold text-blue-600">500+</h2>
                   <p className="text-gray-800">Successful Implementations</p>
                 </div>
