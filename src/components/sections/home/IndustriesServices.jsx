@@ -6,13 +6,13 @@ const IndustriesServices = () => {
     <div className="bg-gray-50 dark:bg-dark-bg">
       <div className="container py-[60px]">
         <div className="">
-          <h2 className="text-center text-2xl md:text-3xl font-bold text-indigo-900">
-            Industries that iTechnolabs Serves With its Development Expertise
+          <h2 className="text-center text-2xl md:text-3xl font-bold  dark:text-white">
+            Industries Serves With its Development Expertise
           </h2>
-          <p className="text-center text-gray-600 mt-3 max-w-4xl mx-auto">
-            iTechnolabs delivers exceptional AI applications and IT services
-            across multiple industry sectors, empowering start-ups, scale-ups,
-            IT staff agencies, and large enterprises to fulfill their digital
+          <p className="text-center text-gray-600 dark:text-gray-400 mt-3 max-w-4xl mx-auto">
+            delivers exceptional AI applications and IT services across multiple
+            industry sectors, empowering start-ups, scale-ups, IT staff
+            agencies, and large enterprises to fulfill their digital
             transformation goals.
           </p>
 
@@ -81,7 +81,7 @@ const IndustriesServices = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`p-6 flex flex-col items-center justify-center rounded-xl shadow hover:shadow-lg transition ${item.bgColor}`}
+                className={`p-6 flex flex-col items-center justify-center rounded-xl shadow-xl hover:scale-105 duration-500 transition ${item.bgColor}`}
               >
                 <item.icon size={40} className={item.iconColor} />
                 <p className="mt-3 font-medium">{item.label}</p>

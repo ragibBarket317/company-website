@@ -5,6 +5,8 @@ import { FiMenu, FiX } from 'react-icons/fi'
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
+  const [isAboutOpen, setIsAboutOpen] = useState(false)
 
   return (
     <nav className="flex justify-between items-center p-4 shadow bg-white dark:shadow-black dark:bg-dark-bg dark:text-dark-text-color">
@@ -88,7 +90,7 @@ export default function Navbar() {
                 <button className="hover:opacity-50 hover:text-blue-600 cursor-default">
                   Services
                 </button>
-                <div className="absolute top-0 left-[-300px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[1000px] transform">
+                <div className="absolute top-0 left-[-400px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[1000px] transform">
                   <div className="relative top-9  bg-gray-100 rounded-xl shadow-xl w-full">
                     <div className="grid grid-cols-4 rounded-xl gap-8">
                       <div className="bg-gradient-to-tl from-blue-950 to-blue-900 rounded-bl-xl rounded-tl-xl text-white">
@@ -215,7 +217,7 @@ export default function Navbar() {
           mobileOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="p-6">
+        <div className="p-6 h-[98vh] overflow-auto will-change-scroll">
           <ul className="space-y-6 text-lg">
             <li>
               <Link to="/" onClick={() => setMobileOpen(false)}>
@@ -223,9 +225,125 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/industries" onClick={() => setMobileOpen(false)}>
-                Industries
-              </Link>
+              <button
+                onClick={() => setIsAboutOpen(!isAboutOpen)}
+                className="w-full text-left flex justify-between items-center"
+              >
+                About Us
+                <span>{isAboutOpen ? '-' : '+'}</span>
+              </button>
+              {isAboutOpen && (
+                <div className="pl-4 mt-2 space-y-3 text-sm">
+                  <div>
+                    <h4 className="font-semibold text-yellow-600">About</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti repudiandae distinctio doloremque provident.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-yellow-600">
+                      Our Reviews
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti repudiandae distinctio doloremque provident.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-yellow-600">Our Team</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti repudiandae distinctio doloremque provident.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-yellow-600">
+                      Why Chosse Us
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti repudiandae distinctio doloremque provident.
+                    </p>
+                  </div>
+                </div>
+              )}
+            </li>
+            <li>
+              <button
+                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                className="w-full text-left flex justify-between items-center"
+              >
+                Services
+                <span>{isMobileServicesOpen ? '-' : '+'}</span>
+              </button>
+
+              {isMobileServicesOpen && (
+                <div className="pl-4 mt-2 space-y-3 text-sm">
+                  <h4 className="font-semibold text-yellow-600">
+                    App Development
+                  </h4>
+                  <ul className="ml-2 space-y-1">
+                    <li>
+                      <Link to="#">Mobile App Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">iOS App Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Android App Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Flutter App Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">React Native App Development</Link>
+                    </li>
+                  </ul>
+
+                  <h4 className="font-semibold text-green-600 mt-4">
+                    Web Development
+                  </h4>
+                  <ul className="ml-2 space-y-1">
+                    <li>
+                      <Link to="#">MERN Stack Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Full Stack Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">PHP Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">WordPress Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Python Development</Link>
+                    </li>
+                  </ul>
+
+                  <h4 className="font-semibold text-red-600 mt-4">
+                    Software Development
+                  </h4>
+                  <ul className="ml-2 space-y-1">
+                    <li>
+                      <Link to="#">Custom Software</Link>
+                    </li>
+                    <li>
+                      <Link to="#">CRM Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">ERP Solutions</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Fintech Software</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Education Software</Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </li>
             <li>
               <Link to="/blog" onClick={() => setMobileOpen(false)}>

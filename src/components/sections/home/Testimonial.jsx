@@ -1,4 +1,12 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/effect-cards'
+
+// import required modules
+import { EffectCards } from 'swiper/modules'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 const Testimonial = () => {
   return (
@@ -8,10 +16,10 @@ const Testimonial = () => {
           <h4 className="text-yellow-500 font-semibold">
             Client’s Testimonial
           </h4>
-          <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mt-2">
+          <h2 className="text-2xl md:text-3xl font-bold dark:text-white mt-2">
             Problem-solving excellence by the team
           </h2>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600 dark:text-gray-400">
             We follow a customer-centric approach which ensures that our
             services are at par with their requirements. This turns us to their
             long-term technology partners.
@@ -37,7 +45,7 @@ const Testimonial = () => {
         </div>
 
         <div className="bg-blue-50 p-6 rounded-xl shadow">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col md:flex md:flex-row items-center gap-4">
             <img
               src="https://i.pravatar.cc/80?img=5"
               className="w-16 h-16 rounded-full border"

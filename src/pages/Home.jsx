@@ -6,6 +6,7 @@ import GetFreeQuote from '../components/sections/home/GetFreeQuote'
 import OurTechStack from '../components/sections/home/OurTechStack'
 import Testimonial from '../components/sections/home/Testimonial'
 import IndustriesServices from '../components/sections/home/IndustriesServices'
+import WhyChooseUs from '../components/sections/home/WhyChooseUs'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <OurTechStack />
       <Testimonial />
       <IndustriesServices />
+      <WhyChooseUs />
       <GetFreeQuote />
     </div>
   )
