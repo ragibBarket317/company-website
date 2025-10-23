@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import bgImage from '../../../assets/images/hero-bg.jpg'
+import Lottie from 'lottie-react'
+import coding from '../../../assets/animation/Coding.json'
+import starfall from '../../../assets/animation/Starfall.json'
+import world from '../../../assets/animation/World.json'
 
 const Hero = () => {
   return (
     <div
-      className="max-h-[80vh] h-[80vh] bg-cover bg-center p-6"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      className="relative max-h-[90vh] h-[85vh] bg-cyan-950 bg-cover bg-center p-6 "
+      // style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <div className="container">
+      <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div>
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.3),_transparent_70%)]"></div>
+      </div>
+      <div className="container z-10">
         <div className="flex gap-5">
-          <div className="md:w-[50%]">
+          <div className="md:w-[50%] z-10">
             <div className="h-[70vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
-                <h1 className="text-2xl md:text-2xl lg:text-5xl text-white font-head">
+                <h1 className="text-2xl md:text-2xl lg:text-6xl text-white font-blod">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry
                 </h1>
@@ -33,7 +41,16 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%]"></div>
+          <div className="">
+            <div className="absolute inset-0 flex justify-end items-center">
+              <Lottie
+                animationData={world}
+                loop
+                autoplay
+                className="w-[100%] md:w-[60%] h-auto relative z-10"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

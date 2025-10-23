@@ -8,7 +8,7 @@ const OurStory = () => {
           <div className="w-full md:w-[50%]">
             <div className="h-full flex flex-col justify-center">
               <div className="space-y-10">
-                <h2 className="text-3xl font-bold dark:text-white">
+                <h2 className="text-4xl font-extrabold dark:text-white">
                   Our Story
                 </h2>
                 <p className="text-gray-800 text-[18px] leading-7 dark:text-gray-300">
