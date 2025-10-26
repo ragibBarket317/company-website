@@ -10,6 +10,7 @@ import Blog from './pages/Blog'
 import BlogDetail from './pages/BlogDetail'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
+import Footer from './components/reuseableComponents/Footer'
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+
+      <Footer />
     </div>
   )
 }

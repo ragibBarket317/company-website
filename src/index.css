@@ -2,6 +2,12 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
 @theme {
   --font-body: Roboto, sans-serif;
   --font-head: Montserrat, sans-serif;
@@ -14,6 +20,14 @@
   --color-dark-bg: #141414;
   --color-dark-card-color: #222222;
   --color-dark-text-color: #ffffff;
+
+  --animate-rotate-border: border-rotate 5s linear infinite;
+
+  @keyframes border-rotate {
+    to {
+      --border-angle: 360deg;
+    }
+  }
 }
 body {
   font-family: Roboto, sans-serif;

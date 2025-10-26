@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import bgImage from '../../../assets/images/hero-bg.jpg'
+import grid from '../../../assets/images/grid.jpg'
 import Lottie from 'lottie-react'
 import coding from '../../../assets/animation/Coding.json'
 import starfall from '../../../assets/animation/Starfall.json'
@@ -8,9 +9,16 @@ import world from '../../../assets/animation/World.json'
 const Hero = () => {
   return (
     <div
-      className="relative max-h-[90vh] h-[85vh] bg-cyan-950 bg-cover bg-center p-6 "
+      className="relative max-h-[90vh] h-[85vh] bg-cover bg-center p-6 "
       // style={{ backgroundImage: `url(${bgImage})` }}
     >
+      <div className="absolute inset-0 bg-cyan-950 mix-blend-multiply"></div>
+      <div
+        className="absolute inset-0 -z-10 bg-cover"
+        style={{
+          backgroundImage: `url(${grid})`,
+        }}
+      ></div>
       <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div>
       <div className="absolute inset-0 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.3),_transparent_70%)]"></div>
