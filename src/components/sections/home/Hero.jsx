@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="md:w-[50%] z-10">
             <div className="h-[70vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
-                <h1 className="text-2xl md:text-2xl lg:text-6xl text-white font-blod">
+                <h1 className="text-2xl md:text-2xl lg:text-6xl text-white font-extrabold">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry
                 </h1>

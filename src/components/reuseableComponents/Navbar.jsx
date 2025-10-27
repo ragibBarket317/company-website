@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="flex justify-between items-center p-4 shadow bg-white dark:shadow-black dark:bg-dark-bg dark:text-dark-text-color">
       <div className="container">
         <div className="flex justify-between items-center">
-          <div>
+          <div className="">
             <Link to="/" className="font-bold text-xl">
               TechCompany
             </Link>
