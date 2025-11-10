@@ -111,7 +111,7 @@ export default function Navbar() {
                         </h4>
                         <ul className="space-y-5 text-md">
                           <li>
-                            <Link to="#">Mobile App Development</Link>
+                            <Link to="/services/mobile-app-development">Mobile App Development</Link>
                           </li>
                           <li>
                             <Link to="#">iOS App Development</Link>
@@ -135,7 +135,9 @@ export default function Navbar() {
                         </h4>
                         <ul className="space-y-5 text-md">
                           <li>
-                            <Link to="#">MERN Stack Development</Link>
+                            <Link to="#">
+                              MERN Stack Development
+                            </Link>
                           </li>
                           <li>
                             <Link to="#">Full Stack Development</Link>

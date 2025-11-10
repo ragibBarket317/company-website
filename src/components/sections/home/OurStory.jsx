@@ -40,7 +40,7 @@ const OurStory = () => {
             </div>
           </div>
           <div className="hidden md:block relative w-full md:w-[50%]">
-            <div className="circlePosition w-[400px] h-[200px] bg-[#eb26fd] rounded-full absolute z-1 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
+            <div className="circlePosition w-[400px] h-[100px] bg-[#eb26fd] rounded-full absolute z-1 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
             <div className="flex justify-center py-10">
               <div className="relative bg-blue-100 shadow-lg h-[400px] w-[400px]  rounded-xl p-8 flex flex-col gap-6 z-20">
                 <div className="absolute left-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-blue-500">

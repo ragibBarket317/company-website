@@ -4,13 +4,13 @@ import Navbar from './components/reuseableComponents/Navbar'
 // Pages
 import Home from './pages/Home'
 import About from './pages/About'
-import Services from './pages/Services'
 import Industries from './pages/Industries'
 import Blog from './pages/Blog'
 import BlogDetail from './pages/BlogDetail'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import Footer from './components/reuseableComponents/Footer'
+import MobileAppDevelopment from './pages/appDevelopmentService/MobileAppDevelopment'
 
 function App() {
   return (
@@ -21,7 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route
+            path="/services/mobile-app-development"
+            element={<MobileAppDevelopment />}
+          />
           <Route path="/industries" element={<Industries />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />

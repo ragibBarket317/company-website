@@ -61,7 +61,7 @@ const Services = () => {
   ]
   return (
     <div className="container relative py-[60px] space-y-10">
-      <div className="circlePosition w-[400px] h-[200px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
+      <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
       <div className="">
         <div className="space-y-3">
           <h2 className="text-center text-5xl font-bold dark:text-white ">

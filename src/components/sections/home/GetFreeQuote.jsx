@@ -1,10 +1,20 @@
 import React from 'react'
+import rocket from '../../../assets/animation/Rocket.json'
+import Lottie from 'lottie-react'
 
 const GetFreeQuote = () => {
   return (
-    <div className="container py-[60px]">
+    <div className="container pb-[60px]">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-14">
-        <div className="md:col-span-3 bg-gradient-to-tl from-green-400 to-green-700 text-white rounded-3xl p-10 flex flex-col justify-center">
+        <div className="relative md:col-span-3 bg-gradient-to-tl from-green-400 to-green-700 text-white rounded-3xl p-10 flex flex-col justify-center">
+          <div className="w-20 h-20 absolute top-[20px] right-[20px] bg-white rounded-full ">
+            <Lottie
+              animationData={rocket}
+              loop
+              autoplay
+              className="w-full h-full"
+            />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold leading-snug">
             Ready to Innovate Together? Let’s <br /> Connect
           </h2>
