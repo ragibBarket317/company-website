@@ -6,7 +6,7 @@ import meeting from '../../../assets/animation/Meeting.json'
 const WhyChooseUs = () => {
   return (
     <div className="bg-gray-50 dark:bg-dark-bg">
-      <div className="container py-[60px]">
+      <div className="container pt-[60px]">
         <h2 className="text-center text-2xl md:text-3xl font-bold  dark:text-white">
           Why Choose for Digital Solutions?
         </h2>

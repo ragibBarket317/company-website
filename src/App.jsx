@@ -11,6 +11,8 @@ import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import Footer from './components/reuseableComponents/Footer'
 import MobileAppDevelopment from './pages/appDevelopmentService/MobileAppDevelopment'
+import SoftwareDevelopmentPage from './pages/SoftwareDevelopmentPage'
+import WebDevelopmentPage from './pages/WebDevelopmentPage'
 
 function App() {
   return (
@@ -25,6 +27,15 @@ function App() {
             path="/services/mobile-app-development"
             element={<MobileAppDevelopment />}
           />
+          <Route
+            path="/services/software-development"
+            element={<SoftwareDevelopmentPage />}
+          />
+          <Route
+            path="/services/web-development"
+            element={<WebDevelopmentPage />}
+          />
+
           <Route path="/industries" element={<Industries />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />

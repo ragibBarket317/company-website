@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import DarkModeToggle from '../reuseableComponents/DarkModeToggle'
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 
 export default function Navbar() {
+  const navigate = useNavigate()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
   const [isAboutOpen, setIsAboutOpen] = useState(false)
@@ -92,7 +93,7 @@ export default function Navbar() {
                 </button>
                 <div className="absolute top-0 left-[-400px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[1000px] transform">
                   <div className="relative top-9  bg-gray-100 rounded-xl shadow-xl w-full">
-                    <div className="grid grid-cols-4 rounded-xl gap-8">
+                    <div className="grid grid-cols-3 rounded-xl gap-8">
                       <div className="bg-gradient-to-tl from-blue-950 to-blue-900 rounded-bl-xl rounded-tl-xl text-white">
                         <div className="p-5 space-y-3">
                           <h3 className="text-lg font-bold ">
@@ -104,14 +105,78 @@ export default function Navbar() {
                           </button>
                         </div>
                       </div>
+                      <div className="col-span-2 grid grid-cols-2 gap-5 py-10">
+                        <div
+                          onClick={() =>
+                            navigate('/services/mobile-app-development')
+                          }
+                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                        >
+                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                            <Link to="/services/mobile-app-development">
+                              Mobile App Development
+                            </Link>
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Corrupti repudiandae distinctio doloremque
+                            provident.
+                          </p>
+                        </div>
+                        <div
+                          onClick={() => navigate('/services/web-development')}
+                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                        >
+                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                            Web Development
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Corrupti repudiandae distinctio doloremque
+                            provident.
+                          </p>
+                        </div>
+                        <div
+                          onClick={() =>
+                            navigate('/services/software-development')
+                          }
+                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                        >
+                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                            Software Development
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Corrupti repudiandae distinctio doloremque
+                            provident.
+                          </p>
+                        </div>
+                        <div
+                          onClick={() =>
+                            navigate('/services/ai-ml-development')
+                          }
+                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                        >
+                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                            AI & ML Development
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Corrupti repudiandae distinctio doloremque
+                            provident.
+                          </p>
+                        </div>
+                      </div>
                       {/* Column 1 */}
-                      <div className="py-10">
+                      {/* <div className="py-10">
                         <h4 className="font-semibold text-lg text-yellow-600 mb-5 flex items-center gap-2">
                           App Development
                         </h4>
                         <ul className="space-y-5 text-md">
                           <li>
-                            <Link to="/services/mobile-app-development">Mobile App Development</Link>
+                            <Link to="/services/mobile-app-development">
+                              Mobile App Development
+                            </Link>
                           </li>
                           <li>
                             <Link to="#">iOS App Development</Link>
@@ -126,18 +191,16 @@ export default function Navbar() {
                             <Link to="#">React Native App Development</Link>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
 
                       {/* Column 2 */}
-                      <div className="py-10">
+                      {/* <div className="py-10">
                         <h4 className="font-semibold text-green-600 text-lg mb-5 flex items-center gap-2">
                           Web Development
                         </h4>
                         <ul className="space-y-5 text-md">
                           <li>
-                            <Link to="#">
-                              MERN Stack Development
-                            </Link>
+                            <Link to="#">MERN Stack Development</Link>
                           </li>
                           <li>
                             <Link to="#">Full Stack Development</Link>
@@ -152,10 +215,10 @@ export default function Navbar() {
                             <Link to="#">Python Development</Link>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
 
                       {/* Column 3 */}
-                      <div className="py-10">
+                      {/* <div className="py-10">
                         <h4 className="font-semibold text-red-600 text-lg mb-5 flex items-center gap-2">
                           Software Development
                         </h4>
@@ -176,7 +239,7 @@ export default function Navbar() {
                             <Link to="#">Education Software</Link>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
