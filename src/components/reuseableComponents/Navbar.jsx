@@ -152,13 +152,11 @@ export default function Navbar() {
                           </p>
                         </div>
                         <div
-                          onClick={() =>
-                            navigate('/services/ai-ml-development')
-                          }
+                          onClick={() => navigate('/services/ai-development')}
                           className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
                         >
                           <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
-                            AI & ML Development
+                            AI Development
                           </h4>
                           <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
@@ -244,10 +242,10 @@ export default function Navbar() {
                   </div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/industries">Industries</Link>
-              </li>
-              <li>{/* <Link to="/case-studies">Case Studies</Link> */}</li>
+              </li> */}
+              {/* <li><Link to="/case-studies">Case Studies</Link></li> */}
               <li>
                 <Link to="/blog">Blog</Link>
               </li>

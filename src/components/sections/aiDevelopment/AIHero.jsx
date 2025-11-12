@@ -1,16 +1,12 @@
+import React, { useEffect, useRef, useState } from 'react'
+import bgImage from '../../../assets/images/hero-bg.jpg'
 import grid from '../../../assets/images/grid.jpg'
 import Lottie from 'lottie-react'
+import coding from '../../../assets/animation/Coding.json'
+import starfall from '../../../assets/animation/Starfall.json'
+import aicore from '../../../assets/animation/ai core.json'
 
-import mobileApp from '../../../assets/animation/Mobile App Showcase.json'
-import { useEffect, useRef } from 'react'
-
-const MobileHero = () => {
-  const lottieRef = useRef()
-
-  useEffect(() => {
-    lottieRef.current.setSpeed(0.3)
-  }, [])
-
+const AIHero = () => {
   return (
     <div
       className="relative max-h-[90vh] h-[85vh] bg-cover bg-center p-6 "
@@ -33,18 +29,17 @@ const MobileHero = () => {
             <div className="h-[70vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
                 <h1 className="text-2xl md:text-2xl lg:text-6xl text-white font-extrabold">
-                  Mobile App Development Company
+                  AI Development Company
                 </h1>
                 <p className="text-gray-200">
-                  We’re a mobile app development company that delivers results —
-                  not just code. From idea to launch, our mobile app development
-                  services align with your goals, your users, and your growth
-                  strategy. Clean UI, secure backend, and rapid delivery —
-                  that’s how we build mobile apps that work.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, cumque adipisci voluptas voluptate consequuntur, omnis
+                  provident autem tenetur unde, reiciendis quos accusantium
+                  voluptatum! Sunt recusandae eligendi enim! Ut, labore ratione!
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg">
-                    Contact
+                    Subscribe
                   </button>
                   <button class="inset-ring-2 inset-ring-cyan-500 shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
                     Subscribe
@@ -56,11 +51,10 @@ const MobileHero = () => {
           <div className="">
             <div className="absolute inset-0 flex justify-end items-center">
               <Lottie
-                lottieRef={lottieRef}
-                animationData={mobileApp}
+                animationData={aicore}
                 loop
                 autoplay
-                className="w-[100%] md:w-[52%] h-auto relative z-10"
+                className="w-[100%] md:w-[60%] h-auto relative z-10"
               />
             </div>
           </div>
@@ -70,4 +64,4 @@ const MobileHero = () => {
   )
 }
 
-export default MobileHero
+export default AIHero

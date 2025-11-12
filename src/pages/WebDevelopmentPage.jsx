@@ -20,12 +20,13 @@ import GetFreeQuote from '../components/sections/home/GetFreeQuote'
 import Lottie from 'lottie-react'
 import software from '../assets/animation/Software.json'
 import MeanStackSection from '../components/sections/mobileAppDevelopment/MeanStackSection'
+import WebHero from '../components/sections/webDevelopment/WebHero'
 
 export default function WebDevelopmentPage() {
   return (
-    <div className=" text-gray-700">
-      <Hero />
-      <div>
+    <div className=" ">
+      <WebHero />
+      <div className="bg-white text-gray-700">
         <section className=" py-16 px-6">
           <div className="container text-center">
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 text-left">

@@ -16,61 +16,49 @@ const IndustriesServices = () => {
             transformation goals.
           </p>
 
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-6 px-10">
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 px-10">
             {[
               {
                 icon: FaTaxi,
                 label: 'Fintech',
-                bgColor: 'bg-blue-100',
+                bgColor: 'bg-gray-100',
                 iconColor: 'text-blue-600',
               },
               {
                 icon: FaTaxi,
                 label: 'Fitness',
-                bgColor: 'bg-green-100',
+                bgColor: 'bg-gray-100',
                 iconColor: 'text-green-600',
               },
               {
                 icon: FaTaxi,
                 label: 'Food Delivery',
-                bgColor: 'bg-yellow-100',
+                bgColor: 'bg-gray-100',
                 iconColor: 'text-yellow-600',
               },
               {
                 icon: FaTaxi,
                 label: 'Healthcare',
-                bgColor: 'bg-red-100',
+                bgColor: 'bg-gray-100',
                 iconColor: 'text-red-600',
               },
               {
                 icon: FaTaxi,
-                label: 'Dating',
-                bgColor: 'bg-pink-100',
-                iconColor: 'text-pink-600',
-              },
-              {
-                icon: FaTaxi,
                 label: 'Travel',
-                bgColor: 'bg-indigo-100',
+                bgColor: 'bg-gray-100',
                 iconColor: 'text-indigo-600',
               },
               {
                 icon: FaTaxi,
                 label: 'Education',
-                bgColor: 'bg-purple-100',
+                bgColor: 'bg-gray-100',
                 iconColor: 'text-purple-600',
               },
               {
                 icon: FaTaxi,
                 label: 'Handyman',
-                bgColor: 'bg-orange-100',
+                bgColor: 'bg-gray-100',
                 iconColor: 'text-orange-600',
-              },
-              {
-                icon: FaTaxi,
-                label: 'Taxi',
-                bgColor: 'bg-teal-100',
-                iconColor: 'text-teal-600',
               },
               {
                 icon: FaTaxi,

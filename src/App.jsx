@@ -13,6 +13,7 @@ import Footer from './components/reuseableComponents/Footer'
 import MobileAppDevelopment from './pages/appDevelopmentService/MobileAppDevelopment'
 import SoftwareDevelopmentPage from './pages/SoftwareDevelopmentPage'
 import WebDevelopmentPage from './pages/WebDevelopmentPage'
+import AIDevelopmentPage from './pages/AIDevelopmentPage'
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
           <Route
             path="/services/web-development"
             element={<WebDevelopmentPage />}
+          />
+          <Route
+            path="/services/ai-development"
+            element={<AIDevelopmentPage />}
           />
 
           <Route path="/industries" element={<Industries />} />

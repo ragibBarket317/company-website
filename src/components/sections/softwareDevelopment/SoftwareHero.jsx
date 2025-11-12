@@ -1,10 +1,10 @@
 import grid from '../../../assets/images/grid.jpg'
 import Lottie from 'lottie-react'
 
-import mobileApp from '../../../assets/animation/Mobile App Showcase.json'
+import software from '../../../assets/animation/Software development.json'
 import { useEffect, useRef } from 'react'
 
-const MobileHero = () => {
+const SoftwareHero = () => {
   const lottieRef = useRef()
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const MobileHero = () => {
             <div className="h-[70vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
                 <h1 className="text-2xl md:text-2xl lg:text-6xl text-white font-extrabold">
-                  Mobile App Development Company
+                  Software Development Company
                 </h1>
                 <p className="text-gray-200">
                   We’re a mobile app development company that delivers results —
@@ -57,10 +57,10 @@ const MobileHero = () => {
             <div className="absolute inset-0 flex justify-end items-center">
               <Lottie
                 lottieRef={lottieRef}
-                animationData={mobileApp}
+                animationData={software}
                 loop
                 autoplay
-                className="w-[100%] md:w-[52%] h-auto relative z-10"
+                className="w-[100%] md:w-[45%] h-auto relative z-10"
               />
             </div>
           </div>
@@ -70,4 +70,4 @@ const MobileHero = () => {
   )
 }
 
-export default MobileHero
+export default SoftwareHero
