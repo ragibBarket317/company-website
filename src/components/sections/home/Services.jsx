@@ -60,7 +60,7 @@ const Services = () => {
     },
   ]
   return (
-    <div className="container relative py-[60px] space-y-10">
+    <div className="container relative py-[60px] text-white space-y-10">
       <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
       <div className="">
         <div className="space-y-3">
@@ -81,9 +81,9 @@ const Services = () => {
                 '--border-color': data.borderColor,
                 '--border-width': data.borderWidth || '2px',
               }}
-              className={`w-full z-10 animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-white via-[var(--border-color)] dark:bg-conic/[from_var(--border-angle)] dark:from-neutral-900 dark:via-[var(--border-color)] to-white from-70% via-90% to-100% p-[3px] shadow-lg`}
+              className={`w-full z-10 animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-neutral-900 via-[var(--border-color)] to-white from-70% via-90% to-100% p-[3px] shadow-lg`}
             >
-              <div className="p-8 rounded-lg bg-slate-50 dark:bg-neutral-900">
+              <div className="p-8 rounded-lg bg-[#232246]">
                 <div
                   className="w-12 h-12 md:w-16 md:h-16 rounded-full"
                   style={{ backgroundColor: data.borderColor }}

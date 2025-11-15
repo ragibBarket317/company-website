@@ -21,7 +21,7 @@ const OurTechStack = () => {
     { icon: FaPhp, label: 'PHP' },
   ]
   return (
-    <div className="container py-[60px]">
+    <div className="container py-[60px] text-white">
       <div className="text-center py-12">
         <h2 className="text-3xl md:text-3xl font-bold dark:text-white">
           Our Tech Stack for Innovative Business Solutions
@@ -37,12 +37,33 @@ const OurTechStack = () => {
           {stackData.map((item, i) => (
             <div
               key={i}
-              className="w-40 h-32 flex flex-col items-center justify-center rounded-xl shadow-lg shadow-slate-300 dark:shadow-slate-600 transition dark:text-white"
+              className="w-40 h-32 bg-[#232246]/70 border-[1px] border-[#44446f] flex flex-col items-center justify-center rounded-xl shadow-md shadow-black dark:shadow-slate-600 transition dark:text-white"
             >
               <item.icon size={40} />
               <p className="mt-2 font-medium">{item.label}</p>
             </div>
           ))}
+        </div>
+      </div>
+      <div
+        className="backdrop-blur-xl bg-white/10 border border-white/20 
+rounded-3xl shadow-xl p-6 
+hover:bg-white/20 transition duration-300"
+      >
+        <h2 className="text-white text-xl font-semibold">Glass Card</h2>
+        <p className="text-gray-200 mt-2">
+          This is an iPhone-style glassmorphism design.
+        </p>
+      </div>
+      <div className="relative mt-5">
+        <div className="absolute inset-0 rounded-3xl bg-white/30 blur-2xl opacity-20"></div>
+
+        <div
+          className="relative backdrop-blur-xl bg-white/10 border border-white/20 
+  rounded-3xl shadow-lg p-6"
+        >
+          <h2 className="text-white text-xl font-semibold">Premium Card</h2>
+          <p className="text-gray-200">Smooth, soft, and elegant like iOS.</p>
         </div>
       </div>
     </div>
