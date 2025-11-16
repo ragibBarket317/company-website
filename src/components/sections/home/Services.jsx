@@ -83,7 +83,7 @@ const Services = () => {
               }}
               className={`w-full z-10 animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-border-[#4b486e]/30 via-[var(--border-color)] to-white from-70% via-90% to-100% p-[3px] shadow-lg`}
             >
-              <div className="p-8 rounded-lg bg-[#232246]">
+              <div className="p-8 rounded-lg bg-gradient-to-b from-[#15192C] to-[#252b4b]">
                 <div
                   className="w-12 h-12 md:w-16 md:h-16 rounded-full"
                   style={{ backgroundColor: data.borderColor }}
