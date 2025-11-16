@@ -12,15 +12,15 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative text-gray-200 py-16 px-6 md:px-16">
-      <div className="absolute inset-0 bg-cyan-950 mix-blend-multiply"></div>
-      <div
+    <footer className="relative bg-[#0C0D23]/50 text-gray-200 py-16 px-6 md:px-16">
+      {/* <div className="absolute inset-0 bg-cyan-950 mix-blend-multiply"></div> */}
+      {/* <div
         className="absolute inset-0 -z-10 bg-cover"
         style={{
           backgroundImage: `url(${grid})`,
         }}
-      ></div>
-      <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div>
+      ></div> */}
+      {/* <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div> */}
       <div>
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo and About */}

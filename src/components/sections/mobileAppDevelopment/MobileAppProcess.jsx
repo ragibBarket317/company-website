@@ -14,12 +14,12 @@ const steps = [
 
 function MobileAppProcess() {
   return (
-    <section className="container bg-white py-16">
+    <section className="container h-[100vh] py-16">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-indigo-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
           Our Mobile App Development Process — From Idea to Launch, Done Right
         </h2>
-        <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+        <p className="mt-4 text-gray-200 max-w-3xl mx-auto">
           We follow a proven mobile app development process that keeps you
           involved at every step. No guesswork, no jargon — just a clear,
           structured journey from first call to final launch. Here’s how we
@@ -29,7 +29,7 @@ function MobileAppProcess() {
 
       <div className="mt-10 grid md:grid-cols-2 gap-6 px-6">
         {/* Left Section */}
-        <div className="bg-blue-700 text-white rounded-lg p-8 flex flex-col justify-center space-y-4">
+        <div className="bg-[#10112D] text-white rounded-lg p-8 flex flex-col justify-center space-y-4">
           {steps.map((step) => (
             <div key={step.id} className="flex items-start space-x-4">
               <div className="flex-shrink-0 w-6 h-6 bg-white text-blue-700 font-bold rounded-full flex items-center justify-center">

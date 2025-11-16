@@ -26,7 +26,7 @@ export default function WebDevelopmentPage() {
   return (
     <div className=" ">
       <WebHero />
-      <div className="bg-white text-gray-700">
+      <div className=" text-gray-200">
         <section className=" py-16 px-6">
           <div className="container text-center">
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 text-left">
@@ -54,13 +54,15 @@ export default function WebDevelopmentPage() {
               ].map((step, i) => (
                 <div
                   key={i}
-                  className="bg-gray-100 border border-gray-100 rounded-lg p-5 shadow-sm hover:shadow-md transition"
+                  className="backdrop-blur-xl bg-white/10 border border-white/20 
+ p-6 
+hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
                 >
                   <div className="flex items-center justify-between mb-2"></div>
-                  <h4 className="font-semibold text-indigo-900 text-xl mb-1">
+                  <h4 className="font-semibold text-white text-xl mb-1">
                     {step.title}
                   </h4>
-                  <p className="text-gray-600 text-lg">{step.desc}</p>
+                  <p className="text-gray-200 text-lg">{step.desc}</p>
                 </div>
               ))}
             </div>
@@ -69,10 +71,10 @@ export default function WebDevelopmentPage() {
         <MeanStackSection />
         {/* --- Section 1: Industries --- */}
         <section className="container py-16 px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 text-center mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-4">
             Industries We Build Web Platforms For
           </h2>
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+          <p className="text-center text-gray-200 max-w-3xl mx-auto mb-10">
             We provide full-cycle web development for diverse industries that
             demand scalability, modern design, and security. Our custom-built
             platforms help you connect, engage, and grow your business.
@@ -113,13 +115,15 @@ export default function WebDevelopmentPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition"
+                className="backdrop-blur-xl bg-white/10 border border-white/20 
+
+hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px_-1px_rgba(0,0,0,0.1)] hover:shadow-md transition"
               >
                 <div className="mb-3">{item.icon}</div>
-                <h3 className="font-semibold text-indigo-900 text-xl mb-2">
+                <h3 className="font-semibold text-white text-xl mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-lg">{item.desc}</p>
+                <p className="text-gray-400 text-lg">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -127,10 +131,10 @@ export default function WebDevelopmentPage() {
         {/* --- Section 3: Why Choose Us --- */}
         <section className="py-16 px-6">
           <div className="container">
-            <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
               Why Choose CodeNova as Your Development Partner
             </h2>
-            <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+            <p className="text-center text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
               We’re more than developers — we’re your digital partners focused
               on building innovative, transparent, and long-term software
               solutions.
@@ -160,10 +164,10 @@ export default function WebDevelopmentPage() {
                       {item.num}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-indigo-900 text-xl">
+                      <h4 className="font-semibold text-white text-xl">
                         {item.title}
                       </h4>
-                      <p className="text-lg text-gray-600">{item.desc}</p>
+                      <p className="text-lg text-gray-400">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -182,126 +186,142 @@ export default function WebDevelopmentPage() {
         </section>
 
         {/* --- Section 2: Web Dev Process --- */}
-        <section className="bg-gray-100 py-16 px-6">
-          <div className="container text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">
-              Our Web Development Process
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto mb-10">
-              We follow a structured, agile process that turns your ideas into
-              high-performing websites and applications — delivered on time and
-              with complete transparency.
-            </p>
+        <section className="relative bg-[#080917] h-[100vh] py-16 px-6">
+          <div className="circlePosition w-[400px] h-[150px] bg-blue-400 rounded-full absolute z-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[200px]"></div>
+          <div className="w-full h-full flex justify-center items-center">
+            <div>
+              <div className="container text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Our Web Development Process
+                </h2>
+                <p className="text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
+                  We follow a structured, agile process that turns your ideas
+                  into high-performing websites and applications — delivered on
+                  time and with complete transparency.
+                </p>
 
-            <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 text-left">
-              {[
-                {
-                  num: '01',
-                  title: 'Discovery',
-                  desc: 'We analyze your requirements, goals, and users to create a solid foundation for your project.',
-                },
-                {
-                  num: '02',
-                  title: 'Planning & Design',
-                  desc: 'Our designers and planners map the UX/UI flow and design prototypes aligned with your brand identity.',
-                },
-                {
-                  num: '03',
-                  title: 'Development',
-                  desc: 'Using modern frameworks, our developers code robust, scalable, and mobile-responsive web apps.',
-                },
-                {
-                  num: '04',
-                  title: 'Testing',
-                  desc: 'Rigorous testing ensures flawless performance, security, and smooth functionality across devices.',
-                },
-                {
-                  num: '05',
-                  title: 'Deployment',
-                  desc: 'We handle deployment with zero downtime — ensuring your web solution goes live seamlessly.',
-                },
-                {
-                  num: '06',
-                  title: 'Maintenance',
-                  desc: 'Post-launch, we offer continuous support and updates to keep your platform secure and optimized.',
-                },
-              ].map((step, i) => (
-                <div
-                  key={i}
-                  className="bg-white border border-gray-100 rounded-lg p-5 shadow-sm hover:shadow-md transition"
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="text-sm font-bold text-indigo-600">
-                      Step {step.num}
+                <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 text-left">
+                  {[
+                    {
+                      num: '01',
+                      title: 'Discovery',
+                      desc: 'We analyze your requirements, goals, and users to create a solid foundation for your project.',
+                    },
+                    {
+                      num: '02',
+                      title: 'Planning & Design',
+                      desc: 'Our designers and planners map the UX/UI flow and design prototypes aligned with your brand identity.',
+                    },
+                    {
+                      num: '03',
+                      title: 'Development',
+                      desc: 'Using modern frameworks, our developers code robust, scalable, and mobile-responsive web apps.',
+                    },
+                    {
+                      num: '04',
+                      title: 'Testing',
+                      desc: 'Rigorous testing ensures flawless performance, security, and smooth functionality across devices.',
+                    },
+                    {
+                      num: '05',
+                      title: 'Deployment',
+                      desc: 'We handle deployment with zero downtime — ensuring your web solution goes live seamlessly.',
+                    },
+                    {
+                      num: '06',
+                      title: 'Maintenance',
+                      desc: 'Post-launch, we offer continuous support and updates to keep your platform secure and optimized.',
+                    },
+                  ].map((step, i) => (
+                    <div
+                      key={i}
+                      className=" rounded-lg p-5 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px_-1px_rgba(0,0,0,0.1)] transition"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="text-sm font-bold text-indigo-600">
+                          Step {step.num}
+                        </div>
+                      </div>
+                      <h4 className="font-semibold text-white text-xl mb-1">
+                        {step.title}
+                      </h4>
+                      <p className="text-gray-400 text-lg">{step.desc}</p>
                     </div>
-                  </div>
-                  <h4 className="font-semibold text-indigo-900 text-xl mb-1">
-                    {step.title}
-                  </h4>
-                  <p className="text-gray-600 text-lg">{step.desc}</p>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </section>
 
         {/* --- Section 3: Why Choose Us --- */}
-        <section className="container py-16 px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 text-center mb-4">
-            Why Partner With NovaWeb for Development
-          </h2>
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
-            We don’t just code — we collaborate. Our focus is on communication,
-            innovation, and delivering reliable digital solutions that grow with
-            your business.
-          </p>
+        <div className="relative h-[100vh]">
+          <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
+          <div className="w-full h-full flex justify-center items-center">
+            <div>
+              <section className="container py-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+                  Why Partner With Intexa for Development
+                </h2>
+                <p className="text-center text-gray-200 max-w-3xl mx-auto mb-10">
+                  We don’t just code — we collaborate. Our focus is on
+                  communication, innovation, and delivering reliable digital
+                  solutions that grow with your business.
+                </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: <FaUsers className="text-indigo-600 text-2xl" />,
-                title: 'Client-Focused Approach',
-                desc: 'We build around your goals and feedback to ensure your website meets your real business objectives.',
-              },
-              {
-                icon: <FaCogs className="text-indigo-600 text-2xl" />,
-                title: 'Dedicated Web Team',
-                desc: 'Our developers stay with your project from start to finish for seamless coordination and consistent delivery.',
-              },
-              {
-                icon: <FaDatabase className="text-indigo-600 text-2xl" />,
-                title: 'Data Security First',
-                desc: 'Following strict security practices, we keep your data safe while maintaining system reliability.',
-              },
-              {
-                icon: <FaChartLine className="text-indigo-600 text-2xl" />,
-                title: 'Proven Experience',
-                desc: 'We’ve worked with startups to enterprises — tailoring solutions that fit diverse industries and requirements.',
-              },
-              {
-                icon: <FaSyncAlt className="text-indigo-600 text-2xl" />,
-                title: 'Agile & Transparent Process',
-                desc: 'Track every stage of progress with real-time updates, ensuring complete transparency throughout development.',
-              },
-              {
-                icon: <FaComments className="text-indigo-600 text-2xl" />,
-                title: 'Clear Communication',
-                desc: 'Stay informed with open communication — no tech jargon, just clear and frequent project updates.',
-              },
-            ].map((feature, i) => (
-              <div
-                key={i}
-                className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition"
-              >
-                <div className="mb-3">{feature.icon}</div>
-                <h3 className="font-semibold text-indigo-900 text-xl mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-lg">{feature.desc}</p>
-              </div>
-            ))}
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {[
+                    {
+                      icon: <FaUsers className="text-indigo-600 text-2xl" />,
+                      title: 'Client-Focused Approach',
+                      desc: 'We build around your goals and feedback to ensure your website meets your real business objectives.',
+                    },
+                    {
+                      icon: <FaCogs className="text-indigo-600 text-2xl" />,
+                      title: 'Dedicated Web Team',
+                      desc: 'Our developers stay with your project from start to finish for seamless coordination and consistent delivery.',
+                    },
+                    {
+                      icon: <FaDatabase className="text-indigo-600 text-2xl" />,
+                      title: 'Data Security First',
+                      desc: 'Following strict security practices, we keep your data safe while maintaining system reliability.',
+                    },
+                    {
+                      icon: (
+                        <FaChartLine className="text-indigo-600 text-2xl" />
+                      ),
+                      title: 'Proven Experience',
+                      desc: 'We’ve worked with startups to enterprises — tailoring solutions that fit diverse industries and requirements.',
+                    },
+                    {
+                      icon: <FaSyncAlt className="text-indigo-600 text-2xl" />,
+                      title: 'Agile & Transparent Process',
+                      desc: 'Track every stage of progress with real-time updates, ensuring complete transparency throughout development.',
+                    },
+                    {
+                      icon: <FaComments className="text-indigo-600 text-2xl" />,
+                      title: 'Clear Communication',
+                      desc: 'Stay informed with open communication — no tech jargon, just clear and frequent project updates.',
+                    },
+                  ].map((feature, i) => (
+                    <div
+                      key={i}
+                      className="backdrop-blur-xl bg-white/10 border border-white/20 
+
+hover:bg-white/20  rounded-lg p-6 shadow-2xl hover:shadow-md transition"
+                    >
+                      <div className="mb-3">{feature.icon}</div>
+                      <h3 className="font-semibold text-white text-xl mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-gray-400 text-lg">{feature.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </div>
           </div>
-        </section>
+        </div>
         <WhyChooseUs />
         <GetFreeQuote />
       </div>

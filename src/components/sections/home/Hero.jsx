@@ -38,17 +38,17 @@ const Hero = () => {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry
                 </h1>
-                <p className="text-gray-200">
+                <p className="text-gray-200 font-body text-[18px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Neque, cumque adipisci voluptas voluptate consequuntur, omnis
                   provident autem tenetur unde, reiciendis quos accusantium
                   voluptatum! Sunt recusandae eligendi enim! Ut, labore ratione!
                 </p>
                 <div className="flex gap-5">
-                  <button className="bg-cyan-500 shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg">
+                  <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
                     Subscribe
                   </button>
-                  <button class="inset-ring-2 inset-ring-cyan-500 shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
+                  <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
                     Subscribe
                   </button>
                 </div>

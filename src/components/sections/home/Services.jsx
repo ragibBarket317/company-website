@@ -60,14 +60,14 @@ const Services = () => {
     },
   ]
   return (
-    <div className="container relative py-[60px] text-white space-y-10">
+    <div className="container relative py-[60px] h-[100vh] text-white space-y-10">
       <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
       <div className="">
         <div className="space-y-3">
           <h2 className="text-center text-5xl font-bold dark:text-white ">
             Our Digital Services
           </h2>
-          <p className="text-center text-gray-800 dark:text-gray-100">
+          <p className="text-center text-white text-[18px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
             doloremque et voluptates id architecto dolorem deleniti laborum
             velit quas alias
@@ -81,7 +81,7 @@ const Services = () => {
                 '--border-color': data.borderColor,
                 '--border-width': data.borderWidth || '2px',
               }}
-              className={`w-full z-10 animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-neutral-900 via-[var(--border-color)] to-white from-70% via-90% to-100% p-[3px] shadow-lg`}
+              className={`w-full z-10 animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-border-[#4b486e]/30 via-[var(--border-color)] to-white from-70% via-90% to-100% p-[3px] shadow-lg`}
             >
               <div className="p-8 rounded-lg bg-[#232246]">
                 <div

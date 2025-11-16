@@ -7,6 +7,7 @@ import OurTechStack from '../components/sections/home/OurTechStack'
 import Testimonial from '../components/sections/home/Testimonial'
 import IndustriesServices from '../components/sections/home/IndustriesServices'
 import WhyChooseUs from '../components/sections/home/WhyChooseUs'
+import SoftwareOverview from '../components/sections/home/SoftwareOverview'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero />
       <Services />
       <OurStory />
+      <SoftwareOverview />
       <OurTechStack />
       <Testimonial />
       <IndustriesServices />

@@ -2,8 +2,8 @@ import React from 'react'
 
 const OurStory = () => {
   return (
-    <div className="text-white dark:bg-dark-bg">
-      <div className="container py-[30px] p-6">
+    <div className="text-white  h-[100vh] pt-[60px] dark:bg-dark-bg">
+      <div className="container p-6">
         <div className="md:flex gap-5">
           <div className="w-full md:w-[50%]">
             <div className="h-full flex flex-col justify-center">
@@ -11,7 +11,7 @@ const OurStory = () => {
                 <h2 className="text-4xl font-extrabold dark:text-white">
                   Our Story
                 </h2>
-                <p className=" text-[18px] leading-7 dark:text-gray-300">
+                <p className=" text-[20px] font-body text-white leading-7">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Illum nam sint ipsam dignissimos repudiandae sed labore
                   dolorum dolores minima aspernatur! Molestiae enim ad

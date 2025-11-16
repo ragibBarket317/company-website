@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
 
   return (
-    <nav className="flex justify-between items-center p-4 shadow text-white dark:shadow-black dark:bg-dark-bg dark:text-dark-text-color z-50">
+    <nav className="flex justify-between items-center p-4 text-white dark:shadow-black dark:bg-dark-bg dark:text-dark-text-color z-50">
       {/* <div className="absolute inset-0 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.3),_transparent_70%)]"></div>
       </div> */}
@@ -116,9 +116,9 @@ export default function Navbar() {
                           onClick={() =>
                             navigate('/services/mobile-app-development')
                           }
-                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                          className="py-5 cursor-pointer text-gray-800 hover:bg-gray-200 rounded-lg px-3"
                         >
-                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                          <h4 className="font-semibold text-lg text-orange-600 mb-3 flex items-center gap-2">
                             <Link to="/services/mobile-app-development">
                               Mobile App Development
                             </Link>
@@ -131,9 +131,9 @@ export default function Navbar() {
                         </div>
                         <div
                           onClick={() => navigate('/services/web-development')}
-                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                          className="py-5 cursor-pointer text-gray-800 hover:bg-gray-200 rounded-lg px-3"
                         >
-                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                          <h4 className="font-semibold text-lg text-orange-600 mb-3 flex items-center gap-2">
                             Web Development
                           </h4>
                           <p>
@@ -146,9 +146,9 @@ export default function Navbar() {
                           onClick={() =>
                             navigate('/services/software-development')
                           }
-                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                          className="py-5 cursor-pointer text-gray-800 hover:bg-gray-200 rounded-lg px-3"
                         >
-                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                          <h4 className="font-semibold text-lg text-orange-600 mb-3 flex items-center gap-2">
                             Software Development
                           </h4>
                           <p>
@@ -159,9 +159,9 @@ export default function Navbar() {
                         </div>
                         <div
                           onClick={() => navigate('/services/ai-development')}
-                          className="py-5 cursor-pointer hover:bg-gray-200 rounded-lg px-3"
+                          className="py-5 cursor-pointer text-gray-800 hover:bg-gray-200 rounded-lg px-3"
                         >
-                          <h4 className="font-semibold text-lg text-yellow-600 mb-3 flex items-center gap-2">
+                          <h4 className="font-semibold text-lg text-orange-600 mb-3 flex items-center gap-2">
                             AI Development
                           </h4>
                           <p>

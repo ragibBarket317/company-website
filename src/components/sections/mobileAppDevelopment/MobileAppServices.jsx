@@ -49,12 +49,12 @@ const services = [
 
 function MobileAppServices() {
   return (
-    <section className="container bg-white py-16">
+    <section className="container h-[100vh] py-16">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-indigo-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
           Full-Scale Mobile App Development for Modern Businesses
         </h2>
-        <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+        <p className="mt-4 text-gray-200 max-w-3xl mx-auto">
           We go beyond coding — our team focuses on solving real business
           problems with reliable architecture, intuitive UX, and smooth app
           performance. From strategy to launch, we deliver mobile apps that make
@@ -66,13 +66,15 @@ function MobileAppServices() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white shadow-md border border-gray-100 rounded-xl p-6 text-left hover:shadow-lg transition"
+            className="backdrop-blur-xl bg-white/10 border border-white/20 
+
+hover:bg-white/20  shadow-md  rounded-xl p-6 text-left hover:shadow-lg transition"
           >
             <div className="mb-4">{service.icon}</div>
-            <h3 className="font-semibold text-indigo-900 text-lg mb-2">
+            <h3 className="font-semibold text-white text-lg mb-2">
               {service.title}
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-300 text-[18px] leading-relaxed">
               {service.description}
             </p>
           </div>

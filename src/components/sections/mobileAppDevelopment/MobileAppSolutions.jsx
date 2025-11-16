@@ -26,37 +26,44 @@ const solutions = [
 
 export default function MobileAppSolutions() {
   return (
-    <section className="container bg-white py-16">
-      <div className="px-6 text-center">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-indigo-900">
-          Mobile App Solutions Built Around Your Business Operations
-        </h2>
-        <p className="mt-4 text-gray-600">
-          If you're managing an enterprise, optimizing a department, or
-          automating internal processes – we develop mobile apps that streamline
-          operations, boost productivity, and scale with your business.
-        </p>
-
-        {/* Solutions Grid */}
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {solutions.map((item) => (
-            <div key={item.id} className="text-left">
-              <div className={`text-2xl font-bold mb-2 ${item.color}`}>
-                {item.id}
-              </div>
-              <div
-                className={` border-l-6 ${item.color} bg-white rounded-md shadow-sm p-6 transition duration-300 hover:shadow-md`}
-              >
-                <h3 className="font-semibold text-indigo-900 mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-md leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
+    <section className="container h-[100vh]">
+      <div className="w-full h-full flex justify-center items-center">
+        <div>
+          <div className="px-6 text-center">
+            {/* Heading */}
+            <div className="max-w-6xl mx-auto px-6 text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-white">
+                Mobile App Solutions Built Around Your Business Operations
+              </h2>
+              <p className="mt-4 text-gray-600">
+                If you're managing an enterprise, optimizing a department, or
+                automating internal processes – we develop mobile apps that
+                streamline operations, boost productivity, and scale with your
+                business.
+              </p>
             </div>
-          ))}
+
+            {/* Solutions Grid */}
+            <div className="mt-12 grid md:grid-cols-3 gap-6">
+              {solutions.map((item) => (
+                <div key={item.id} className="text-left">
+                  <div className={`text-2xl font-bold mb-2 ${item.color}`}>
+                    {item.id}
+                  </div>
+                  <div
+                    className={` border-l-6 ${item.color} rounded-xl shadow-2xl p-6 transition duration-300 hover:shadow-md`}
+                  >
+                    <h3 className="font-semibold text-indigo-400 text-lg mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-200 text-[18px] leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
