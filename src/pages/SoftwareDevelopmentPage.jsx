@@ -21,9 +21,9 @@ export default function SoftwareDevelopmentPage() {
   return (
     <div>
       <SoftwareHero />
-      <div className=" text-gray-200">
+      <div className="pb-[80px] text-gray-200">
         {/* --- Section 1: Capabilities --- */}
-        <div className="h-[100vh]">
+        <div>
           <div className="w-full h-full flex justify-center items-center">
             <section className="container py-16 px-6 mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
@@ -150,7 +150,7 @@ hover:bg-white/20 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 
         </div>
 
         {/* --- Section 3: Why Choose Us --- */}
-        <div className="h-[100vh]">
+        <div className="py-[80px]">
           <div className="w-full h-full flex justify-center items-center">
             <section className="py-16 px-6">
               <div className="container">
@@ -214,11 +214,16 @@ hover:bg-white/20 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 
         </div>
 
         {/* --- Section 4: Solutions --- */}
-        <section className="container  py-16 px-6">
+        <section className="container  py-[80px] px-6">
           <div className="text-center">
-            <h2 className="text-3xl md:text-5xl max-w-6xl mx-auto font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl max-w-3xl mx-auto font-bold text-white mb-6">
               We Deliver Tailored Software Solutions for Every Business Level
             </h2>
+            <p className="text-center text-gray-400 text-[18px] max-w-3xl mx-auto mb-10">
+              We’re more than developers — we’re your digital partners focused
+              on building innovative, transparent, and long-term software
+              solutions.
+            </p>
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               {[
                 {

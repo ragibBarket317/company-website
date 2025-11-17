@@ -1,9 +1,18 @@
 import React from 'react'
-import { FaTaxi } from 'react-icons/fa'
+import {
+  FaMoneyCheckAlt,
+  FaDumbbell,
+  FaHamburger,
+  FaHospitalAlt,
+  FaPlane,
+  FaBookReader,
+  FaTools,
+  FaBuilding,
+} from 'react-icons/fa'
 
 const IndustriesServices = () => {
   return (
-    <div className="relative h-[100vh]">
+    <div className="relative py-[80px]">
       <div className=" w-full h-full flex justify-center items-center ">
         <div className="container">
           <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
@@ -21,49 +30,49 @@ const IndustriesServices = () => {
             <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 px-10">
               {[
                 {
-                  icon: FaTaxi,
+                  icon: FaMoneyCheckAlt,
                   label: 'Fintech',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-blue-600',
                 },
                 {
-                  icon: FaTaxi,
+                  icon: FaDumbbell,
                   label: 'Fitness',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-green-600',
                 },
                 {
-                  icon: FaTaxi,
+                  icon: FaHamburger,
                   label: 'Food Delivery',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-yellow-600',
                 },
                 {
-                  icon: FaTaxi,
+                  icon: FaHospitalAlt,
                   label: 'Healthcare',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-red-600',
                 },
                 {
-                  icon: FaTaxi,
+                  icon: FaPlane,
                   label: 'Travel',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-indigo-600',
                 },
                 {
-                  icon: FaTaxi,
+                  icon: FaBookReader,
                   label: 'Education',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-purple-600',
                 },
                 {
-                  icon: FaTaxi,
+                  icon: FaTools,
                   label: 'Handyman',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-orange-600',
                 },
                 {
-                  icon: FaTaxi,
+                  icon: FaBuilding,
                   label: 'Real Estate',
                   bgColor: 'bg-gray-100',
                   iconColor: 'text-gray-600',

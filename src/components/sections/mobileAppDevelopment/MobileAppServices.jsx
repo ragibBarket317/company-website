@@ -49,7 +49,7 @@ const services = [
 
 function MobileAppServices() {
   return (
-    <section className="container h-[100vh] py-16">
+    <section className="container py-[80px]">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white">
           Full-Scale Mobile App Development for Modern Businesses
@@ -74,7 +74,7 @@ hover:bg-white/20  shadow-md  rounded-xl p-6 text-left hover:shadow-lg transitio
             <h3 className="font-semibold text-white text-lg mb-2">
               {service.title}
             </h3>
-            <p className="text-gray-300 text-[18px] leading-relaxed">
+            <p className="text-gray-300 text-base leading-relaxed">
               {service.description}
             </p>
           </div>

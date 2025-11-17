@@ -1,27 +1,74 @@
 import React from 'react'
-import { FaReact, FaVuejs, FaAngular, FaPhp } from 'react-icons/fa'
+import {
+  FaReact,
+  FaVuejs,
+  FaAngular,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaPhp,
+  FaPython,
+  FaJava,
+  FaAndroid,
+  FaApple,
+  FaAws,
+  FaGitAlt,
+  FaDocker,
+} from 'react-icons/fa'
+
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiTailwindcss,
+  SiKubernetes,
+  SiGooglecloud,
+  SiTensorflow,
+} from 'react-icons/si'
 
 const OurTechStack = () => {
   const stackData = [
-    { icon: FaReact, label: 'React js' },
+    // Frontend
+    { icon: FaReact, label: 'React.js' },
+    { icon: SiNextdotjs, label: 'Next.js' },
     { icon: FaVuejs, label: 'Vue.js' },
     { icon: FaAngular, label: 'Angular' },
-    { icon: FaPhp, label: 'PHP' },
-    { icon: FaReact, label: 'React js' },
-    { icon: FaVuejs, label: 'Vue.js' },
-    { icon: FaAngular, label: 'Angular' },
-    { icon: FaPhp, label: 'PHP' },
-    { icon: FaReact, label: 'React js' },
-    { icon: FaVuejs, label: 'Vue.js' },
-    { icon: FaAngular, label: 'Angular' },
-    { icon: FaPhp, label: 'PHP' },
-    { icon: FaReact, label: 'React js' },
-    { icon: FaVuejs, label: 'Vue.js' },
-    { icon: FaAngular, label: 'Angular' },
-    { icon: FaPhp, label: 'PHP' },
+    { icon: SiTypescript, label: 'TypeScript' },
+    { icon: FaHtml5, label: 'HTML5' },
+    { icon: FaCss3Alt, label: 'CSS3' },
+    { icon: SiTailwindcss, label: 'Tailwind CSS' },
+
+    // Backend
+    { icon: FaNodeJs, label: 'Node.js' },
+    { icon: SiExpress, label: 'Express.js' },
+    { icon: FaPhp, label: 'PHP / Laravel' },
+    { icon: FaPython, label: 'Python / Django' },
+    { icon: FaJava, label: 'Java / Spring Boot' },
+
+    // Mobile App
+    { icon: FaReact, label: 'React Native' },
+    { icon: FaAndroid, label: 'Android (Kotlin/Java)' },
+    { icon: FaApple, label: 'iOS (Swift)' },
+
+    // Database
+    { icon: SiMongodb, label: 'MongoDB' },
+    { icon: SiMysql, label: 'MySQL' },
+    { icon: SiPostgresql, label: 'PostgreSQL' },
+
+    // DevOps & Cloud
+    { icon: FaDocker, label: 'Docker' },
+    { icon: SiKubernetes, label: 'Kubernetes' },
+    { icon: FaAws, label: 'AWS' },
+    { icon: SiGooglecloud, label: 'Google Cloud' },
+
+    // AI / ML
+    { icon: SiTensorflow, label: 'TensorFlow' },
   ]
   return (
-    <div className="relative container h-[80vh] text-white">
+    <div className="relative container py-[80px] text-white">
       <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
       <div className="h-full w-full flex justify-center items-center text-center">
         <div>

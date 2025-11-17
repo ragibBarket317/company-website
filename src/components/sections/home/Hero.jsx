@@ -35,14 +35,14 @@ const Hero = () => {
             <div className="h-[80vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
                 <h1 className="text-2xl md:text-2xl lg:text-6xl text-white font-extrabold">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
+                  Powering Organizations Worldwide with Advanced Digital
+                  Engineering
                 </h1>
                 <p className="text-gray-200 font-body text-[18px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Neque, cumque adipisci voluptas voluptate consequuntur, omnis
-                  provident autem tenetur unde, reiciendis quos accusantium
-                  voluptatum! Sunt recusandae eligendi enim! Ut, labore ratione!
+                  Specialists in mobile, web, AI/ML, and blockchain engineering
+                  Proven expertise across app development, web platforms, AI/ML,
+                  and blockchain solutions Skilled teams delivering world-class
+                  mobile, web, AI, and blockchain products
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">

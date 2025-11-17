@@ -62,7 +62,7 @@ hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
                   <h4 className="font-semibold text-white text-xl mb-1">
                     {step.title}
                   </h4>
-                  <p className="text-gray-200 text-lg">{step.desc}</p>
+                  <p className="text-gray-200 text-base">{step.desc}</p>
                 </div>
               ))}
             </div>
@@ -70,7 +70,7 @@ hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
         </section>
         <MeanStackSection />
         {/* --- Section 1: Industries --- */}
-        <section className="container py-16 px-6">
+        <section className="container py-[80px] px-6">
           <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-4">
             Industries We Build Web Platforms For
           </h2>
@@ -123,16 +123,16 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
                 <h3 className="font-semibold text-white text-xl mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-400 text-lg">{item.desc}</p>
+                <p className="text-gray-400 text-base">{item.desc}</p>
               </div>
             ))}
           </div>
         </section>
         {/* --- Section 3: Why Choose Us --- */}
-        <section className="py-16 px-6">
+        <section className="py-[80px] px-6">
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-              Why Choose CodeNova as Your Development Partner
+              Why Choose Intexa as Your Development Partner
             </h2>
             <p className="text-center text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
               We’re more than developers — we’re your digital partners focused
@@ -245,7 +245,7 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
                       <h4 className="font-semibold text-white text-xl mb-1">
                         {step.title}
                       </h4>
-                      <p className="text-gray-400 text-lg">{step.desc}</p>
+                      <p className="text-gray-400 text-base">{step.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -314,7 +314,7 @@ hover:bg-white/20  rounded-lg p-6 shadow-2xl hover:shadow-md transition"
                       <h3 className="font-semibold text-white text-xl mb-2">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-400 text-lg">{feature.desc}</p>
+                      <p className="text-gray-400 text-base">{feature.desc}</p>
                     </div>
                   ))}
                 </div>

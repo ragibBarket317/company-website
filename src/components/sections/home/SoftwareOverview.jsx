@@ -8,12 +8,12 @@ import {
   FaChartPie,
 } from 'react-icons/fa'
 import software from '../../../assets/images/software.png'
-import pc from '../../../assets/images/pc.jpg'
+import webpage from '../../../assets/images/webpage.png'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
 
 export default function SoftwareOverview() {
   return (
-    <div className=" text-gray-800">
+    <div className="py-[80px] text-gray-800">
       {/* Trusted By */}
       {/* <section className="py-16 px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-10">
@@ -40,7 +40,7 @@ export default function SoftwareOverview() {
         </h1>
 
         {/* Multi-Cloud Governance */}
-        <section className="py-20 h-[100vh] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section className="py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex items-center justify-center">
             <div className="w-[500px] h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
               <img src={software} alt="" className="w-full" />
@@ -94,7 +94,7 @@ export default function SoftwareOverview() {
         </section>
 
         {/* Automated Workflows */}
-        <section className="py-20 h-[100vh] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section className="py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="uppercase text-orange-600 text-sm font-semibold mb-2">
               Standardized Multi‑Cloud Governance
@@ -141,8 +141,8 @@ export default function SoftwareOverview() {
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="w-[500px] h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
-              <img src={software} alt="" className="w-full" />
+            <div className="p-8 w-[500px] h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
+              <img src={webpage} alt="" className="w-full" />
             </div>
           </div>
         </section>

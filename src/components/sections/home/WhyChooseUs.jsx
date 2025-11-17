@@ -5,10 +5,10 @@ import meeting from '../../../assets/animation/Meeting.json'
 
 const WhyChooseUs = () => {
   return (
-    <div className="h-[100vh]">
+    <div className="py-[80px]">
       <div className="w-full h-full flex justify-center items-center  ">
         <div className="container">
-          <h2 className="text-center text-3xl md:text-5xl font-bold  text-white">
+          <h2 className="text-center text-3xl md:text-4xl font-bold  text-white">
             Why Choose for Digital Solutions?
           </h2>
           <p className="text-center font-body text-gray-200 mt-3 max-w-4xl mx-auto">

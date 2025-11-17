@@ -252,9 +252,9 @@ export default function Navbar() {
                 <Link to="/industries">Industries</Link>
               </li> */}
               {/* <li><Link to="/case-studies">Case Studies</Link></li> */}
-              <li>
+              {/* <li>
                 <Link to="/blog">Blog</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/careers">Careers</Link>
               </li>

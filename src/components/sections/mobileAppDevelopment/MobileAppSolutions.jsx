@@ -56,7 +56,7 @@ export default function MobileAppSolutions() {
                     <h3 className="font-semibold text-indigo-400 text-lg mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-200 text-[18px] leading-relaxed">
+                    <p className="text-gray-200 text-base leading-relaxed">
                       {item.description}
                     </p>
                   </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const OurStory = () => {
   return (
-    <div className="text-white  h-[100vh] pt-[60px] dark:bg-dark-bg">
+    <div className="text-white py-[80px] dark:bg-dark-bg">
       <div className="container p-6">
         <div className="md:flex gap-5">
           <div className="w-full md:w-[50%]">
@@ -12,13 +12,23 @@ const OurStory = () => {
                   Our Story
                 </h2>
                 <p className=" text-[20px] font-body text-white leading-7">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Illum nam sint ipsam dignissimos repudiandae sed labore
-                  dolorum dolores minima aspernatur! Molestiae enim ad
-                  explicabo, iure corporis dolorum autem cum modi eius mollitia
-                  voluptatem, cupiditate sint debitis ratione assumenda! Qui
-                  quod eligendi quibusdam necessitatibus illo est fuga
-                  exercitationem non sunt natus.
+                  Our story began with a simple idea — to create digital
+                  solutions that solve real problems and deliver meaningful
+                  value. What started as a small team of passionate developers
+                  and designers has grown into a global technology partner
+                  trusted by startups and enterprises alike. From the beginning,
+                  we focused on understanding people, not just projects. This
+                  mindset helped us build products that feel intuitive,
+                  purposeful, and aligned with our clients’ long-term goals.
+                  Over the years, we expanded our expertise across web
+                  development, mobile apps, AI/ML, cloud systems, and enterprise
+                  platforms. Each new challenge strengthened our commitment to
+                  innovation and quality. But even as we evolve, our core belief
+                  remains unchanged: technology should empower businesses and
+                  create better experiences for users. Today, we continue to
+                  collaborate, experiment, and push boundaries — turning ideas
+                  into scalable digital products that shape the future. And our
+                  journey is only just beginning.
                 </p>
                 {/* <div className="grid grid-cols-4 gap-2">
                 <div className="border border-gray-600 py-5 px-2 rounded-lg bg-green-300">
@@ -32,9 +42,9 @@ const OurStory = () => {
                 </div>
               </div> */}
                 <div className="">
-                  <button className="w-full md:w-[50%] bg-blue-300 text-white py-3 px-7 rounded-lg">
+                  {/* <button className="w-full md:w-[50%] bg-blue-300 text-white py-3 px-7 rounded-lg">
                     Learn More About XYZ
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
