@@ -1,13 +1,13 @@
 export default function Careers() {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-6">
+    <div className="min-h-screen py-16 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h1 className="text-3xl md:text-4xl font-bold text-white">
             Join Our Team
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+          <p className="text-gray-200 max-w-2xl mx-auto mt-4">
             At our company, we’re constantly exploring new ideas and building
             digital solutions that shape the future. While we may not have
             active openings right now, we’re always excited to connect with
