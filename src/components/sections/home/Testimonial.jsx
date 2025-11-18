@@ -10,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 const Testimonial = () => {
   return (
-    <div className="container py-[60px]">
+    <div className="container py-[80px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 py-12 items-center">
         <div>
           <h4 className="text-orange-600 font-semibold">

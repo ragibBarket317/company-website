@@ -82,11 +82,11 @@ const OurTechStack = () => {
             operations, and drive innovation.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-6">
+          <div className="mt-8  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 justify-center gap-6">
             {stackData.map((item, i) => (
               <div
                 key={i}
-                className="w-40 h-32 backdrop-blur-xl bg-white/10 border border-white/20 
+                className="h-32 backdrop-blur-xl bg-white/10 border border-white/20 
  p-6 
 hover:bg-white/20  duration-300 flex flex-col items-center justify-center rounded-xl shadow-md shadow-black  transition "
               >

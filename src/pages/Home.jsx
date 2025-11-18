@@ -11,7 +11,7 @@ import SoftwareOverview from '../components/sections/home/SoftwareOverview'
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <Services />
       <OurStory />

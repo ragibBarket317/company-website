@@ -35,14 +35,14 @@ export default function SoftwareOverview() {
         </div>
       </section> */}
       <div className="container">
-        <h1 className="text-center text-5xl font-bold text-white">
+        <h1 className="text-center text-2xl md:text-4xl font-bold text-white">
           Area Of Our Software Expertise Over Two Decades
         </h1>
 
         {/* Multi-Cloud Governance */}
         <section className="py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex items-center justify-center">
-            <div className="w-[500px] h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
+            <div className="w-60 h-60 lg:w-[500px] lg:h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
               <img src={software} alt="" className="w-full" />
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function SoftwareOverview() {
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="p-8 w-[500px] h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
+            <div className="p-8 w-60 h-60 lg:w-[500px] lg:h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
               <img src={webpage} alt="" className="w-full" />
             </div>
           </div>

@@ -4,31 +4,28 @@ const OurStory = () => {
   return (
     <div className="text-white py-[80px] dark:bg-dark-bg">
       <div className="container p-6">
-        <div className="md:flex gap-5">
-          <div className="w-full md:w-[50%]">
+        <div className="lg:flex gap-5">
+          <div className="w-full lg:w-[50%]">
             <div className="h-full flex flex-col justify-center">
               <div className="space-y-10">
                 <h2 className="text-4xl font-extrabold dark:text-white">
                   Our Story
                 </h2>
-                <p className=" text-[20px] font-body text-white leading-7">
+                <p className=" text-[18px] font-body text-white leading-7">
                   Our story began with a simple idea — to create digital
                   solutions that solve real problems and deliver meaningful
-                  value. What started as a small team of passionate developers
-                  and designers has grown into a global technology partner
-                  trusted by startups and enterprises alike. From the beginning,
-                  we focused on understanding people, not just projects. This
-                  mindset helped us build products that feel intuitive,
-                  purposeful, and aligned with our clients’ long-term goals.
-                  Over the years, we expanded our expertise across web
-                  development, mobile apps, AI/ML, cloud systems, and enterprise
-                  platforms. Each new challenge strengthened our commitment to
-                  innovation and quality. But even as we evolve, our core belief
-                  remains unchanged: technology should empower businesses and
-                  create better experiences for users. Today, we continue to
-                  collaborate, experiment, and push boundaries — turning ideas
-                  into scalable digital products that shape the future. And our
-                  journey is only just beginning.
+                  value. From the beginning, we focused on understanding people,
+                  not just projects. This mindset helped us build products that
+                  feel intuitive, purposeful, and aligned with our clients’
+                  long-term goals. Over the years, we expanded our expertise
+                  across web development, mobile apps, AI/ML, cloud systems, and
+                  enterprise platforms. Each new challenge strengthened our
+                  commitment to innovation and quality. But even as we evolve,
+                  our core belief remains unchanged: technology should empower
+                  businesses and create better experiences for users. Today, we
+                  continue to collaborate, experiment, and push boundaries —
+                  turning ideas into scalable digital products that shape the
+                  future. And our journey is only just beginning.
                 </p>
                 {/* <div className="grid grid-cols-4 gap-2">
                 <div className="border border-gray-600 py-5 px-2 rounded-lg bg-green-300">
@@ -49,7 +46,7 @@ const OurStory = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:block relative w-full md:w-[50%]">
+          <div className="hidden md:block relative w-full lg:w-[50%]">
             <div className="circlePosition w-[400px] h-[200px] bg-[#eb26fd] rounded-full absolute z-1 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
             <div className="flex justify-center py-10">
               <div className="relative bg-blue-100 shadow-lg h-[400px] w-[400px]  rounded-xl p-8 flex flex-col gap-6 z-20">

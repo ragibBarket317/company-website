@@ -17,7 +17,7 @@ import AIDevelopmentPage from './pages/AIDevelopmentPage'
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen dark:bg-dark-bg">
+    <div className="overflow-x-hidden flex flex-col min-h-screen">
       <Navbar />
 
       <main className="flex-grow">

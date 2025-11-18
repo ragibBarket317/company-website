@@ -27,7 +27,7 @@ const IndustriesServices = () => {
               transformation goals.
             </p>
 
-            <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 px-10">
+            <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 {
                   icon: FaMoneyCheckAlt,

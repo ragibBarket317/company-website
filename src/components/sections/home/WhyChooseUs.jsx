@@ -17,10 +17,10 @@ const WhyChooseUs = () => {
             agencies, and large enterprises to fulfill their digital
             transformation goals.
           </p>
-          <div className="grid grid-cols-2 grap-5 mt-10 items-start dark:text-white">
-            <div className="flex flex-col justify-center h-[500px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 grap-5 mt-10 items-start dark:text-white">
+            <div className="flex flex-col justify-center lg:h-[500px]">
               <div className="flex items-center ">
-                <div className="p-5 grid grid-cols-2 gap-5">
+                <div className="p-5 grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="px-3 py-6 text-white shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px_-1px_rgba(0,0,0,0.1)] rounded-2xl">
                     <div className="text-xl font-bold bg-blue-950 text-blue-300 rounded-full p-2 w-10 h-10 mb-2">
                       01
