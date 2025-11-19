@@ -14,12 +14,12 @@ const steps = [
 
 function MobileAppProcess() {
   return (
-    <section className="container h-[100vh] py-16">
+    <section className="container py-[40px] md:py-[80px]">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white">
+        <h2 className="text-xl md:text-4xl font-bold text-white">
           Our Mobile App Development Process — From Idea to Launch, Done Right
         </h2>
-        <p className="mt-4 text-gray-200 max-w-3xl mx-auto">
+        <p className="mt-4 text-gray-200 max-w-3xl mx-auto text-[14px] md:text-[18px]">
           We follow a proven mobile app development process that keeps you
           involved at every step. No guesswork, no jargon — just a clear,
           structured journey from first call to final launch. Here’s how we
@@ -29,26 +29,28 @@ function MobileAppProcess() {
 
       <div className="mt-10 grid md:grid-cols-2 gap-6 px-6">
         {/* Left Section */}
-        <div className="bg-[#10112D] text-white rounded-lg p-8 flex flex-col justify-center space-y-4">
+        <div className="bg-[#10112D] text-white rounded-lg p-4 md:p-8 flex flex-col justify-center space-y-4">
           {steps.map((step) => (
             <div key={step.id} className="flex items-start space-x-4">
               <div className="flex-shrink-0 w-6 h-6 bg-white text-blue-700 font-bold rounded-full flex items-center justify-center">
                 {step.id}
               </div>
-              <p className="font-medium">{step.title}</p>
+              <p className="font-medium text-[14px] md:text-base">
+                {step.title}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Right Section */}
-        <div className="border border-gray-300 rounded-lg p-10 flex flex-col items-start">
+        <div className="border border-gray-300 rounded-lg p-5 md:p-10 flex flex-col items-start">
           <div className="bg-blue-700 text-white p-4 rounded-xl mb-6">
-            <FaClipboard size={32} />
+            <FaClipboard className="w-5 h-5" />
           </div>
-          <h3 className="text-xl font-semibold text-indigo-900 mb-3">
+          <h3 className="text-lg md:text-xl font-semibold text-white mb-3">
             Discovery & Consultation
           </h3>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-400 leading-relaxed text-[14px] md:text-[18px]">
             The process begins with learning about goals, users, and challenges.
             This phase includes ideation, market research, and feature mapping —
             setting the foundation for your app’s success.

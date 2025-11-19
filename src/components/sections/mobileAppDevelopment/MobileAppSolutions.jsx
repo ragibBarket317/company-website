@@ -26,13 +26,13 @@ const solutions = [
 
 export default function MobileAppSolutions() {
   return (
-    <section className="container h-[100vh]">
+    <section className="container py-[40px] md:h-[100vh]">
       <div className="w-full h-full flex justify-center items-center">
         <div>
           <div className="px-6 text-center">
             {/* Heading */}
             <div className="max-w-6xl mx-auto px-6 text-center">
-              <h2 className="text-3xl md:text-5xl font-bold text-white">
+              <h2 className="text-xl md:text-4xl font-bold text-white">
                 Mobile App Solutions Built Around Your Business Operations
               </h2>
               <p className="mt-4 text-gray-600">
@@ -53,10 +53,10 @@ export default function MobileAppSolutions() {
                   <div
                     className={` border-l-6 ${item.color} rounded-xl shadow-2xl p-6 transition duration-300 hover:shadow-md`}
                   >
-                    <h3 className="font-semibold text-indigo-400 text-lg mb-2">
+                    <h3 className="font-semibold text-white text-lg mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-200 text-base leading-relaxed">
+                    <p className="text-gray-400 text-base leading-relaxed text-[14px] md:text-[18px]">
                       {item.description}
                     </p>
                   </div>

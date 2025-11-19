@@ -8,11 +8,19 @@ import MobileAppServices from '../../components/sections/mobileAppDevelopment/Mo
 import MeanStackSection from '../../components/sections/mobileAppDevelopment/MeanStackSection'
 import IndustriesServices from '../../components/sections/home/IndustriesServices'
 import MobileAppSolutions from '../../components/sections/mobileAppDevelopment/MobileAppSolutions'
+import MobileHeroForSmallScreen from '../../components/sections/mobileAppDevelopment/MobileHeroForSmallScreen'
 
 const MobileAppDevelopment = () => {
   return (
     <div>
-      <MobileHero />
+      <div className="md:hidden">
+        <MobileHeroForSmallScreen />
+      </div>
+
+      <div className="hidden md:block">
+        <MobileHero />
+      </div>
+
       <Services />
       <MobileAppProcess />
       <MobileAppServices />
