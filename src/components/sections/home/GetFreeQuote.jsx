@@ -10,9 +10,9 @@ const GetFreeQuote = () => {
         <div className="relative container pb-[40px] md:pb-[60px]">
           <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-14">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-14">
             {/* LEFT CONTENT */}
-            <div className="relative md:col-span-3 bg-gradient-to-tl from-[#161B2F] to-[#0f1220] text-white rounded-3xl p-6 md:p-10 flex flex-col justify-center">
+            <div className="relative lg:col-span-3 bg-gradient-to-tl from-[#161B2F] to-[#0f1220] text-white rounded-3xl p-6 md:p-10 flex flex-col justify-center">
               <div className="w-16 h-16 md:w-20 md:h-20 absolute top-[20px] right-[20px] bg-[#262d49] rounded-full">
                 <Lottie
                   animationData={rocket}
@@ -37,7 +37,7 @@ const GetFreeQuote = () => {
             {/* FORM AREA */}
             <div
               className="
-              md:col-span-2 
+              lg:col-span-2 
               backdrop-blur-xl 
               bg-[#151420]/10 
               border 
