@@ -21,13 +21,21 @@ import Lottie from 'lottie-react'
 import software from '../assets/animation/Software.json'
 import MeanStackSection from '../components/sections/mobileAppDevelopment/MeanStackSection'
 import WebHero from '../components/sections/webDevelopment/WebHero'
+import WebHeroSmallScreen from '../components/sections/webDevelopment/WebHeroSmallScreen'
 
 export default function WebDevelopmentPage() {
   return (
     <div className=" ">
-      <WebHero />
+      <div className="md:hidden">
+        <WebHeroSmallScreen />
+      </div>
+
+      <div className="hidden md:block">
+        <WebHero />
+      </div>
+
       <div className=" text-gray-200">
-        <section className=" py-16 px-6">
+        <section className="py-16">
           <div className="container text-center">
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 text-left">
               {[
@@ -59,10 +67,12 @@ export default function WebDevelopmentPage() {
 hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
                 >
                   <div className="flex items-center justify-between mb-2"></div>
-                  <h4 className="font-semibold text-white text-xl mb-1">
+                  <h4 className="font-semibold text-white text-lg md:text-xl mb-1">
                     {step.title}
                   </h4>
-                  <p className="text-gray-200 text-base">{step.desc}</p>
+                  <p className="text-gray-200 text-[14px] md:text-base">
+                    {step.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -70,11 +80,11 @@ hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
         </section>
         <MeanStackSection />
         {/* --- Section 1: Industries --- */}
-        <section className="container py-[80px] px-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-4">
+        <section className="container py-[40px] md:py-[80px]">
+          <h2 className="text-xl md:text-4xl font-bold text-white text-center mb-4">
             Industries We Build Web Platforms For
           </h2>
-          <p className="text-center text-gray-200 max-w-3xl mx-auto mb-10">
+          <p className="text-center text-[14px] md:text-[18px] text-gray-200 max-w-3xl mx-auto mb-10">
             We provide full-cycle web development for diverse industries that
             demand scalability, modern design, and security. Our custom-built
             platforms help you connect, engage, and grow your business.
@@ -120,21 +130,23 @@ hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
 hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px_-1px_rgba(0,0,0,0.1)] hover:shadow-md transition"
               >
                 <div className="mb-3">{item.icon}</div>
-                <h3 className="font-semibold text-white text-xl mb-2">
+                <h3 className="font-semibold text-white text-lg md:text-xl mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-400 text-base">{item.desc}</p>
+                <p className="text-gray-400 text-[14px] md:text-base">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
         </section>
         {/* --- Section 3: Why Choose Us --- */}
-        <section className="py-[80px] px-6">
+        <section className="py-[40px] md:py-[80px]">
           <div className="container">
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-white text-center mb-4">
               Why Choose Intexa as Your Development Partner
             </h2>
-            <p className="text-center text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
+            <p className="text-center text-gray-200 text-[14px] md:text-[18px] max-w-3xl mx-auto mb-10">
               We’re more than developers — we’re your digital partners focused
               on building innovative, transparent, and long-term software
               solutions.
@@ -164,10 +176,12 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
                       {item.num}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white text-xl">
+                      <h4 className="font-semibold text-white text-lg md:text-xl">
                         {item.title}
                       </h4>
-                      <p className="text-lg text-gray-400">{item.desc}</p>
+                      <p className="text-[14px] text-lg text-gray-400">
+                        {item.desc}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -178,7 +192,7 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
                   animationData={software}
                   loop
                   autoplay
-                  className="w-[600px] h-full p-5"
+                  className="w-full lg:w-[600px] h-full p-5"
                 />
               </div>
             </div>
@@ -186,15 +200,15 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
         </section>
 
         {/* --- Section 2: Web Dev Process --- */}
-        <section className="relative bg-[#080917] h-[100vh] py-16 px-6">
+        <section className="relative bg-[#080917] md:h-[100vh] py-[40px] md:py-16">
           <div className="circlePosition w-[400px] h-[150px] bg-blue-400 rounded-full absolute z-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[200px]"></div>
           <div className="w-full h-full flex justify-center items-center">
             <div>
               <div className="container text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
                   Our Web Development Process
                 </h2>
-                <p className="text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
+                <p className="text-gray-200 text-[14px] md:text-[18px] max-w-3xl mx-auto mb-10">
                   We follow a structured, agile process that turns your ideas
                   into high-performing websites and applications — delivered on
                   time and with complete transparency.
@@ -238,14 +252,16 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
                       className=" rounded-lg p-5 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px_-1px_rgba(0,0,0,0.1)] transition"
                     >
                       <div className="flex items-center justify-between mb-2">
-                        <div className="text-sm font-bold text-indigo-600">
+                        <div className="text-[12px] md:text-sm font-bold text-indigo-600">
                           Step {step.num}
                         </div>
                       </div>
-                      <h4 className="font-semibold text-white text-xl mb-1">
+                      <h4 className="font-semibold text-white text-[14px] md:text-xl mb-1">
                         {step.title}
                       </h4>
-                      <p className="text-gray-400 text-base">{step.desc}</p>
+                      <p className="text-gray-400 text-[14px] md:text-base">
+                        {step.desc}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -255,15 +271,15 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
         </section>
 
         {/* --- Section 3: Why Choose Us --- */}
-        <div className="relative h-[100vh]">
+        <div className="relative py-[40px] md:py-0 md:h-[100vh]">
           <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
           <div className="w-full h-full flex justify-center items-center">
             <div>
               <section className="container py-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+                <h2 className="text-xl md:text-4xl font-bold text-white text-center mb-4">
                   Why Partner With Intexa for Development
                 </h2>
-                <p className="text-center text-gray-200 max-w-3xl mx-auto mb-10">
+                <p className="text-center text-gray-200 text-[14px] md:text-[18px] max-w-3xl mx-auto mb-10">
                   We don’t just code — we collaborate. Our focus is on
                   communication, innovation, and delivering reliable digital
                   solutions that grow with your business.
@@ -311,10 +327,12 @@ hover:bg-white/20  rounded-lg p-6 shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px
 hover:bg-white/20  rounded-lg p-6 shadow-2xl hover:shadow-md transition"
                     >
                       <div className="mb-3">{feature.icon}</div>
-                      <h3 className="font-semibold text-white text-xl mb-2">
+                      <h3 className="font-semibold text-white text-lg md:text-xl mb-2">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-400 text-base">{feature.desc}</p>
+                      <p className="text-gray-400 text-[14px] md:text-base">
+                        {feature.desc}
+                      </p>
                     </div>
                   ))}
                 </div>
