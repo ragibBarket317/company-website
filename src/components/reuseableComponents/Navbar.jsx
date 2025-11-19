@@ -264,9 +264,7 @@ export default function Navbar() {
             </ul>
             {/* Right Side (DarkMode + Mobile Button) */}
             <div className="flex items-center gap-4">
-              <div className=" md:hidden">
-                <DarkModeToggle />
-              </div>
+              <div className=" md:hidden">{/* <DarkModeToggle /> */}</div>
               <button
                 className="block md:hidden text-2xl"
                 onClick={() => setMobileOpen(!mobileOpen)}
@@ -275,25 +273,24 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-          <div className="hidden md:block">
-            <DarkModeToggle />
-          </div>
+          <div className="hidden md:block">{/* <DarkModeToggle /> */}</div>
         </div>
       </div>
       {/* Mobile Drawer (outside of hidden md:flex) */}
       <div
-        className={`fixed top-0 right-0 h-full w-72 bg-white dark:bg-dark-bg shadow-lg z-50 transform transition-transform duration-500 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-72 bg-[#080917] shadow-lg z-50 transform transition-transform duration-500 ease-in-out ${
           mobileOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="p-6 h-[98vh] overflow-auto will-change-scroll">
-          <ul className="space-y-6 text-lg">
-            <li>
-              <Link to="/" onClick={() => setMobileOpen(false)}>
-                Home
-              </Link>
+        <div className="p-6 h-[98vh] overflow-auto  will-change-scroll">
+          <ul className="space-y-6 text-md">
+            <li onClick={() => setMobileOpen(false)}>
+              <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={() => setMobileOpen(false)}>
+              <Link to="/about">About</Link>
+            </li>
+            {/* <li>
               <button
                 onClick={() => setIsAboutOpen(!isAboutOpen)}
                 className="w-full text-left flex justify-between items-center"
@@ -337,7 +334,7 @@ export default function Navbar() {
                   </div>
                 </div>
               )}
-            </li>
+            </li> */}
             <li>
               <button
                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
@@ -348,29 +345,32 @@ export default function Navbar() {
               </button>
 
               {isMobileServicesOpen && (
-                <div className="pl-4 mt-2 space-y-3 text-sm">
-                  <h4 className="font-semibold text-yellow-600">
+                <div className="pl-5 mt-2 space-y-3 text-sm">
+                  {/* <h4 className="font-semibold text-yellow-600">
                     App Development
-                  </h4>
-                  <ul className="ml-2 space-y-1">
-                    <li>
-                      <Link to="#">Mobile App Development</Link>
+                  </h4> */}
+                  <ul className=" space-y-4">
+                    <li onClick={() => setMobileOpen(false)}>
+                      <Link to="/services/mobile-app-development">
+                        Mobile App Development
+                      </Link>
                     </li>
-                    <li>
-                      <Link to="#">iOS App Development</Link>
+                    <li onClick={() => setMobileOpen(false)}>
+                      <Link to="/services/web-development">
+                        Web Development
+                      </Link>
                     </li>
-                    <li>
-                      <Link to="#">Android App Development</Link>
+                    <li onClick={() => setMobileOpen(false)}>
+                      <Link to="/services/software-development">
+                        Software Development
+                      </Link>
                     </li>
-                    <li>
-                      <Link to="#">Flutter App Development</Link>
-                    </li>
-                    <li>
-                      <Link to="#">React Native App Development</Link>
+                    <li onClick={() => setMobileOpen(false)}>
+                      <Link to="/services/ai-development">AI Development</Link>
                     </li>
                   </ul>
 
-                  <h4 className="font-semibold text-green-600 mt-4">
+                  {/* <h4 className="font-semibold text-green-600 mt-4">
                     Web Development
                   </h4>
                   <ul className="ml-2 space-y-1">
@@ -410,7 +410,7 @@ export default function Navbar() {
                     <li>
                       <Link to="#">Education Software</Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               )}
             </li>
@@ -435,7 +435,7 @@ export default function Navbar() {
       {/* Overlay */}
       {mobileOpen && (
         <div
-          className="fixed inset-0 bg-white/30 backdrop-blur-xs z-40"
+          className="fixed inset-0 bg-[#080917]/30 backdrop-blur-[5px] z-40"
           onClick={() => setMobileOpen(false)}
         />
       )}

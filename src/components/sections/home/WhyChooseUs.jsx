@@ -5,13 +5,13 @@ import meeting from '../../../assets/animation/Meeting.json'
 
 const WhyChooseUs = () => {
   return (
-    <div className="py-[80px]">
+    <div className="py-[40px] md:py-[80px]">
       <div className="w-full h-full flex justify-center items-center  ">
         <div className="container">
-          <h2 className="text-center text-3xl md:text-4xl font-bold  text-white">
+          <h2 className="text-center text-xl md:text-4xl font-bold  text-white">
             Why Choose for Digital Solutions?
           </h2>
-          <p className="text-center font-body text-gray-200 mt-3 max-w-4xl mx-auto">
+          <p className="text-center font-body text-[14px] md:text-[18px] text-gray-200 mt-3 max-w-4xl mx-auto">
             delivers exceptional AI applications and IT services across multiple
             industry sectors, empowering start-ups, scale-ups, IT staff
             agencies, and large enterprises to fulfill their digital
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 grap-5 mt-10 items-start dark:text-white">
             <div className="flex flex-col justify-center lg:h-[500px]">
               <div className="flex items-center ">
-                <div className="p-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="p-0 md:p-5 grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="px-3 py-6 text-white shadow-[0_8px_6px_-1px_rgba(0,0,0,1),0_2px_4px_-1px_rgba(0,0,0,0.1)] rounded-2xl">
                     <div className="text-xl font-bold bg-blue-950 text-blue-300 rounded-full p-2 w-10 h-10 mb-2">
                       01
@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
                     <h4 className="text-md font-head font-semibold mb-2">
                       Less Time to Market
                     </h4>
-                    <p>
+                    <p className="text-[14px] md:text-base">
                       Our development approach is such that it will take no time
                       for your app to hit the market and enchant your audience
                     </p>
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
                     <h4 className="text-md font-semibold mb-2">
                       Dedicated Development
                     </h4>
-                    <p>
+                    <p className="text-[14px] md:text-base">
                       We build a cross-functional team which is devoted to cater
                       you with a premier app development experience
                     </p>
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
                     <h4 className="text-md font-semibold mb-2">
                       Robust Development
                     </h4>
-                    <p>
+                    <p className="text-[14px] md:text-base">
                       When it comes to app development, we always make sure that
                       we build a product that is strong and secure
                     </p>
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
                     <h4 className="text-md font-semibold mb-2">
                       Less Time to Market
                     </h4>
-                    <p>
+                    <p className="text-[14px] md:text-base">
                       Our development approach is such that it will take no time
                       for your app to hit the market and enchant your audience
                     </p>

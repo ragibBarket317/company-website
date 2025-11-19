@@ -68,14 +68,14 @@ const OurTechStack = () => {
     { icon: SiTensorflow, label: 'TensorFlow' },
   ]
   return (
-    <div className="relative container py-[80px] text-white">
+    <div className="relative container py-[40px] md:py-[80px] text-white">
       <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
       <div className="h-full w-full flex justify-center items-center text-center">
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold dark:text-white">
+          <h2 className="text-xl md:text-4xl font-bold dark:text-white">
             Our Tech Stack for Innovative Business Solutions
           </h2>
-          <p className="mt-3 font-body text-gray-300 text-[18px] max-w-3xl mx-auto">
+          <p className="mt-3 font-body text-gray-300 text-[14px] md:text-[18px] max-w-3xl mx-auto">
             we leverage a cutting-edge tech stack to deliver transformative
             solutions across industries such as healthcare, e-commerce, and food
             delivery. Our tailored technologies enhance engagement, optimize
@@ -91,7 +91,9 @@ const OurTechStack = () => {
 hover:bg-white/20  duration-300 flex flex-col items-center justify-center rounded-xl shadow-md shadow-black  transition "
               >
                 <item.icon size={40} />
-                <p className="mt-2 font-medium">{item.label}</p>
+                <p className="mt-2 font-medium text-[14px] md:text-base">
+                  {item.label}
+                </p>
               </div>
             ))}
           </div>

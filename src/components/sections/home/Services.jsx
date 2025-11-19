@@ -66,10 +66,10 @@ const Services = () => {
           <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
           <div className="">
             <div className="space-y-3">
-              <h2 className="text-center text-5xl font-bold dark:text-white ">
+              <h2 className="text-center text-xl md:text-4xl font-bold dark:text-white ">
                 Our Digital Services
               </h2>
-              <p className="text-center text-white text-[18px]">
+              <p className="text-center text-white text-[14px] md:text-[18px]">
                 We aim to deliver intuitive, human-first digital solutions that
                 captivate users and build enduring relationships.
               </p>
@@ -98,10 +98,10 @@ const Services = () => {
                     </div>
 
                     <div>
-                      <h3 className="mt-4 text-xl font-semibold dark:text-white">
+                      <h3 className="mt-4 text-md md:text-xl font-semibold dark:text-white">
                         {data.title}
                       </h3>
-                      <p className="mt-2 text-gray-600 dark:text-gray-300">
+                      <p className="mt-2 text-gray-600 text-[13px] md:text-base dark:text-gray-300">
                         {data.description}
                       </p>
                     </div>

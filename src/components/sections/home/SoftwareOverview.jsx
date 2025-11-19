@@ -13,7 +13,7 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
 
 export default function SoftwareOverview() {
   return (
-    <div className="py-[80px] text-gray-800">
+    <div className="py-[40px] md:py-[80px] text-gray-800">
       {/* Trusted By */}
       {/* <section className="py-16 px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-10">
@@ -35,12 +35,12 @@ export default function SoftwareOverview() {
         </div>
       </section> */}
       <div className="container">
-        <h1 className="text-center text-2xl md:text-4xl font-bold text-white">
+        <h1 className="text-center text-xl md:text-4xl font-bold text-white">
           Area Of Our Software Expertise Over Two Decades
         </h1>
 
         {/* Multi-Cloud Governance */}
-        <section className="py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section className="py-[40px] md:py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex items-center justify-center">
             <div className="w-60 h-60 lg:w-[500px] lg:h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
               <img src={software} alt="" className="w-full" />
@@ -48,19 +48,19 @@ export default function SoftwareOverview() {
           </div>
 
           <div>
-            <p className="uppercase text-orange-600 text-sm font-semibold mb-2">
+            <p className="uppercase text-orange-600 text-[12px] md:text-sm font-semibold mb-2">
               Standardized Multi‑Cloud Governance
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-100 mb-4">
               Strategic Software Team Augmentation
             </h2>
-            <p className="text-gray-300 text-[18px] leading-relaxed">
+            <p className="text-gray-300 text-[14px] md:text-[18px] leading-relaxed">
               Gain access to qualified experienced and qualified software
               engineers without having to go through time-consuming and
               expensive hiring processes. We can help you extend your software
               team so you can start making a difference right away.
             </p>
-            <ul className="text-gray-300 text-[18px] space-y-2 mt-5">
+            <ul className="text-gray-300 text-[14px] md:text-[18px] space-y-2 mt-5">
               <li className="flex items-center gap-2">
                 <IoMdCheckmarkCircleOutline
                   size={24}
@@ -94,21 +94,21 @@ export default function SoftwareOverview() {
         </section>
 
         {/* Automated Workflows */}
-        <section className="py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section className="py-[40px] md:py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="uppercase text-orange-600 text-sm font-semibold mb-2">
+            <p className="uppercase text-orange-600 text-[12px] md:text-sm font-semibold mb-2">
               Standardized Multi‑Cloud Governance
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-100 mb-4">
               Strategic Software Team Augmentation
             </h2>
-            <p className="text-gray-300 text-[18px] leading-relaxed">
+            <p className="text-gray-300 text-[14px] md:text-[18px] leading-relaxed">
               Gain access to qualified experienced and qualified software
               engineers without having to go through time-consuming and
               expensive hiring processes. We can help you extend your software
               team so you can start making a difference right away.
             </p>
-            <ul className="text-gray-300 text-[18px] space-y-2 mt-5">
+            <ul className="text-gray-300 text-[14px] md:text-[18px] space-y-2 mt-5">
               <li className="flex items-center gap-2">
                 <IoMdCheckmarkCircleOutline
                   size={24}

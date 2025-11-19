@@ -2,16 +2,16 @@ import React from 'react'
 
 const OurStory = () => {
   return (
-    <div className="text-white py-[80px] dark:bg-dark-bg">
+    <div className="text-white py-[40px] md:py-[80px] dark:bg-dark-bg">
       <div className="container p-6">
         <div className="lg:flex gap-5">
           <div className="w-full lg:w-[50%]">
             <div className="h-full flex flex-col justify-center">
               <div className="space-y-10">
-                <h2 className="text-4xl font-extrabold dark:text-white">
+                <h2 className="text-xl md:text-4xl font-extrabold dark:text-white">
                   Our Story
                 </h2>
-                <p className=" text-[18px] font-body text-white leading-7">
+                <p className="text-[14px] md:text-[18px] font-body text-white leading-7">
                   Our story began with a simple idea — to create digital
                   solutions that solve real problems and deliver meaningful
                   value. From the beginning, we focused on understanding people,
@@ -69,16 +69,22 @@ const OurStory = () => {
             <div className="flex justify-center py-10">
               <div className="relative bg-blue-100 shadow-lg h-[400px] w-[400px]  rounded-xl p-8 flex flex-col gap-6">
                 <div className="absolute left-2 right-2 bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-blue-500">
-                  <h2 className="text-3xl font-bold text-blue-600">800+</h2>
-                  <p className="text-gray-800">Successful Implementations</p>
+                  <h2 className="text-lg font-bold text-blue-600">800+</h2>
+                  <p className="text-gray-800 text-[14px]">
+                    Successful Implementations
+                  </p>
                 </div>
                 <div className="absolute top-[38%] left-2 right-2 bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-pink-500">
-                  <h2 className="text-3xl font-bold text-blue-600">1000+</h2>
-                  <p className="text-gray-800">Successful Implementations</p>
+                  <h2 className="text-lg font-bold text-blue-600">1000+</h2>
+                  <p className="text-gray-800 text-[14px]">
+                    Successful Implementations
+                  </p>
                 </div>
                 <div className="absolute bottom-[7%] left-2 right-2 bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-green-500">
-                  <h2 className="text-3xl font-bold text-blue-600">500+</h2>
-                  <p className="text-gray-800">Successful Implementations</p>
+                  <h2 className="text-lg font-bold text-blue-600">500+</h2>
+                  <p className="text-gray-800 text-[14px]">
+                    Successful Implementations
+                  </p>
                 </div>
               </div>
             </div>

@@ -12,15 +12,15 @@ import {
 
 const IndustriesServices = () => {
   return (
-    <div className="relative py-[80px]">
+    <div className="relative py-[40px] md:py-[80px]">
       <div className=" w-full h-full flex justify-center items-center ">
         <div className="container">
           <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
           <div className="">
-            <h2 className="text-center font-head text-3xl md:text-5xl font-bold text-white">
+            <h2 className="text-center font-head text-xl md:text-4xl font-bold text-white">
               Industries Serves With its Development Expertise
             </h2>
-            <p className="text-center font-body text-[18px] text-gray-200 mt-3 max-w-4xl mx-auto">
+            <p className="text-center font-body text-[14px] md:text-[18px] text-gray-200 mt-3 max-w-4xl mx-auto">
               delivers exceptional AI applications and IT services across
               multiple industry sectors, empowering start-ups, scale-ups, IT
               staff agencies, and large enterprises to fulfill their digital
@@ -85,7 +85,9 @@ const IndustriesServices = () => {
 hover:bg-white/20 flex flex-col items-center justify-center rounded-xl shadow-xl hover:scale-105 duration-500 transition ${item.bgColor}`}
                 >
                   <item.icon size={40} className={item.iconColor} />
-                  <p className="mt-3 font-medium text-white">{item.label}</p>
+                  <p className="mt-3 font-medium text-[14px] md:text-base text-white">
+                    {item.label}
+                  </p>
                 </div>
               ))}
             </div>
