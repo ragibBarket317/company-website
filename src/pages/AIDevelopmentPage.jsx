@@ -19,21 +19,29 @@ import Hero from '../components/sections/home/Hero'
 import AIHero from '../components/sections/aiDevelopment/AIHero'
 import WhyChooseUs from '../components/sections/home/WhyChooseUs'
 import GetFreeQuote from '../components/sections/home/GetFreeQuote'
+import AIHeroSmallScreen from '../components/sections/aiDevelopment/AIHeroSmallScreen'
 
 export default function AIDevelopmentPage() {
   return (
     <div className="">
-      <AIHero />
+      <div className="md:hidden">
+        <AIHeroSmallScreen />
+      </div>
+
+      <div className="hidden md:block">
+        <AIHero />
+      </div>
+
       <div className="text-gray-800">
         {/* ===== Section 1: AI Development Services ===== */}
         <div className="pb-[80px]">
           <div className="w-full h-full flex justify-center items-center">
-            <section className="py-16 px-6">
+            <section className="py-16">
               <div className="container text-center">
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
                   Your Reliable Partner for AI Software Development
                 </h2>
-                <p className="text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
+                <p className="text-gray-200 text-[14px] md:text-[18px] max-w-3xl mx-auto mb-10">
                   From predictive analytics to custom-trained AI models — we
                   help businesses harness artificial intelligence to gain a
                   competitive edge through smart automation and deep insights.
@@ -79,10 +87,12 @@ export default function AIDevelopmentPage() {
                       <div className="w-12 h-12 bg-indigo-100 text-indigo-700 flex items-center justify-center rounded-lg text-2xl mb-4 mx-auto">
                         {item.icon}
                       </div>
-                      <h3 className="font-semibold text-xl text-white mb-2">
+                      <h3 className="font-semibold text-lg md:text-xl text-white mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-gray-400 text-base">{item.desc}</p>
+                      <p className="text-gray-400 text-[14px] md:text-base">
+                        {item.desc}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -92,15 +102,15 @@ export default function AIDevelopmentPage() {
         </div>
 
         {/* ===== Section 2: AI Solutions Businesses Need ===== */}
-        <div className="relative py-[80px]">
+        <div className="relative py-[14px] md:py-[80px]">
           <div className="circlePosition w-[400px] h-[150px] bg-blue-400 rounded-full absolute z-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[200px]"></div>
           <div className="w-full h-full flex justify-center items-center">
-            <section className=" py-16 px-6">
+            <section className=" py-16">
               <div className="container mx-auto text-center">
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
                   Practical AI Solutions Businesses Use Every Day
                 </h2>
-                <p className="text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
+                <p className="text-gray-200 text-[14px] md:text-[18px] max-w-3xl mx-auto mb-10">
                   We design scalable AI products that seamlessly integrate with
                   your operations, enhancing productivity, speed, and customer
                   experience.
@@ -138,10 +148,12 @@ hover:bg-white/20 rounded-xl shadow-sm hover:shadow-md transition"
                       <div className="w-10 h-10 bg-indigo-600 text-white flex items-center justify-center rounded-md text-lg mb-3 mx-auto">
                         {item.icon}
                       </div>
-                      <h3 className="font-semibold text-white text-lg mb-1">
+                      <h3 className="font-semibold text-white text-lg md:text-xl mb-1">
                         {item.title}
                       </h3>
-                      <p className="text-gray-400 text-base">{item.desc}</p>
+                      <p className="text-gray-400 text-[14px] md:text-base">
+                        {item.desc}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -151,8 +163,8 @@ hover:bg-white/20 rounded-xl shadow-sm hover:shadow-md transition"
         </div>
 
         {/* ===== Section 3: AI Banner ===== */}
-        <div className="py-[80px]">
-          <div className=" bg-gradient-to-b from-[#15192C] to-[#252b4b] rounded-tl-[200px] rounded-br-[200px] px-6 text-white">
+        <div className="py-[40px] md:py-[80px]">
+          <div className=" bg-gradient-to-b from-[#15192C] to-[#252b4b] md:rounded-tl-[200px] md:rounded-br-[200px] px-6 text-white">
             <div className="w-full h-full flex justify-center items-center">
               <div>
                 <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
@@ -161,14 +173,14 @@ hover:bg-white/20 rounded-xl shadow-sm hover:shadow-md transition"
                       animationData={ai}
                       loop
                       autoplay
-                      className="w-[600px] h-full p-10"
+                      className="w-full lg:w-[600px] h-full p-10"
                     />
                   </div>
-                  <div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  <div className="pb-10 md:pb-0">
+                    <h2 className="text-xl md:text-4xl font-bold mb-4">
                       AI Development Services That Deliver Real Results
                     </h2>
-                    <p className="text-indigo-100 mb-6">
+                    <p className="text-indigo-100 text-[14px] md:text-[18px] mb-6">
                       Our AI experts bring years of experience in deep learning,
                       automation, and cloud integration to build intelligent
                       systems that actually solve your business challenges — not
@@ -185,15 +197,15 @@ hover:bg-white/20 rounded-xl shadow-sm hover:shadow-md transition"
         </div>
 
         {/* ===== Section 4: Why Choose Us ===== */}
-        <div className="relative py-[80px]">
+        <div className="relative py-[40px] md:py-[80px]">
           <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
           <div className="w-full h-full flex justify-center items-center">
-            <section className=" py-16 px-6">
+            <section className=" py-16">
               <div className="container text-center">
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
                   Why Partner With Our AI Engineers
                 </h2>
-                <p className="text-gray-200 text-[18px] max-w-3xl mx-auto mb-10">
+                <p className="text-gray-200 text-[14px] md:text-[18px] max-w-3xl mx-auto mb-10">
                   We combine deep technical knowledge, proven methodologies, and
                   a transparent process to ensure your AI initiative succeeds
                   from start to finish.
@@ -231,10 +243,12 @@ hover:bg-white/20 rounded-xl shadow-sm hover:shadow-md transition"
                       <div className="w-12 h-12 bg-indigo-100 text-indigo-700 flex items-center justify-center rounded-lg text-2xl mb-4 mx-auto">
                         {item.icon}
                       </div>
-                      <h3 className="font-semibold text-white text-lg mb-2">
+                      <h3 className="font-semibold text-white text-lg md:text-xl mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-gray-400 text-base">{item.desc}</p>
+                      <p className="text-gray-400 text-[14px] md:text-base">
+                        {item.desc}
+                      </p>
                     </div>
                   ))}
                 </div>

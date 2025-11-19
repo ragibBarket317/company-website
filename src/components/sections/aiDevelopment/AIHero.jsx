@@ -1,28 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
-import bgImage from '../../../assets/images/hero-bg.jpg'
-import grid from '../../../assets/images/grid.jpg'
 import Lottie from 'lottie-react'
-import coding from '../../../assets/animation/Coding.json'
-import starfall from '../../../assets/animation/Starfall.json'
+
 import aicore from '../../../assets/animation/ai core.json'
 
 const AIHero = () => {
   return (
-    <div
-      className="max-h-[100vh] h-[95vh] bg-cover bg-center p-6 "
-      // style={{ backgroundImage: `url(${bgImage})` }}
-    >
-      {/* <div className="absolute inset-0 bg-cyan-950 mix-blend-multiply"></div>
-      <div
-        className="absolute inset-0 -z-10 bg-cover"
-        style={{
-          backgroundImage: `url(${grid})`,
-        }}
-      ></div>
-      <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div>
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.3),_transparent_70%)]"></div>
-      </div> */}
+    <div className="max-h-[100vh] h-[95vh] bg-cover bg-center p-6 ">
       <div className="absolute inset-0 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(60%_120%_at_90%_0%,rgba(255,255,255,0.35),transparent_70%)]"></div>
       </div>
