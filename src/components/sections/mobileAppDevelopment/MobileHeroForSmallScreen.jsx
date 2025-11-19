@@ -11,9 +11,9 @@ const MobileHeroForSmallScreen = () => {
   }, [])
 
   return (
-    <div className="overflow-x-hidden min-h-screen mb-14 bg-cover bg-center flex flex-col justify-center gap-5">
+    <div className="overflow-x-hidden mb-14 flex flex-col gap-5">
       {/* MOBILE LOTTIE */}
-      <div className="w-full h-[350px] flex justify-center mb-5">
+      <div className="w-full h-[350px]">
         <div className="circlePosition w-[400px] h-[200px] bg-blue-400 rounded-full absolute z-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[200px]"></div>
         <Lottie
           lottieRef={lottieRef}
