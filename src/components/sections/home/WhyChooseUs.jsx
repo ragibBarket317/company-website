@@ -84,7 +84,7 @@ const WhyChooseUs = () => {
                   animationData={meeting}
                   loop
                   autoplay
-                  className="w-full h-[600px]"
+                  className="w-full h-full lg:h-[600px]"
                 />
               </div>
             </div>
