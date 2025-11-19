@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import {
   FaReact,
   FaVuejs,
@@ -29,7 +32,45 @@ import {
   SiTensorflow,
 } from 'react-icons/si'
 
+gsap.registerPlugin(ScrollTrigger)
+
 const OurTechStack = () => {
+  const sectionRef = useRef(null)
+  const cardsRef = useRef([])
+  const headingRef = useRef(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Cards stagger animation
+      gsap.from(cardsRef.current, {
+        y: 100,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 60%',
+          toggleActions: 'play none none reverse',
+        },
+      })
+
+      // Heading scroll-based smooth movement
+      gsap.to(headingRef.current, {
+        x: -1200, // move left on scroll down
+        ease: 'none', // linear movement with scroll
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top bottom', // when section enters viewport
+          end: 'bottom top', // when section leaves viewport
+          scrub: true, // smooth link to scroll
+        },
+      })
+    }, sectionRef)
+
+    return () => ctx.revert()
+  }, [])
+
   const stackData = [
     // Frontend
     { icon: FaReact, label: 'React.js' },
@@ -68,11 +109,17 @@ const OurTechStack = () => {
     { icon: SiTensorflow, label: 'TensorFlow' },
   ]
   return (
-    <div className="relative container py-[40px] md:py-[80px] text-white">
+    <div
+      ref={sectionRef}
+      className="relative container py-[40px] md:py-[80px] text-white"
+    >
       <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
       <div className="h-full w-full flex justify-center items-center text-center">
         <div>
-          <h2 className="text-xl md:text-4xl font-bold dark:text-white">
+          <h2
+            ref={headingRef}
+            className="text-xl md:text-4xl font-bold dark:text-white"
+          >
             Our Tech Stack for Innovative Business Solutions
           </h2>
           <p className="mt-3 font-body text-gray-300 text-[14px] md:text-[18px] max-w-3xl mx-auto">
@@ -86,9 +133,8 @@ const OurTechStack = () => {
             {stackData.map((item, i) => (
               <div
                 key={i}
-                className="h-32 backdrop-blur-xl bg-white/10 border border-white/20 
- p-6 
-hover:bg-white/20  duration-300 flex flex-col items-center justify-center rounded-xl shadow-md shadow-black  transition "
+                ref={(el) => (cardsRef.current[i] = el)}
+                className="h-32 backdrop-blur-xl bg-white/10 border border-white/20 p-6 hover:bg-white/20  duration-300 flex flex-col items-center justify-center rounded-xl shadow-md shadow-black  transition "
               >
                 <item.icon size={40} />
                 <p className="mt-2 font-medium text-[14px] md:text-base">
