@@ -45,7 +45,7 @@ const Testimonial = () => {
         </div>
 
         <div className="relative bg-[#11112E] border-[#4b486e]/30 border p-6 rounded-xl shadow-lg">
-          <div className="circlePosition w-[400px] h-[80px] bg-[#eb26fd] rounded-full absolute z-1 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
+          <div className="circlePosition w-[400px] h-[80px] bg-blue-500 rounded-full absolute z-1 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
           <div className="flex flex-col md:flex md:flex-row items-center gap-4">
             <img
               src="https://i.pravatar.cc/80?img=5"

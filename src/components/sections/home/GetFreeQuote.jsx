@@ -1,11 +1,38 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import rocket from '../../../assets/animation/Rocket.json'
 import Lottie from 'lottie-react'
 import Form from '../../reuseableComponents/Form'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const GetFreeQuote = () => {
+  const sectionRef = useRef(null)
+  const rocketRef = useRef(null)
+
+  useGSAP(
+    () => {
+      // const q = gsap.utils.selector(sectionRef)
+      gsap.from(rocketRef.current, {
+        opacity: 1,
+        x: -1200,
+        // stagger: 0.15,
+        duration: 0.9,
+        ease: 'power3.out',
+        delay: 0.5,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 60%',
+          toggleActions: 'play none none reset',
+        },
+      })
+    },
+    { scope: sectionRef }
+  )
+
   return (
-    <div className="py-[40px] md:py-[80px]">
+    <div ref={sectionRef} className="py-[40px] md:py-[80px]">
       <div className="w-full h-full flex justify-center items-center">
         <div className="relative container pb-[40px] md:pb-[60px]">
           <div className="circlePosition w-[400px] h-[100px] bg-blue-400 rounded-full absolute z-1 top-[25%] blur-[200px]"></div>
@@ -13,7 +40,10 @@ const GetFreeQuote = () => {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-14">
             {/* LEFT CONTENT */}
             <div className="relative lg:col-span-3 bg-gradient-to-tl from-[#161B2F] to-[#0f1220] text-white rounded-3xl p-6 md:p-10 flex flex-col justify-center">
-              <div className="w-12 h-12 md:w-20 md:h-20 absolute top-[20px] right-[20px] bg-[#262d49] rounded-full">
+              <div
+                ref={rocketRef}
+                className="w-12 h-12 md:w-20 md:h-20 absolute top-[20px] right-[20px] bg-[#262d49] rounded-full"
+              >
                 <Lottie
                   animationData={rocket}
                   loop

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {
   FaCloud,
   FaCogs,
@@ -11,7 +11,55 @@ import software from '../../../assets/images/software.png'
 import webpage from '../../../assets/images/webpage.png'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(ScrollTrigger)
+
 export default function SoftwareOverview() {
+  const section1Ref = useRef(null)
+  const section2Ref = useRef(null)
+  const img1Ref = useRef(null)
+  const img2Ref = useRef(null)
+
+  useGSAP(
+    () => {
+      // Image animation
+      gsap.from(img1Ref.current, {
+        scale: 0.6,
+        opacity: 0,
+        duration: 1,
+        ease: 'back.out(1.8)',
+        delay: 0.1,
+        scrollTrigger: {
+          trigger: section1Ref.current,
+          start: 'top 60%',
+          toggleActions: 'play none none reset',
+        },
+      })
+    },
+    { scope: section1Ref }
+  )
+  useGSAP(
+    () => {
+      // Image animation
+      gsap.from(img2Ref.current, {
+        scale: 0.6,
+        opacity: 0,
+        duration: 1,
+        ease: 'back.out(1.8)',
+        delay: 0.1,
+        scrollTrigger: {
+          trigger: section2Ref.current,
+          start: 'top 60%',
+          toggleActions: 'play none none reset',
+        },
+      })
+    },
+    { scope: section2Ref }
+  )
+
   return (
     <div className="py-[40px] md:py-[80px] text-gray-800">
       {/* Trusted By */}
@@ -40,10 +88,13 @@ export default function SoftwareOverview() {
         </h1>
 
         {/* Multi-Cloud Governance */}
-        <section className="py-[40px] md:py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section
+          ref={section1Ref}
+          className="py-[40px] md:py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center"
+        >
           <div className="flex items-center justify-center">
             <div className="w-60 h-60 lg:w-[500px] lg:h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
-              <img src={software} alt="" className="w-full" />
+              <img ref={img1Ref} src={software} alt="" className="w-full" />
             </div>
           </div>
 
@@ -94,7 +145,10 @@ export default function SoftwareOverview() {
         </section>
 
         {/* Automated Workflows */}
-        <section className="py-[40px] md:py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section
+          ref={section2Ref}
+          className="py-[40px] md:py-[80px] px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center"
+        >
           <div>
             <p className="uppercase text-orange-600 text-[12px] md:text-sm font-semibold mb-2">
               Standardized Multi‑Cloud Governance
@@ -142,7 +196,7 @@ export default function SoftwareOverview() {
 
           <div className="flex items-center justify-center">
             <div className="p-8 w-60 h-60 lg:w-[500px] lg:h-[500px] rounded-full bg-[#15192C] border border-[#272d4d]/90 flex items-center justify-center shadow-inner">
-              <img src={webpage} alt="" className="w-full" />
+              <img ref={img2Ref} src={webpage} alt="" className="w-full" />
             </div>
           </div>
         </section>

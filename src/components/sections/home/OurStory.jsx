@@ -1,17 +1,86 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(useGSAP)
 
 const OurStory = () => {
+  const sectionRef = useRef(null)
+  const headingRef = useRef(null)
+  const textRef = useRef(null)
+  const cardsRef = useRef([])
+
+  useGSAP(
+    () => {
+      const cards = gsap.utils.toArray(cardsRef.current)
+
+      // ⭐ Heading animation (plays every scroll in/out)
+      gsap.from(headingRef.current, {
+        opacity: 0,
+        x: -40,
+        duration: 0.8,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none reset',
+        },
+      })
+
+      // ⭐ Text animation
+      gsap.from(textRef.current, {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: 'power3.out',
+        delay: 0.2,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none reset',
+        },
+      })
+
+      // ⭐ Cards animation
+      gsap.from(cards, {
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'back.out(1.8)',
+        delay: 0.3,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none reset', // replay every time
+        },
+      })
+    },
+    { scope: sectionRef }
+  )
+
   return (
-    <div className="text-white py-[40px] md:py-[80px] dark:bg-dark-bg">
+    <div
+      ref={sectionRef}
+      className="text-white py-[40px] md:py-[80px] dark:bg-dark-bg"
+    >
       <div className="container p-6">
         <div className="lg:flex gap-5">
+          {/* LEFT SIDE */}
           <div className="w-full lg:w-[50%]">
             <div className="h-full flex flex-col justify-center">
               <div className="space-y-10">
-                <h2 className="text-xl md:text-4xl font-extrabold dark:text-white">
+                <h2
+                  ref={headingRef}
+                  className="text-xl md:text-4xl font-extrabold dark:text-white"
+                >
                   Our Story
                 </h2>
-                <p className="text-[14px] md:text-[18px] font-body text-white leading-7">
+
+                <p
+                  ref={textRef}
+                  className="text-[14px] md:text-[18px] font-body text-white leading-7"
+                >
                   Our story began with a simple idea — to create digital
                   solutions that solve real problems and deliver meaningful
                   value. From the beginning, we focused on understanding people,
@@ -22,52 +91,50 @@ const OurStory = () => {
                   enterprise platforms. Each new challenge strengthened our
                   commitment to innovation and quality. But even as we evolve,
                   our core belief remains unchanged: technology should empower
-                  businesses and create better experiences for users. Today, we
-                  continue to collaborate, experiment, and push boundaries —
-                  turning ideas into scalable digital products that shape the
-                  future. And our journey is only just beginning.
+                  businesses and create better experiences for users.
                 </p>
-                {/* <div className="grid grid-cols-4 gap-2">
-                <div className="border border-gray-600 py-5 px-2 rounded-lg bg-green-300">
-                  <h3>hello</h3>
-                </div>
-                <div className="border border-gray-600 py-5 px-2 rounded-lg bg-cyan-300">
-                  <h3>hello</h3>
-                </div>
-                <div className="border border-gray-600 py-5 px-2 rounded-lg bg-pink-300">
-                  <h3>hello</h3>
-                </div>
-              </div> */}
-                <div className="">
-                  {/* <button className="w-full md:w-[50%] bg-blue-300 text-white py-3 px-7 rounded-lg">
-                    Learn More About XYZ
-                  </button> */}
-                </div>
               </div>
             </div>
           </div>
+
+          {/* RIGHT SIDE DESKTOP */}
           <div className="hidden md:block relative w-full lg:w-[50%]">
-            <div className="circlePosition w-[400px] h-[200px] bg-[#eb26fd] rounded-full absolute z-1 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
+            <div className="circlePosition w-[400px] h-[100px] bg-blue-500 rounded-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
+
             <div className="flex justify-center py-10">
-              <div className="relative bg-blue-100 shadow-lg h-[400px] w-[400px]  rounded-xl p-8 flex flex-col gap-6 z-20">
-                <div className="absolute left-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-blue-500">
+              <div className="relative bg-[#15192C] shadow-lg h-[400px] w-[400px] rounded-xl p-8 flex flex-col gap-6 z-20">
+                <div
+                  ref={(el) => (cardsRef.current[0] = el)}
+                  className="absolute left-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-blue-500"
+                >
                   <h2 className="text-3xl font-bold text-blue-600">800+</h2>
                   <p className="text-gray-800">Successful Implementations</p>
                 </div>
-                <div className="absolute top-[38%] right-[60px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-pink-500">
+
+                <div
+                  ref={(el) => (cardsRef.current[1] = el)}
+                  className="absolute top-[38%] right-[60px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-pink-500"
+                >
                   <h2 className="text-3xl font-bold text-blue-600">1000+</h2>
                   <p className="text-gray-800">Successful Implementations</p>
                 </div>
-                <div className="absolute bottom-[7%] right-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-green-500">
+
+                <div
+                  ref={(el) => (cardsRef.current[2] = el)}
+                  className="absolute bottom-[7%] right-[-100px] bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-green-500"
+                >
                   <h2 className="text-3xl font-bold text-blue-600">500+</h2>
                   <p className="text-gray-800">Successful Implementations</p>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* MOBILE (No Need Animation For Now) */}
           <div className="md:hidden w-full md:w-[50%]">
             <div className="flex justify-center py-10">
-              <div className="relative bg-blue-100 shadow-lg h-[400px] w-[400px]  rounded-xl p-8 flex flex-col gap-6">
+              <div className="relative bg-[#15192C] shadow-lg h-[400px] w-[400px] rounded-xl p-8 flex flex-col gap-6">
+                {/* Same cards simplified */}
                 <div className="absolute left-2 right-2 bg-white shadow-md rounded-lg px-10 py-5 border-l-4 border-blue-500">
                   <h2 className="text-lg font-bold text-blue-600">800+</h2>
                   <p className="text-gray-800 text-[14px]">

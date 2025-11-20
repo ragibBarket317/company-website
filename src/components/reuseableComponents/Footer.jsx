@@ -9,6 +9,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from 'react-icons/fa'
+import logo from '../../assets/images/logo.png'
 
 const Footer = () => {
   return (
@@ -26,9 +27,9 @@ const Footer = () => {
           {/* Logo and About */}
           <div className="z-10">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Tech<span className="text-pink-500">C</span>ompany
+              <img src={logo} alt="" className="w-20 h-16 md:w-32 md:h-20" />
             </h2>
-            <p className="text-md leading-relaxed">
+            <p className="text-sm md:text-md leading-relaxed">
               We’re a leading development company that creates web apps, mobile
               apps, and AI-powered solutions for iOS, Android, and the web. We
               deliver on time, write clean code, and build exactly what your

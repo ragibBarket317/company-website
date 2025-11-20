@@ -5,6 +5,7 @@ import { FiMenu, FiX } from 'react-icons/fi'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { div } from 'three/tsl'
+import logo from '../../assets/images/logo.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -18,6 +19,7 @@ export default function Navbar() {
   const placeholderRef = useRef(null)
 
   useEffect(() => {
+    if (window.innerWidth < 768) return
     const navbar = navRef.current
 
     // Initial setup: always fixed but normal top, scale 1
@@ -106,7 +108,7 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             <div className="">
               <Link to="/" className="font-bold text-xl">
-                TechCompany
+                <img src={logo} alt="" className="w-20 h-16 md:w-32 md:h-20" />
               </Link>
             </div>
             <div>
@@ -226,7 +228,11 @@ export default function Navbar() {
                 </button>
               </div>
             </div>
-            <div className="hidden md:block">{/* <DarkModeToggle /> */}</div>
+            <div className="hidden md:block">
+              <button className="bg-[#17233f] border shadow-lg border-[#4b486e]/30 text-white px-5 py-2.5 rounded-md">
+                Call For Sehedule
+              </button>
+            </div>
           </div>
         </div>
         {/* Mobile Drawer (outside of hidden md:flex) */}
