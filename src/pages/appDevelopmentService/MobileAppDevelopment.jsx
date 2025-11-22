@@ -21,14 +21,16 @@ const MobileAppDevelopment = () => {
         <MobileHero />
       </div>
 
-      <Services />
-      <MobileAppProcess />
-      <MobileAppServices />
-      <MeanStackSection />
-      <WhyChooseUs />
-      <IndustriesServices />
-      <MobileAppSolutions />
-      <GetFreeQuote />
+      <div className="relative z-20 ">
+        <Services />
+        <MobileAppProcess />
+        <MobileAppServices />
+        <MeanStackSection />
+        <WhyChooseUs />
+        <IndustriesServices />
+        <MobileAppSolutions />
+        <GetFreeQuote />
+      </div>
     </div>
   )
 }

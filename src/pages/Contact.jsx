@@ -11,8 +11,11 @@ export default function Contact() {
 
       <section className="relative w-full text-white py-24 px-6">
         {/* <div className="circlePosition w-[400px] h-[150px] bg-blue-400 rounded-full absolute z-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[200px]"></div> */}
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-500 opacity-20 blur-[140px] rounded-full"></div>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        {/* <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-500 opacity-20 blur-[140px] rounded-full"></div> */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-[600px] h-[300px] bg-blue-500/50 blur-[150px] rounded-full"></div>
+        </div>
+        <div className="container relative z-10 grid md:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -116,7 +119,7 @@ export default function Contact() {
       </div>
 
       {/* Office Locations */}
-      <div className="max-w-6xl mx-auto py-16 px-4">
+      <div className="container py-16">
         <h2 className="text-center text-2xl font-semibold mb-10">
           Our <span className="text-yellow-500">Global Offices</span>
         </h2>

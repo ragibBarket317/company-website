@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+
 import {
   FaCode,
   FaUsers,
@@ -13,7 +17,9 @@ import {
   FaLaptopCode,
   FaGlobe,
   FaCloudUploadAlt,
+  FaClipboard,
 } from 'react-icons/fa'
+
 import Hero from '../components/sections/home/Hero'
 import WhyChooseUs from '../components/sections/home/WhyChooseUs'
 import GetFreeQuote from '../components/sections/home/GetFreeQuote'
@@ -23,7 +29,79 @@ import MeanStackSection from '../components/sections/mobileAppDevelopment/MeanSt
 import WebHero from '../components/sections/webDevelopment/WebHero'
 import WebHeroSmallScreen from '../components/sections/webDevelopment/WebHeroSmallScreen'
 
+gsap.registerPlugin(ScrollTrigger)
+
 export default function WebDevelopmentPage() {
+  const sectionRef = useRef(null)
+  const devSectionRef = useRef(null)
+  const stepsRef = useRef([])
+  const devStepsRef = useRef([])
+  const cardRef = useRef(null)
+  const devCardRef = useRef(null)
+
+  // useGSAP(
+  //   () => {
+  //     gsap.from(devStepsRef.current, {
+  //       y: 80,
+  //       opacity: 0,
+  //       stagger: 0.15,
+  //       duration: 0.9,
+  //       ease: 'power3.out',
+  //       scrollTrigger: {
+  //         trigger: devSectionRef.current,
+  //         start: 'top 70%',
+  //         toggleActions: 'restart none none none',
+  //       },
+  //     })
+  //   },
+  //   { scope: devSectionRef }
+  // )
+
+  useGSAP(
+    () => {
+      gsap.from(sectionRef.current, {
+        opacity: 0,
+        y: 60,
+        duration: 1.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+          toggleActions: 'restart none none none',
+        },
+      })
+
+      // Steps stagger animation
+      gsap.from(stepsRef.current, {
+        opacity: 0,
+        x: -50,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 70%',
+          toggleActions: 'restart none none none',
+        },
+      })
+
+      // Right Card Animation
+      gsap.from(cardRef.current, {
+        opacity: 0,
+        scale: 0.9,
+        y: 40,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: cardRef.current,
+          start: 'top 80%',
+          toggleActions: 'restart none none none',
+        },
+      })
+    },
+    { scope: sectionRef }
+  )
+
   return (
     <div className=" ">
       <div className="md:hidden">
@@ -35,7 +113,7 @@ export default function WebDevelopmentPage() {
       </div>
 
       <div className=" text-gray-200">
-        <section className="py-16">
+        <section ref={devSectionRef} className="py-16">
           <div className="container text-center">
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 text-left">
               {[
@@ -62,6 +140,7 @@ export default function WebDevelopmentPage() {
               ].map((step, i) => (
                 <div
                   key={i}
+                  ref={(el) => (devStepsRef.current[i] = el)}
                   className="backdrop-blur-xl bg-white/10 border border-white/20 
  p-6 
 hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
@@ -75,6 +154,67 @@ hover:bg-white/20 rounded-lg shadow-sm hover:shadow-md transition"
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+        <section ref={sectionRef} className="container py-[40px] md:py-[80px]">
+          <div className="max-w-6xl mx-auto px-6 text-center">
+            <h2 className="text-xl md:text-4xl font-bold text-white">
+              A Complete Suite of Web Development Services for Modern Brands
+            </h2>
+            <p className="mt-4 text-gray-200 max-w-3xl mx-auto text-[14px] md:text-[18px]">
+              Our web development process is built around real business needs.
+              We create secure and scalable websites and custom web applications
+              that offer strong performance and excellent user experience. We
+              are a trusted web development company, building clean code,
+              improving transparency, fostering collaboration, with results
+              built to grow alongside your business.
+            </p>
+          </div>
+
+          <div className="mt-10 grid md:grid-cols-2 gap-6 px-6">
+            {/* Left Section */}
+            <div className="bg-[#10112D] text-white rounded-lg p-4 md:p-8 flex flex-col justify-center space-y-4">
+              {[
+                { id: 1, title: 'Website Consulting Services' },
+                { id: 2, title: 'Custom Website Development' },
+                { id: 3, title: 'Enterprise Web Development' },
+                { id: 4, title: 'Web App Development Services' },
+                { id: 5, title: 'CMS & Website Integration Services' },
+                { id: 6, title: 'eCommerce Website Development' },
+                { id: 7, title: 'Third-Party API Integration' },
+              ].map((step, index) => (
+                <div
+                  key={step.id}
+                  ref={(el) => (stepsRef.current[index] = el)}
+                  className="flex items-start space-x-4"
+                >
+                  <div className="flex-shrink-0 w-6 h-6 bg-white text-blue-700 font-bold rounded-full flex items-center justify-center">
+                    {step.id}
+                  </div>
+                  <p className="font-medium text-[14px] md:text-base">
+                    {step.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Right Section */}
+            <div
+              ref={cardRef}
+              className="border border-gray-300 rounded-lg p-5 md:p-10 flex flex-col items-start"
+            >
+              <div className="bg-blue-700 text-white p-4 rounded-xl mb-6">
+                <FaClipboard className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold text-white mb-3">
+                Third-Party API Integration
+              </h3>
+              <p className="text-gray-400 leading-relaxed text-[14px] md:text-[18px]">
+                Already using tools like Stripe, Salesforce, or HubSpot? We
+                connect your website with these platforms using secure, reliable
+                APIs — so everything works together in real time.
+              </p>
             </div>
           </div>
         </section>

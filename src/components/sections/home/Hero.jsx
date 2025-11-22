@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="w-full h-full bg-[radial-gradient(60%_120%_at_90%_0%,rgba(255,255,255,0.35),transparent_70%)]"></div>
       </div> */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[600px] h-[300px] bg-blue-500/20 blur-[150px] rounded-full"></div>
+        <div className="w-[600px] h-[300px] bg-blue-500/50 blur-[150px] rounded-full"></div>
       </div>
 
       <div className="container z-10">
@@ -50,7 +50,7 @@ const Hero = () => {
                 </h1> */}
                 <h1
                   ref={titleRef}
-                  className="text-2xl md:text-2xl lg:text-5xl text-white font-extrabold leading-snug"
+                  className="text-2xl md:text-2xl lg:text-5xl text-white font-head font-extrabold leading-snug"
                 >
                   {title.split('').map((char, i) => (
                     <span key={i} className="letter inline-block">

@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import DarkModeToggle from '../reuseableComponents/DarkModeToggle'
 import { useEffect, useRef, useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
@@ -11,6 +11,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Navbar() {
   const navigate = useNavigate()
+  const location = useLocation()
+  const isServiceActive = location.pathname.startsWith('/services')
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
   const [isAboutOpen, setIsAboutOpen] = useState(false)
@@ -114,13 +116,37 @@ export default function Navbar() {
             <div>
               <ul className="hidden md:flex items-center gap-6">
                 <li>
-                  <Link to="/">Home</Link>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive
+                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        : ''
+                    }
+                  >
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                      isActive
+                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        : ''
+                    }
+                  >
+                    About
+                  </NavLink>
                 </li>
                 <li className="w-full relative group px-3 py-2">
-                  <button className="hover:opacity-50 hover:text-blue-600 cursor-default">
+                  <button
+                    className={
+                      isServiceActive
+                        ? 'border-orange-600 border-b-2 pb-1 font-semibold'
+                        : 'hover:opacity-50 hover:text-blue-600 cursor-default'
+                    }
+                  >
                     Services
                   </button>
                   <div className="absolute top-0 left-[-400px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[1000px] transform">
@@ -129,15 +155,16 @@ export default function Navbar() {
                         <div className="bg-gradient-to-tl from-blue-950 to-blue-900 rounded-bl-xl rounded-tl-xl text-white">
                           <div className="p-5 space-y-3">
                             <h3 className="text-lg font-bold ">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Quasi accusantium.
+                              Build modern, scalable, and high-performance
+                              digital solutions tailored for your business
+                              needs.
                             </h3>
                             <button className="bg-cyan-700 shadow-lg py-2 px-5 rounded-lg">
                               {'Contact >'}
                             </button>
                           </div>
                         </div>
-                        <div className="col-span-2 grid grid-cols-2 gap-5 py-10">
+                        {/* <div className="col-span-2 grid grid-cols-2 gap-5 py-10">
                           <div
                             onClick={() =>
                               navigate('/services/mobile-app-development')
@@ -150,9 +177,9 @@ export default function Navbar() {
                               </Link>
                             </h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corrupti repudiandae distinctio doloremque
-                              provident.
+                              We design and develop intuitive, fast, and
+                              feature-rich mobile apps for Android, iOS, and
+                              cross-platform environments.
                             </p>
                           </div>
                           <div
@@ -165,9 +192,9 @@ export default function Navbar() {
                               Web Development
                             </h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corrupti repudiandae distinctio doloremque
-                              provident.
+                              From dynamic websites to powerful web
+                              applications, our team builds responsive and
+                              scalable digital experiences.
                             </p>
                           </div>
                           <div
@@ -180,9 +207,9 @@ export default function Navbar() {
                               Software Development
                             </h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corrupti repudiandae distinctio doloremque
-                              provident.
+                              We create secure, custom software solutions that
+                              automate workflows and enhance your business
+                              operations.
                             </p>
                           </div>
                           <div
@@ -193,11 +220,83 @@ export default function Navbar() {
                               AI Development
                             </h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corrupti repudiandae distinctio doloremque
-                              provident.
+                              Leverage the power of AI with intelligent
+                              automation, predictive analytics, and machine
+                              learning-driven applications.
                             </p>
                           </div>
+                        </div> */}
+                        <div className="col-span-2 grid grid-cols-2 gap-5 py-10 pr-5">
+                          {/* Mobile App Development */}
+                          <NavLink
+                            to="/services/mobile-app-development"
+                            className={({ isActive }) =>
+                              `py-5 rounded-lg px-3 cursor-pointer 
+      ${isActive ? 'bg-gray-300' : 'hover:bg-gray-200 text-gray-800'}`
+                            }
+                          >
+                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
+                              Mobile App Development
+                            </h4>
+                            <p className="text-gray-800">
+                              We design and develop intuitive, fast, and
+                              feature-rich mobile apps for Android, iOS, and
+                              cross-platform environments.
+                            </p>
+                          </NavLink>
+
+                          {/* Web Development */}
+                          <NavLink
+                            to="/services/web-development"
+                            className={({ isActive }) =>
+                              `py-5 rounded-lg px-3 cursor-pointer 
+      ${isActive ? 'bg-gray-300' : 'hover:bg-gray-200 text-gray-800'}`
+                            }
+                          >
+                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
+                              Web Development
+                            </h4>
+                            <p className="text-gray-800">
+                              From dynamic websites to powerful web
+                              applications, our team builds responsive and
+                              scalable digital experiences.
+                            </p>
+                          </NavLink>
+
+                          {/* Software Development */}
+                          <NavLink
+                            to="/services/software-development"
+                            className={({ isActive }) =>
+                              `py-5 rounded-lg px-3 cursor-pointer 
+      ${isActive ? 'bg-gray-300' : 'hover:bg-gray-200 text-gray-800'}`
+                            }
+                          >
+                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
+                              Software Development
+                            </h4>
+                            <p className="text-gray-800">
+                              We create secure, custom software solutions that
+                              automate workflows and enhance business
+                              operations.
+                            </p>
+                          </NavLink>
+
+                          {/* AI Development */}
+                          <NavLink
+                            to="/services/ai-development"
+                            className={({ isActive }) =>
+                              `py-5 rounded-lg px-3 cursor-pointer 
+      ${isActive ? 'bg-gray-300' : 'hover:bg-gray-200 text-gray-800'}`
+                            }
+                          >
+                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
+                              AI Development
+                            </h4>
+                            <p className="text-gray-800">
+                              Leverage AI with intelligent automation,
+                              predictive analytics, and ML-driven apps.
+                            </p>
+                          </NavLink>
                         </div>
                       </div>
                     </div>
@@ -211,10 +310,28 @@ export default function Navbar() {
                 <Link to="/blog">Blog</Link>
               </li> */}
                 <li>
-                  <Link to="/careers">Careers</Link>
+                  <NavLink
+                    to="/careers"
+                    className={({ isActive }) =>
+                      isActive
+                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        : ''
+                    }
+                  >
+                    Careers
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      isActive
+                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        : ''
+                    }
+                  >
+                    Contact
+                  </NavLink>
                 </li>
               </ul>
               {/* Right Side (DarkMode + Mobile Button) */}
@@ -229,7 +346,10 @@ export default function Navbar() {
               </div>
             </div>
             <div className="hidden md:block">
-              <button className="bg-[#17233f] border shadow-lg border-[#4b486e]/30 text-white px-5 py-2.5 rounded-md">
+              {/* <button className="bg-[#17233f] border shadow-lg border-[#4b486e]/30 text-white px-5 py-2.5 rounded-md">
+                Call For Sehedule
+              </button> */}
+              <button className="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
                 Call For Sehedule
               </button>
             </div>
@@ -286,11 +406,6 @@ export default function Navbar() {
                   </div>
                 )}
               </li>
-              {/* <li>
-              <Link to="/blog" onClick={() => setMobileOpen(false)}>
-                Blog
-              </Link>
-            </li> */}
               <li>
                 <Link to="/careers" onClick={() => setMobileOpen(false)}>
                   Careers

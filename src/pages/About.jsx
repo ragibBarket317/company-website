@@ -10,14 +10,14 @@ export default function About() {
       <section className="py-32  text-center text-white overflow-hidden">
         <div className="container">
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-[600px] h-[300px] bg-blue-500/20 blur-[150px] rounded-full"></div>
+            <div className="w-[600px] h-[300px] bg-blue-500/50 blur-[150px] rounded-full"></div>
           </div>
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h1 className="text-xl md:text-4xl font-bold leading-tight">
+            <h1 className="text-xl md:text-5xl font-bold leading-tight">
               Who We Are
             </h1>
-            <p className="text-gray-300 mt-6 text-[14px] md:text-[18px] max-w-2xl mx-auto">
+            <p className="text-gray-300 mt-6 text-[14px] md:text-[20px] max-w-2xl mx-auto">
               At Intexa, we build digital experiences that transform businesses.
               Our team brings creativity, engineering, and deep technical
               expertise together to shape the future.

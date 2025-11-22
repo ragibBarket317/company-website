@@ -16,7 +16,7 @@ const SoftwareHero = () => {
         <div className="w-full h-full bg-[radial-gradient(60%_120%_at_90%_0%,rgba(255,255,255,0.35),transparent_70%)]"></div>
       </div> */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[600px] h-[300px] bg-blue-500/20 blur-[150px] rounded-full"></div>
+        <div className="w-[600px] h-[300px] bg-blue-500/50 blur-[150px] rounded-full"></div>
       </div>
       <div className="container z-10">
         <div className="flex gap-5">

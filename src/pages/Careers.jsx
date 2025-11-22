@@ -4,9 +4,11 @@ export default function Careers() {
   return (
     <div className="min-h-screen py-16">
       <section className="relative text-white py-24 px-6">
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-500 opacity-20 blur-[140px] rounded-full"></div>
-
-        <div className="container grid md:grid-cols-2 gap-12 items-center">
+        {/* <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-500/50 opacity-20 blur-[140px] rounded-full"></div> */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-[600px] h-[300px] bg-blue-500/50 blur-[150px] rounded-full"></div>
+        </div>
+        <div className="container relative grid md:grid-cols-2 gap-12 items-center z-20">
           {/* Left Content */}
           <div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
