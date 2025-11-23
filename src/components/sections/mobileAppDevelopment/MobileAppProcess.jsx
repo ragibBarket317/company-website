@@ -17,54 +17,60 @@ const steps = [
 ]
 
 function MobileAppProcess() {
-  const sectionRef = useRef(null)
+  const mobileProcessSectionRef = useRef(null)
   const stepsRef = useRef([])
   const cardRef = useRef(null)
 
-  useGSAP(() => {
-    gsap.from(sectionRef.current, {
-      opacity: 0,
-      y: 60,
-      duration: 1.2,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: 'top 80%',
-        toggleActions: 'restart none none none',
-      },
-    })
+  useGSAP(
+    () => {
+      gsap.from(mobileProcessSectionRef.current, {
+        opacity: 0,
+        y: 60,
+        duration: 1.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: mobileProcessSectionRef.current,
+          start: 'top 80%',
+          toggleActions: 'restart none none none',
+        },
+      })
 
-    // Steps stagger animation
-    gsap.from(stepsRef.current, {
-      opacity: 0,
-      x: -50,
-      duration: 0.8,
-      stagger: 0.15,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: 'top 70%',
-        toggleActions: 'restart none none none',
-      },
-    })
+      // Steps stagger animation
+      gsap.from(stepsRef.current, {
+        opacity: 0,
+        x: -50,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: mobileProcessSectionRef.current,
+          start: 'top 70%',
+          toggleActions: 'restart none none none',
+        },
+      })
 
-    // Right Card Animation
-    gsap.from(cardRef.current, {
-      opacity: 0,
-      scale: 0.9,
-      y: 40,
-      duration: 1,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: cardRef.current,
-        start: 'top 80%',
-        toggleActions: 'restart none none none',
-      },
-    })
-  }, [])
+      // Right Card Animation
+      gsap.from(cardRef.current, {
+        opacity: 0,
+        scale: 0.9,
+        y: 40,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: cardRef.current,
+          start: 'top 80%',
+          toggleActions: 'restart none none none',
+        },
+      })
+    },
+    { scope: mobileProcessSectionRef }
+  )
 
   return (
-    <section ref={sectionRef} className="container py-[40px] md:py-[80px]">
+    <section
+      ref={mobileProcessSectionRef}
+      className="container py-[40px] md:py-[80px]"
+    >
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-xl md:text-4xl font-bold text-white">
           Our Mobile App Development Process — From Idea to Launch, Done Right

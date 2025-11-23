@@ -53,17 +53,15 @@ const services = [
 ]
 
 function MobileAppServices() {
-  const sectionRef = useRef(null)
+  const mobileServiceSectionRef = useRef(null)
   const headingRef = useRef(null)
   const paragraphRef = useRef(null)
   const cardsRef = useRef([])
 
   useGSAP(
     () => {
-      ScrollTrigger.refresh()
-
       const triggerOptions = {
-        trigger: sectionRef.current,
+        trigger: mobileServiceSectionRef.current,
         start: 'top 85%',
         toggleActions: 'restart none none none',
       }
@@ -86,26 +84,70 @@ function MobileAppServices() {
         delay: 0.1,
         scrollTrigger: { ...triggerOptions, start: 'top 88%' },
       })
+      // gsap.set(cardsRef.current, { y: 80 })
+      // // Cards
+      // gsap.to(cardsRef.current, {
+      //   y: 0,
+      //   opacity: 1,
+      //   stagger: 0.15,
+      //   duration: 0.9,
+      //   ease: 'power3.out',
+      //   scrollTrigger: {
+      //     trigger: mobileServiceSectionRef.current,
+      //     start: 'top 80%',
+      //     toggleActions: 'restart none none none',
+      //   },
+      // })
+      // gsap.fromTo(
+      //   cardsRef.current,
+      //   {
+      //     opacity: 0,
+      //     y: 60,
+      //     force3D: true,
+      //   },
+      //   {
+      //     opacity: 1,
+      //     y: 0,
+      //     stagger: 0.15,
+      //     duration: 0.8,
+      //     ease: 'power3.out',
+      //     scrollTrigger: {
+      //       trigger: mobileServiceSectionRef.current,
+      //       start: 'top 80%',
+      //       toggleActions: 'restart none none none',
+      //     },
+      //   }
+      // )
 
-      // Cards
-      gsap.from(cardsRef.current.filter(Boolean), {
-        opacity: 0,
-        x: -50,
-        duration: 1.2,
-        stagger: 0.15,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 75%',
-          toggleActions: 'restart none none none',
-        },
+      cardsRef.current.forEach((card) => {
+        gsap.fromTo(
+          card,
+          {
+            opacity: 0,
+            y: 40,
+            scale: 0.95,
+            willChange: 'transform, opacity',
+          },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+              toggleActions: 'restart none none none',
+            },
+          }
+        )
       })
     },
-    { scope: sectionRef }
+    { scope: mobileServiceSectionRef }
   )
 
   return (
-    <section ref={sectionRef} className="py-[40px] md:py-[80px]">
+    <section ref={mobileServiceSectionRef} className="py-[40px] md:py-[80px]">
       <div className="w-full h-full">
         <div className="container">
           <div className="max-w-6xl mx-auto px-6 text-center">
@@ -131,7 +173,8 @@ function MobileAppServices() {
               <div
                 key={index}
                 // ref={cardsRef}
-                className="service-card bg-gray-800/40 border border-white/20 backdrop-blur-xl hover:bg-gray-700/40 shadow-md rounded-xl p-6 text-left hover:shadow-lg transition"
+                ref={(el) => (cardsRef.current[index] = el)}
+                className="service-card bg-gray-800/40 border border-white/20 backdrop-blur-xl hover:bg-gray-700/40 shadow-md rounded-xl p-6 text-left hover:shadow-lg"
               >
                 <div className="mb-4 service-icon">{service.icon}</div>
                 <h3 className="font-semibold text-white text-md md:text-lg mb-2">

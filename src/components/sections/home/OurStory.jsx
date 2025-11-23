@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 
-gsap.registerPlugin(useGSAP)
+gsap.registerPlugin(ScrollTrigger)
 
 const OurStory = () => {
-  const sectionRef = useRef(null)
+  const storySectionRef = useRef(null)
   const headingRef = useRef(null)
   const textRef = useRef(null)
   const cardsRef = useRef([])
@@ -21,7 +22,7 @@ const OurStory = () => {
         duration: 0.8,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: storySectionRef.current,
           start: 'top 80%',
           toggleActions: 'play none none reset',
         },
@@ -35,7 +36,7 @@ const OurStory = () => {
         ease: 'power3.out',
         delay: 0.2,
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: storySectionRef.current,
           start: 'top 80%',
           toggleActions: 'play none none reset',
         },
@@ -50,18 +51,18 @@ const OurStory = () => {
         ease: 'back.out(1.8)',
         delay: 0.3,
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: storySectionRef.current,
           start: 'top 80%',
           toggleActions: 'play none none reset', // replay every time
         },
       })
     },
-    { scope: sectionRef }
+    { scope: storySectionRef }
   )
 
   return (
     <div
-      ref={sectionRef}
+      ref={storySectionRef}
       className="text-white py-[40px] md:py-[80px] dark:bg-dark-bg"
     >
       <div className="container p-6">

@@ -1,24 +1,24 @@
 import React, { useRef } from 'react'
-import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
-
 import Lottie from 'lottie-react'
 import meeting from '../../../assets/animation/Meeting.json'
 
+gsap.registerPlugin(ScrollTrigger)
+
 const WhyChooseUs = () => {
-  const sectionRef = useRef(null)
+  const chooseUsSectionRef = useRef(null)
   const headingRef = useRef(null)
   const paragraphRef = useRef(null)
   const lottieRef = useRef(null)
 
   useGSAP(
     () => {
-      const q = gsap.utils.selector(sectionRef)
+      const q = gsap.utils.selector(chooseUsSectionRef)
 
       const triggerOptions = {
-        trigger: sectionRef.current,
+        trigger: chooseUsSectionRef.current,
         start: 'top 85%',
         toggleActions: 'restart none none none', // replay every re-entry
         // markers: true,
@@ -52,17 +52,17 @@ const WhyChooseUs = () => {
         ease: 'power3.out',
         delay: 0.3,
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: chooseUsSectionRef.current,
           start: 'top 70%',
           toggleActions: 'restart none none none',
         },
       })
     },
-    { scope: sectionRef }
+    { scope: chooseUsSectionRef }
   )
 
   return (
-    <div ref={sectionRef} className="py-[40px] md:py-[80px]">
+    <div ref={chooseUsSectionRef} className="py-[40px] md:py-[80px]">
       <div className="w-full h-full flex justify-center items-center">
         <div className="container">
           <h2

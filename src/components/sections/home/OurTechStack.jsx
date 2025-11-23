@@ -67,7 +67,7 @@ const stackData = [
 ]
 
 const OurTechStack = () => {
-  const sectionRef = useRef()
+  const ourTechStackSectionRef = useRef()
   const headingRef = useRef()
 
   useGSAP(
@@ -82,7 +82,7 @@ const OurTechStack = () => {
         duration: 0.9,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: ourTechStackSectionRef.current,
           start: 'top 70%',
           toggleActions: 'restart none none none',
         },
@@ -93,19 +93,19 @@ const OurTechStack = () => {
         x: -0,
         ease: 'none',
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: ourTechStackSectionRef.current,
           start: 'top bottom',
           end: 'bottom top',
           scrub: true,
         },
       })
     },
-    { scope: sectionRef }
-  ) // IMPORTANT!!
+    { scope: ourTechStackSectionRef }
+  )
 
   return (
     <section
-      ref={sectionRef}
+      ref={ourTechStackSectionRef}
       className="container mx-auto py-20 text-white min-h-[90vh]"
     >
       <h2
