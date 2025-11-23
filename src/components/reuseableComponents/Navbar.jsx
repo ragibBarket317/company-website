@@ -104,7 +104,7 @@ export default function Navbar() {
                 <img
                   src={logo}
                   alt=""
-                  className="w-20 h-16 md:w-32 md:h-20 logo"
+                  className="w-32 h-10 md:w-36 md:h-10 logo"
                 />
               </Link>
             </div>
@@ -116,7 +116,7 @@ export default function Navbar() {
                     to="/"
                     className={({ isActive }) =>
                       isActive
-                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        ? ' border-cyan-600 border-b-2 pb-1 font-semibold'
                         : ''
                     }
                   >
@@ -128,7 +128,7 @@ export default function Navbar() {
                     to="/about"
                     className={({ isActive }) =>
                       isActive
-                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        ? ' border-cyan-600 border-b-2 pb-1 font-semibold'
                         : ''
                     }
                   >
@@ -139,8 +139,8 @@ export default function Navbar() {
                   <button
                     className={
                       isServiceActive
-                        ? 'border-orange-600 border-b-2 pb-1 font-semibold'
-                        : 'hover:opacity-50 hover:text-blue-600 cursor-default'
+                        ? 'border-cyan-600 border-b-2 pb-1 font-semibold'
+                        : 'hover:opacity-50 hover:text-cyan-300 cursor-default'
                     }
                   >
                     Services
@@ -253,7 +253,7 @@ export default function Navbar() {
                     to="/careers"
                     className={({ isActive }) =>
                       isActive
-                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        ? ' border-cyan-600 border-b-2 pb-1 font-semibold'
                         : ''
                     }
                   >
@@ -265,7 +265,7 @@ export default function Navbar() {
                     to="/contact"
                     className={({ isActive }) =>
                       isActive
-                        ? ' border-orange-600 border-b-2 pb-1 font-semibold'
+                        ? ' border-cyan-600 border-b-2 pb-1 font-semibold'
                         : ''
                     }
                   >

@@ -21,6 +21,31 @@ const WebIndustries = () => {
 
   useGSAP(
     () => {
+      const triggerOptions = {
+        trigger: webIndustriesRef.current,
+        start: 'top 85%',
+        toggleActions: 'restart none none none',
+      }
+
+      // Heading
+      gsap.from(headingRef.current, {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: { ...triggerOptions, start: 'top 90%' },
+      })
+
+      // Paragraph
+      gsap.from(descriptionRef.current, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: 'power3.out',
+        delay: 0.1,
+        scrollTrigger: { ...triggerOptions, start: 'top 88%' },
+      })
+
       cardsRef.current.forEach((card) => {
         gsap.fromTo(
           card,

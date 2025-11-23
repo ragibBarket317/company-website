@@ -84,40 +84,6 @@ function MobileAppServices() {
         delay: 0.1,
         scrollTrigger: { ...triggerOptions, start: 'top 88%' },
       })
-      // gsap.set(cardsRef.current, { y: 80 })
-      // // Cards
-      // gsap.to(cardsRef.current, {
-      //   y: 0,
-      //   opacity: 1,
-      //   stagger: 0.15,
-      //   duration: 0.9,
-      //   ease: 'power3.out',
-      //   scrollTrigger: {
-      //     trigger: mobileServiceSectionRef.current,
-      //     start: 'top 80%',
-      //     toggleActions: 'restart none none none',
-      //   },
-      // })
-      // gsap.fromTo(
-      //   cardsRef.current,
-      //   {
-      //     opacity: 0,
-      //     y: 60,
-      //     force3D: true,
-      //   },
-      //   {
-      //     opacity: 1,
-      //     y: 0,
-      //     stagger: 0.15,
-      //     duration: 0.8,
-      //     ease: 'power3.out',
-      //     scrollTrigger: {
-      //       trigger: mobileServiceSectionRef.current,
-      //       start: 'top 80%',
-      //       toggleActions: 'restart none none none',
-      //     },
-      //   }
-      // )
 
       cardsRef.current.forEach((card) => {
         gsap.fromTo(

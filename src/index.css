@@ -30,9 +30,16 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1c1947 #03050e;
+}
+
 body {
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -44,4 +51,25 @@ body {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover;
+}
+
+/* Entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (background behind thumb) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scroll thumb (the thing you drag) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #03050e, #09091b, #1c1947);
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #1c1947, #09091b, #03050e);
 }

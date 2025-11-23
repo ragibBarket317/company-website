@@ -27,7 +27,7 @@ const Footer = () => {
           {/* Logo and About */}
           <div className="z-10">
             <h2 className="text-3xl font-bold text-white mb-4">
-              <img src={logo} alt="" className="w-20 h-16 md:w-32 md:h-20" />
+              <img src={logo} alt="" className="w-32 h-10 md:w-36 md:h-10" />
             </h2>
             <p className="text-sm md:text-md leading-relaxed">
               We’re a leading development company that creates web apps, mobile
