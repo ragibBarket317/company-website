@@ -10,6 +10,7 @@ import {
   FaMapMarkerAlt,
 } from 'react-icons/fa'
 import logo from '../../assets/images/logo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -43,11 +44,27 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-2 text-md">
-              <li>Hire Developers</li>
-              <li>Mobile App Development</li>
-              <li>Web Development Services</li>
-              <li>AI Development</li>
-              <li>AR VR App Development</li>
+              <li>
+                <Link to="/careers">Hire Developers</Link>
+              </li>
+              <li>
+                <Link to="/services/mobile-app-development">
+                  Mobile App Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/web-development">
+                  Web Development Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/software-development">
+                  Software Development Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/ai-development">AI Development</Link>
+              </li>
               <li>Privacy Policy</li>
               <li>Terms & Conditions</li>
             </ul>
@@ -119,8 +136,8 @@ const Footer = () => {
 
       {/* Bottom line */}
       <div className="z-10">
-        <div className="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-900">
-          © {new Date().getFullYear()} techcompany. All rights reserved.
+        <div className="mt-12 border-t border-gray-800/50 pt-6 text-center text-sm text-gray-700">
+          © {new Date().getFullYear()} intexa. All rights reserved.
         </div>
       </div>
     </footer>

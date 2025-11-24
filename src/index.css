@@ -73,3 +73,39 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #1c1947, #09091b, #03050e);
 }
+
+.testimonialSwiper .swiper-slide {
+  opacity: 0.4;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+
+.testimonialSwiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Swiper pagination dots */
+.custom-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #4b486e; /* normal dot color */
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 6px !important;
+}
+
+/* Active dot */
+.custom-pagination .swiper-pagination-bullet-active {
+  background: linear-gradient(45deg, #1c1947, #5b5ceb);
+  width: 24px;
+  border-radius: 10px;
+  opacity: 1;
+  box-shadow: 0px 0px 10px #5b5ceb;
+}
+
+/* Hover effect */
+.custom-pagination .swiper-pagination-bullet:hover {
+  opacity: 1;
+  background: #7573b5;
+}

@@ -66,11 +66,11 @@ const Hero = () => {
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
-                    Subscribe
+                    Call For Sehedule
                   </button>
-                  <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
+                  {/* <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
                     Subscribe
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

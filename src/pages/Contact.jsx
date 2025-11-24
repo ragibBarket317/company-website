@@ -54,7 +54,7 @@ export default function Contact() {
 
       {/* Services Section */}
       <div className="container py-[80px]">
-        <h2 className="text-center text-4xl font-semibold">
+        <h2 className="text-center text-2xl lg:text-4xl font-bold">
           Schedule a Call and You Will Receive
         </h2>
 
@@ -120,8 +120,8 @@ export default function Contact() {
 
       {/* Office Locations */}
       <div className="container py-16">
-        <h2 className="text-center text-2xl font-semibold mb-10">
-          Our <span className="text-yellow-500">Global Offices</span>
+        <h2 className="text-center text-2xl lg:text-4xl font-bold mb-10">
+          Our Global Offices
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

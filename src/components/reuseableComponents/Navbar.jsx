@@ -6,6 +6,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import logo from '../../assets/images/logo.png'
+import logo1 from '../../assets/images/N.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -18,73 +19,76 @@ export default function Navbar() {
   const navRef = useRef(null)
   const placeholderRef = useRef(null)
 
-  useGSAP(
-    () => {
-      if (window.innerWidth < 768) return
+  useGSAP(() => {
+    const navbar = navRef.current
 
-      const navbar = navRef.current
+    // Start transparent
+    gsap.set(navbar, {
+      backgroundColor: 'transparent',
+      boxShadow: 'none',
+      position: 'fixed',
+      top: 0,
+      left: '50%',
+      xPercent: -50,
+      width: '100%',
+      zIndex: 50,
+    })
 
-      if (placeholderRef.current) {
-        placeholderRef.current.style.height = `${navbar.offsetHeight}px`
-      }
-      gsap.set(navbar, {
-        position: 'fixed',
-        top: 0,
-        left: '50%',
-        xPercent: -50,
-        width: '100%',
-        transformOrigin: 'center center',
-        scaleX: 1,
-        scaleY: 1,
-        borderRadius: '0px',
-        boxShadow: 'none',
-        zIndex: 50,
-      })
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: 'top top',
+      end: 99999,
 
-      const shrinkTl = gsap.timeline({ paused: true })
-      shrinkTl.to(
-        navbar,
-        {
-          scaleX: 0.7,
-          scaleY: 0.65,
-          top: 20,
-          backgroundColor: 'rgba(15,15,15,0.85)',
-          backdropFilter: 'blur(10px)',
-          borderRadius: '20px',
-          boxShadow: '0 8px 25px rgba(0,0,0,0.25)',
-          duration: 1.5,
-          ease: 'power3.inOut',
-        },
-        0
-      )
-      shrinkTl.to(
-        navbar.querySelector('img'),
-        {
-          scale: 0.85,
-          duration: 1.2,
-          ease: 'power2.inOut',
-        },
-        0
-      )
+      onUpdate: (self) => {
+        if (self.direction === 1 && self.scroll() > 10) {
+          // Scrolling Down → Add shadow + background
+          gsap.to(navbar, {
+            backgroundColor: 'rgba(15,15,15,0.85)',
+            backdropFilter: 'blur(10px)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+            duration: 0.3,
+            ease: 'power2.out',
+          })
+        } else if (self.scroll() <= 10) {
+          // Back to Top → Transparent Navbar
+          gsap.to(navbar, {
+            backgroundColor: 'transparent',
+            backdropFilter: 'blur(0px)',
+            boxShadow: 'none',
+            duration: 0.3,
+            ease: 'power2.out',
+          })
+        }
+      },
+    })
+  })
+  useGSAP(() => {
+    const logoA = navRef.current.querySelector('.logo-1')
+    const logoB = navRef.current.querySelector('.logo-2')
 
-      ScrollTrigger.create({
-        trigger: 'body',
-        start: 'top+=50 top',
-        onEnter: () => shrinkTl.play(),
-        onLeaveBack: () => shrinkTl.reverse(),
-      })
-      const refreshTimeout = setTimeout(() => ScrollTrigger.refresh(), 100)
-
-      return () => {
-        clearTimeout(refreshTimeout)
-      }
-    },
-    {
-      scope: navRef,
-      dependencies: [],
-    }
-  )
-  // =========================================================================
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: 'top top',
+      end: 99999,
+      onUpdate: (self) => {
+        const scrollRatio = Math.min(self.scroll() / 100, 1) // 0 → 1
+        // gradually hide Logo 1 (right → left)
+        gsap.to(logoA, {
+          x: scrollRatio * 50, // move right
+          clipPath: `inset(0 ${scrollRatio * 100}% 0 0)`, // hide gradually
+          duration: 0.1,
+          ease: 'none',
+        })
+        // gradually show Logo 2 (left → right)
+        gsap.to(logoB, {
+          x: -50 + scrollRatio * 5, // move from left
+          clipPath: `inset(0 0 0 ${100 - scrollRatio * 100}%)`, // reveal gradually
+          duration: 0.1,
+          ease: 'none',
+        })
+      },
+    })
+  })
 
   return (
     <div>
@@ -101,11 +105,27 @@ export default function Navbar() {
             <div className="">
               <Link to="/" className="font-bold text-xl">
                 {/* Add a class name to the logo for targeted GSAP animation */}
-                <img
+                {/* <img
                   src={logo}
                   alt=""
                   className="w-32 h-10 md:w-36 md:h-10 logo"
-                />
+                /> */}
+                <div className="relative w-32 h-10 overflow-hidden">
+                  {/* Logo 1 */}
+                  <img
+                    src={logo}
+                    alt="Logo 1"
+                    className="logo-1 absolute top-0 left-0 w-full h-full object-contain"
+                    style={{ clipPath: 'inset(0 0 0 0)' }}
+                  />
+                  {/* Logo 2 */}
+                  <img
+                    src={logo1}
+                    alt="Logo 2"
+                    className="logo-2 absolute top-0 left-0 w-full h-full object-contain"
+                    style={{ clipPath: 'inset(0 100% 0 0)', x: '-50px' }}
+                  />
+                </div>
               </Link>
             </div>
             {/* ... (Menu items, mobile drawer, and overlay remain the same) ... */}

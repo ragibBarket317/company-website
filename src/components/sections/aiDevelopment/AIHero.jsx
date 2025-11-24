@@ -16,7 +16,7 @@ const AIHero = () => {
           <div className="md:w-[50%] z-10">
             <div className="h-[70vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
-                <h1 className="text-2xl md:text-2xl lg:text-6xl text-white font-extrabold">
+                <h1 className="text-2xl md:text-2xl lg:text-5xl text-white font-extrabold">
                   AI Development Company
                 </h1>
                 <p className="text-gray-200">
@@ -26,12 +26,12 @@ const AIHero = () => {
                   voluptatum! Sunt recusandae eligendi enim! Ut, labore ratione!
                 </p>
                 <div className="flex gap-5">
-                  <button className="bg-cyan-500 shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg">
-                    Subscribe
+                  <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
+                    Call For Sehedule
                   </button>
-                  <button class="inset-ring-2 inset-ring-cyan-500 shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
+                  {/* <button class="inset-ring-2 inset-ring-cyan-500 shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
                     Subscribe
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
