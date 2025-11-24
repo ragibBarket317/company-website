@@ -313,7 +313,7 @@ export default function Navbar() {
         </div>
         {/* Mobile Drawer (outside of hidden md:flex) */}
         <div
-          className={`md:hidden fixed top-0 right-0 h-full w-72 bg-[#080917] shadow-lg z-50 transform transition-transform duration-500 ease-in-out ${
+          className={`md:hidden fixed top-0 right-0 h-[100vh] w-72 bg-[#080917] shadow-lg z-50 transform transition-transform duration-500 ease-in-out ${
             mobileOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -378,7 +378,7 @@ export default function Navbar() {
         {/* Overlay */}
         {mobileOpen && (
           <div
-            className="fixed inset-0 bg-[#080917]/30 backdrop-blur-[5px] z-40"
+            className="fixed inset-0 bg-[#080917]/30 backdrop-blur-[5px] h-[100vh] z-40"
             onClick={() => setMobileOpen(false)}
           />
         )}
