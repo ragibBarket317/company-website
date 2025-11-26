@@ -7,6 +7,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import logo from '../../assets/images/logo.png'
 import logo1 from '../../assets/images/N.png'
+import mobile from '../../assets/images/user-interface.png'
+import web from '../../assets/images/layout.png'
+import software from '../../assets/images/content.png'
+import ai from '../../assets/images/ai.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -192,14 +196,25 @@ export default function Navbar() {
                               }`
                             }
                           >
-                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
-                              Mobile App Development
-                            </h4>
-                            <p className="text-gray-800">
-                              We design and develop intuitive, fast, and
-                              feature-rich mobile apps for Android, iOS, and
-                              cross-platform environments.
-                            </p>
+                            <div>
+                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2 mb-1">
+                                <img
+                                  src={mobile}
+                                  alt=""
+                                  className="w-full h-full"
+                                />
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-md text-orange-600 mb-1">
+                                  Mobile App Development
+                                </h4>
+                                <p className="text-gray-800 text-sm">
+                                  We design and develop intuitive, fast, and
+                                  feature-rich mobile apps for Android, iOS, and
+                                  cross-platform environments.
+                                </p>
+                              </div>
+                            </div>
                           </NavLink>
 
                           {/* Web Development */}
@@ -213,14 +228,25 @@ export default function Navbar() {
                               }`
                             }
                           >
-                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
-                              Web Development
-                            </h4>
-                            <p className="text-gray-800">
-                              From dynamic websites to powerful web
-                              applications, our team builds responsive and
-                              scalable digital experiences.
-                            </p>
+                            <div>
+                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2.5 mb-1">
+                                <img
+                                  src={web}
+                                  alt=""
+                                  className="w-full h-full"
+                                />
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-md text-orange-600 mb-1">
+                                  Web Development
+                                </h4>
+                                <p className="text-gray-800 text-sm">
+                                  From dynamic websites to powerful web
+                                  applications, our team builds responsive and
+                                  scalable digital experiences.
+                                </p>
+                              </div>
+                            </div>
                           </NavLink>
 
                           {/* Software Development */}
@@ -234,14 +260,25 @@ export default function Navbar() {
                               }`
                             }
                           >
-                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
-                              Software Development
-                            </h4>
-                            <p className="text-gray-800">
-                              We create secure, custom software solutions that
-                              automate workflows and enhance business
-                              operations.
-                            </p>
+                            <div>
+                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2.5 mb-1">
+                                <img
+                                  src={software}
+                                  alt=""
+                                  className="w-full h-full"
+                                />
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-md text-orange-600 mb-1">
+                                  Software Development
+                                </h4>
+                                <p className="text-gray-800 text-sm">
+                                  We create secure, custom software solutions
+                                  that automate workflows and enhance business
+                                  operations.
+                                </p>
+                              </div>
+                            </div>
                           </NavLink>
 
                           {/* AI Development */}
@@ -255,13 +292,24 @@ export default function Navbar() {
                               }`
                             }
                           >
-                            <h4 className="font-semibold text-lg text-orange-600 mb-3">
-                              AI Development
-                            </h4>
-                            <p className="text-gray-800">
-                              Leverage AI with intelligent automation,
-                              predictive analytics, and ML-driven apps.
-                            </p>
+                            <div>
+                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2.5 mb-1">
+                                <img
+                                  src={ai}
+                                  alt=""
+                                  className="w-full h-full"
+                                />
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-md text-orange-600 mb-1">
+                                  AI Development
+                                </h4>
+                                <p className="text-gray-800 text-sm">
+                                  Leverage AI with intelligent automation,
+                                  predictive analytics, and ML-driven apps.
+                                </p>
+                              </div>
+                            </div>
                           </NavLink>
                         </div>
                       </div>
