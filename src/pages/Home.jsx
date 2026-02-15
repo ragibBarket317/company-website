@@ -9,6 +9,9 @@ import IndustriesServices from '../components/sections/home/IndustriesServices'
 import WhyChooseUs from '../components/sections/home/WhyChooseUs'
 import SoftwareOverview from '../components/sections/home/SoftwareOverview'
 import HeroForSmallScreen from '../components/sections/home/HeroForSmallScreen'
+import CapabilitiesSection from '../components/sections/home/CapabilitiesSection'
+import PerformanceOverview from '../components/sections/home/PerformanceOverview'
+import IndustrySectors from '../components/sections/home/IndustrySectors'
 
 const Home = () => {
   return (
@@ -21,12 +24,15 @@ const Home = () => {
         <Hero />
       </div>
 
-      <Services />
+      {/* <Services /> */}
+      <CapabilitiesSection />
       <OurStory />
-      <SoftwareOverview />
-      <OurTechStack />
+      {/* <SoftwareOverview />
+      <OurTechStack /> */}
+      <PerformanceOverview />
       <Testimonial />
-      <IndustriesServices />
+      {/* <IndustriesServices /> */}
+      {/* <IndustrySectors /> */}
       <WhyChooseUs />
       <GetFreeQuote />
     </div>

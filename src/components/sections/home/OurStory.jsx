@@ -57,7 +57,7 @@ const OurStory = () => {
         },
       })
     },
-    { scope: storySectionRef }
+    { scope: storySectionRef },
   )
 
   return (
@@ -78,7 +78,7 @@ const OurStory = () => {
                   Our Story
                 </h2>
 
-                <p
+                {/* <p
                   ref={textRef}
                   className="text-[14px] md:text-[18px] font-body text-white leading-7"
                 >
@@ -93,6 +93,28 @@ const OurStory = () => {
                   commitment to innovation and quality. But even as we evolve,
                   our core belief remains unchanged: technology should empower
                   businesses and create better experiences for users.
+                </p> */}
+                <p
+                  ref={textRef}
+                  className="text-[14px] md:text-[18px] font-body text-white leading-7"
+                >
+                  Our Story Our journey began with a simple vision, to build
+                  digital solutions that solve real world problems and deliver
+                  meaningful value. From the beginning, we focused on
+                  understanding people, not just projects. This human-centered
+                  mindset enables us to create products that feel intuitive,
+                  purposeful, and aligned with our clients’ long-term ambitions.
+                  As technology evolved, so did we. Today, our expertise is not
+                  only limited to web development, mobile applications but span
+                  artificial intelligence and machine learning, cloud
+                  infrastructure, and enterprise platforms. Each challenge we
+                  take on strengthens our commitment to innovation, quality, and
+                  measurable business impact. Yet one principle continues to
+                  guide everything we do. Technology should empower
+                  organizations, accelerate growth, and create better
+                  experiences for people everywhere. We do not just build
+                  technology. We build digital foundations for long term
+                  success.
                 </p>
               </div>
             </div>

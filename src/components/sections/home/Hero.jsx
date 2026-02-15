@@ -10,7 +10,7 @@ const Hero = () => {
   const titleRef = useRef(null)
 
   const title =
-    'Powering Organizations Worldwide with Advanced Digital Engineering'
+    'Powering Global Organizations Through Advanced Digital Engineering'
 
   useGSAP(() => {
     const letters = titleRef.current.querySelectorAll('.letter')
@@ -24,7 +24,7 @@ const Hero = () => {
         duration: 0.05,
         stagger: 0.03,
         ease: 'power1.out',
-      }
+      },
     )
   }, [])
   return (
@@ -59,18 +59,17 @@ const Hero = () => {
                   ))}
                 </h1>
                 <p className="text-gray-200 font-body text-[18px]">
-                  Specialists in mobile, web, AI/ML, and blockchain engineering
-                  Proven expertise across app development, web platforms, AI/ML,
-                  and blockchain solutions Skilled teams delivering world-class
-                  mobile, web, AI, and blockchain products
+                  Proven experts in mobile, web, AI/ML, and blockchain
+                  engineering, delivering world-class digital products for over
+                  15 years through experienced teams and scalable solutions.
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
-                    Call For Sehedule
+                    Get a free discovery
                   </button>
-                  {/* <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
-                    Subscribe
-                  </button> */}
+                  <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
+                    Explore Services
+                  </button>
                 </div>
               </div>
             </div>
