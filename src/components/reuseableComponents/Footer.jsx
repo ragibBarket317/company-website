@@ -15,76 +15,108 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className="relative bg-[#0C0D23]/50 text-gray-200 py-16 px-6 md:px-16">
-      {/* <div className="absolute inset-0 bg-cyan-950 mix-blend-multiply"></div> */}
-      {/* <div
-        className="absolute inset-0 -z-10 bg-cover"
-        style={{
-          backgroundImage: `url(${grid})`,
-        }}
-      ></div> */}
-      {/* <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div> */}
       <div>
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Logo and About */}
           <div className="z-10">
             <h2 className="text-3xl font-bold text-white mb-4">
               <img src={logo} alt="" className="w-32 h-10 md:w-36 md:h-10" />
             </h2>
             <p className="text-sm md:text-md leading-relaxed">
-              We’re a leading development company that creates web apps, mobile
-              apps, and AI-powered solutions for iOS, Android, and the web. We
-              deliver on time, write clean code, and build exactly what your
-              business needs.
+              Global engineering firm specializing in enterprise-grade
+              insfrastructure, secure software development, and transformative
+              AI solutions. Keadquartered in Candana.
             </p>
+            <div className="flex gap-3 mt-5">
+              <a
+                href="#"
+                className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="#"
+                className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="#"
+                className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="#"
+                className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
+              >
+                <FaInstagram />
+              </a>
+            </div>
           </div>
-
-          {/* Quick Links */}
           <div className="z-10">
-            <h3 className="text-lg font-semibold text-white mb-4">
-              Quick Links
-            </h3>
-            <ul className="space-y-2 text-md">
+            <h3 className="text-lg font-semibold text-white mb-4">SOLUTIONS</h3>
+            <ul className="space-y-2 text-md text-gray-400">
               <li>
-                <Link to="/careers">Hire Developers</Link>
+                <Link className="hover:text-cyan-500">Custom Engineering</Link>
               </li>
               <li>
-                <Link to="/services/mobile-app-development">
-                  Mobile App Development
+                <Link className="hover:text-cyan-500">
+                  Cloud Infrastructure
                 </Link>
               </li>
               <li>
-                <Link to="/services/web-development">
-                  Web Development Services
-                </Link>
+                <Link className="hover:text-cyan-500">Enterprise AI</Link>
               </li>
               <li>
-                <Link to="/services/software-development">
-                  Software Development Services
-                </Link>
+                <Link className="hover:text-cyan-500">Security Audits</Link>
               </li>
-              <li>
-                <Link to="/services/ai-development">AI Development</Link>
-              </li>
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
             </ul>
           </div>
 
-          {/* Recent Posts */}
           <div className="z-10">
-            <h3 className="text-lg font-semibold text-white mb-4">
-              Recent Posts
+            <h3 className="text-lg font-semibold text-white mb-4 uppercase">
+              Comapany
             </h3>
-            <ul className="space-y-2 text-md">
-              <li>Top Benefits of AI Chatbot Development</li>
-              <li>How to Use AI in Marketing</li>
-              <li>Safeguarding Data in AI Development</li>
-              <li>AI Use Cases & Advantages</li>
+            <ul className="space-y-2 text-md text-gray-400">
+              <li>
+                <Link to="/">Overview</Link>
+              </li>
+              <li>
+                <Link to="/about">Intexa</Link>
+              </li>
+              <li>
+                <Link to="/">Expertise</Link>
+              </li>
+              <li>
+                <Link to="/">Join us</Link>
+              </li>
+              <li>
+                <Link to="/">Contact</Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="z-10">
+            <h3 className="text-lg font-semibold text-white mb-4 uppercase">
+              Legal
+            </h3>
+            <ul className="space-y-2 text-md text-gray-400">
+              <li>
+                <Link to="/">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/about">Terms of Service</Link>
+              </li>
+              <li>
+                <Link to="/">Governance</Link>
+              </li>
+              <li>
+                <Link to="/">Compiliance</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* <div className="z-10">
             <h3 className="text-lg font-semibold text-white mb-4">
               Get In Touch
             </h3>
@@ -130,11 +162,10 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      {/* Bottom line */}
       <div className="z-10">
         <div className="mt-12 border-t border-gray-800/50 pt-6 text-center text-sm text-gray-700">
           © {new Date().getFullYear()} intexa. All rights reserved.

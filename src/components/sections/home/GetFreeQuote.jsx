@@ -28,7 +28,7 @@ const GetFreeQuote = () => {
         },
       })
     },
-    { scope: sectionRef }
+    { scope: sectionRef },
   )
 
   return (
@@ -40,7 +40,7 @@ const GetFreeQuote = () => {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-14">
             {/* LEFT CONTENT */}
             <div className="relative lg:col-span-3 bg-gradient-to-tl from-[#161B2F] to-[#0f1220] text-white rounded-3xl p-6 md:p-10 flex flex-col justify-center">
-              <div
+              {/* <div
                 ref={rocketRef}
                 className="w-12 h-12 md:w-20 md:h-20 absolute top-[20px] right-[20px] bg-[#262d49] rounded-full"
               >
@@ -50,7 +50,7 @@ const GetFreeQuote = () => {
                   autoplay
                   className="w-full h-full"
                 />
-              </div>
+              </div> */}
 
               <h2 className="text-xl w-[250px] md:w-full md:text-3xl lg:text-4xl font-head font-bold leading-snug">
                 Ready to Innovate Together? Let’s <br /> Connect

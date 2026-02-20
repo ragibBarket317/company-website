@@ -12,6 +12,7 @@ import HeroForSmallScreen from '../components/sections/home/HeroForSmallScreen'
 import CapabilitiesSection from '../components/sections/home/CapabilitiesSection'
 import PerformanceOverview from '../components/sections/home/PerformanceOverview'
 import IndustrySectors from '../components/sections/home/IndustrySectors'
+import WhatSetsUsApart from '../components/sections/home/WhatSetsUsApart'
 
 const Home = () => {
   return (
@@ -30,10 +31,11 @@ const Home = () => {
       {/* <SoftwareOverview />
       <OurTechStack /> */}
       <PerformanceOverview />
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* <IndustriesServices /> */}
       {/* <IndustrySectors /> */}
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
+      <WhatSetsUsApart />
       <GetFreeQuote />
     </div>
   )

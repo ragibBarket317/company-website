@@ -65,7 +65,7 @@ export default function Navbar() {
         }
       },
     })
-  })
+  }, [])
   useGSAP(() => {
     const logoA = navRef.current.querySelector('.logo-1')
     const logoB = navRef.current.querySelector('.logo-2')
@@ -144,7 +144,7 @@ export default function Navbar() {
                         : ''
                     }
                   >
-                    Home
+                    Overview
                   </NavLink>
                 </li>
                 <li>
@@ -156,7 +156,7 @@ export default function Navbar() {
                         : ''
                     }
                   >
-                    About
+                    Intexa
                   </NavLink>
                 </li>
                 <li className="w-full relative group px-3 py-2">
@@ -167,7 +167,7 @@ export default function Navbar() {
                         : 'hover:opacity-50 hover:text-cyan-300 cursor-default'
                     }
                   >
-                    Services
+                    Expertise
                   </button>
                   <div className="absolute top-0 left-[-400px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[1000px] transform">
                     <div className="relative top-9  bg-gray-100 rounded-xl shadow-xl w-full">
@@ -325,7 +325,7 @@ export default function Navbar() {
                         : ''
                     }
                   >
-                    Careers
+                    Join
                   </NavLink>
                 </li>
                 <li>

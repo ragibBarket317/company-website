@@ -8,7 +8,7 @@ const Form = () => {
           <h3 className="text-md md:text-lg font-semibold text-center">
             Get A Free Quote
           </h3>
-          <p className="text-gray-800 text-center text-[14px] md:text-base">
+          <p className="text-center text-[14px] ">
             Share your details Now to get strated.
           </p>
         </div>
