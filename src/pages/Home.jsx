@@ -13,6 +13,7 @@ import CapabilitiesSection from '../components/sections/home/CapabilitiesSection
 import PerformanceOverview from '../components/sections/home/PerformanceOverview'
 import IndustrySectors from '../components/sections/home/IndustrySectors'
 import WhatSetsUsApart from '../components/sections/home/WhatSetsUsApart'
+import CaseStudySection from '../components/sections/home/CaseStudySection'
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
       {/* <IndustriesServices /> */}
       {/* <IndustrySectors /> */}
       {/* <WhyChooseUs /> */}
+      <CaseStudySection />
       <WhatSetsUsApart />
       <GetFreeQuote />
     </div>

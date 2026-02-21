@@ -296,9 +296,9 @@ export default function CapabilitiesSection() {
 
                 {/* Learn More */}
                 <div className="mt-auto pt-6">
-                  <span className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400">
+                  <span className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400 group-hover:cursor-pointer">
                     LEARN MORE
-                    <span className="transition-transform duration-300 group-hover:translate-x-2">
+                    <span className="transition-transform duration-300 group-hover:translate-x-2 ">
                       →
                     </span>
                   </span>

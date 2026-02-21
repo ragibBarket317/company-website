@@ -97,10 +97,9 @@ export default function PerformanceOverview() {
             <p className="text-[10px] tracking-[0.3em] text-cyan-400 mb-2 uppercase">
               Real-time Analytics Dashboard
             </p>
-            <h1 className="text-3xl font-bold ">Performance Overview</h1>
-            {/* <p className="text-gray-400 text-sm mt-1">
-              Real-time Analytics Dashboard
-            </p> */}
+            <h2 className="text-xl md:text-4xl font-extrabold dark:text-white">
+              Performance Overview
+            </h2>
           </div>
 
           <div className="bg-green-500/10 text-green-400 px-4 py-2 rounded-full text-sm border border-green-500/30">

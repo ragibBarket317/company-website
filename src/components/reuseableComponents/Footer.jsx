@@ -11,11 +11,19 @@ import {
 } from 'react-icons/fa'
 import logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
+import {
+  Facebook,
+  Globe,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+} from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#0C0D23]/50 text-gray-200 py-16 px-6 md:px-16">
-      <div>
+    <footer className="relative bg-[#0C0D23]/50 text-gray-200 pt-16 px-6 md:px-16">
+      <div className="mb-10">
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="z-10">
             <h2 className="text-3xl font-bold text-white mb-4">
@@ -31,25 +39,25 @@ const Footer = () => {
                 href="#"
                 className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
               >
-                <FaFacebookF />
+                <Facebook className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
               >
-                <FaLinkedinIn />
+                <Linkedin className="w-4 h-4" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
               >
                 <FaTwitter />
-              </a>
+              </a> */}
               <a
                 href="#"
                 className="p-2 bg-slate-700 shadow-2xl shadow-blue-200 rounded-full"
               >
-                <FaInstagram />
+                <Instagram className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -166,9 +174,56 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="z-10">
-        <div className="mt-12 border-t border-gray-800/50 pt-6 text-center text-sm text-gray-700">
-          © {new Date().getFullYear()} intexa. All rights reserved.
+      <div className="z-10 relative">
+        {/* Global Delivery Section */}
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between gap-6 mt-12 border-t border-gray-800/50 pt-6">
+          <div className="flex gap-3">
+            <span className="w-9 h-9 bg-slate-700 rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/20">
+              <Globe className="w-4 h-4 text-cyan-500" />
+            </span>
+
+            <div>
+              <h3 className="text-white font-semibold text-sm">
+                Global Delivery Network
+              </h3>
+              <p className="text-xs text-gray-400">
+                Servicing North America, Europe and APAC
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-4">
+            <div className="flex gap-2 items-center">
+              <MapPin className="text-cyan-500 w-4 h-4" />
+              <p className="text-xs text-gray-400">Toronto CA</p>
+            </div>
+
+            <div className="flex gap-2 items-center">
+              <MapPin className="text-cyan-500 w-4 h-4" />
+              <p className="text-xs text-gray-400">New York US</p>
+            </div>
+
+            <div className="flex gap-2 items-center">
+              <MapPin className="text-cyan-500 w-4 h-4" />
+              <p className="text-xs text-gray-400">Global Remote</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="pt-20">
+          <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p className="text-xs text-gray-700 text-center sm:text-left">
+              © {new Date().getFullYear()} Intexa. All rights reserved.
+            </p>
+
+            <div className="flex items-center gap-2">
+              <Mail className="text-gray-700 w-4 h-4" />
+              <p className="text-xs text-gray-700 text-center sm:text-right">
+                hello@intexa.com
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
