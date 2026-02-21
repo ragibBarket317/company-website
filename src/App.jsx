@@ -14,6 +14,7 @@ import MobileAppDevelopment from './pages/appDevelopmentService/MobileAppDevelop
 import SoftwareDevelopmentPage from './pages/SoftwareDevelopmentPage'
 import WebDevelopmentPage from './pages/WebDevelopmentPage'
 import AIDevelopmentPage from './pages/AIDevelopmentPage'
+import Expertise from './pages/Expertise'
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route
+          <Route path="/intexa" element={<About />} />
+          <Route path="/expertise" element={<Expertise />} />
+          {/* <Route
             path="/services/mobile-app-development"
             element={<MobileAppDevelopment />}
           />
@@ -43,7 +45,7 @@ function App() {
 
           <Route path="/industries" element={<Industries />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/blog/:id" element={<BlogDetail />} /> */}
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

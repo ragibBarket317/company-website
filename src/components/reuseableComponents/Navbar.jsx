@@ -159,163 +159,19 @@ export default function Navbar() {
                     Intexa
                   </NavLink>
                 </li>
-                <li className="w-full relative group px-3 py-2">
-                  <button
-                    className={
-                      isServiceActive
-                        ? 'border-cyan-600 border-b-2 pb-1 font-semibold'
-                        : 'hover:opacity-50 hover:text-cyan-300 cursor-default'
+                <li>
+                  <NavLink
+                    to="/expertise"
+                    className={({ isActive }) =>
+                      isActive
+                        ? ' border-cyan-600 border-b-2 pb-1 font-semibold'
+                        : ''
                     }
                   >
                     Expertise
-                  </button>
-                  <div className="absolute top-0 left-[-400px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[1000px] transform">
-                    <div className="relative top-9  bg-gray-100 rounded-xl shadow-xl w-full">
-                      <div className="grid grid-cols-3 bg-white rounded-xl gap-8">
-                        <div className="bg-gradient-to-tl from-blue-950 to-blue-900 rounded-bl-xl rounded-tl-xl text-white">
-                          <div className="p-5 space-y-3">
-                            <h3 className="text-lg font-bold ">
-                              Build modern, scalable, and high-performance
-                              digital solutions tailored for your business
-                              needs.
-                            </h3>
-                            <button className="bg-cyan-700 shadow-lg py-2 px-5 rounded-lg">
-                              {'Contact >'}
-                            </button>
-                          </div>
-                        </div>
-                        <div className="col-span-2 grid grid-cols-2 gap-5 py-10 pr-5">
-                          {/* Mobile App Development */}
-                          <NavLink
-                            to="/services/mobile-app-development"
-                            className={({ isActive }) =>
-                              `py-5 rounded-lg px-3 cursor-pointer ${
-                                isActive
-                                  ? 'bg-gray-300'
-                                  : 'hover:bg-gray-200 text-gray-800'
-                              }`
-                            }
-                          >
-                            <div>
-                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2 mb-1">
-                                <img
-                                  src={mobile}
-                                  alt=""
-                                  className="w-full h-full"
-                                />
-                              </div>
-                              <div>
-                                <h4 className="font-semibold text-md text-orange-600 mb-1">
-                                  Mobile App Development
-                                </h4>
-                                <p className="text-gray-800 text-sm">
-                                  We design and develop intuitive, fast, and
-                                  feature-rich mobile apps for Android, iOS, and
-                                  cross-platform environments.
-                                </p>
-                              </div>
-                            </div>
-                          </NavLink>
-
-                          {/* Web Development */}
-                          <NavLink
-                            to="/services/web-development"
-                            className={({ isActive }) =>
-                              `py-5 rounded-lg px-3 cursor-pointer ${
-                                isActive
-                                  ? 'bg-gray-300'
-                                  : 'hover:bg-gray-200 text-gray-800'
-                              }`
-                            }
-                          >
-                            <div>
-                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2.5 mb-1">
-                                <img
-                                  src={web}
-                                  alt=""
-                                  className="w-full h-full"
-                                />
-                              </div>
-                              <div>
-                                <h4 className="font-semibold text-md text-orange-600 mb-1">
-                                  Web Development
-                                </h4>
-                                <p className="text-gray-800 text-sm">
-                                  From dynamic websites to powerful web
-                                  applications, our team builds responsive and
-                                  scalable digital experiences.
-                                </p>
-                              </div>
-                            </div>
-                          </NavLink>
-
-                          {/* Software Development */}
-                          <NavLink
-                            to="/services/software-development"
-                            className={({ isActive }) =>
-                              `py-5 rounded-lg px-3 cursor-pointer ${
-                                isActive
-                                  ? 'bg-gray-300'
-                                  : 'hover:bg-gray-200 text-gray-800'
-                              }`
-                            }
-                          >
-                            <div>
-                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2.5 mb-1">
-                                <img
-                                  src={software}
-                                  alt=""
-                                  className="w-full h-full"
-                                />
-                              </div>
-                              <div>
-                                <h4 className="font-semibold text-md text-orange-600 mb-1">
-                                  Software Development
-                                </h4>
-                                <p className="text-gray-800 text-sm">
-                                  We create secure, custom software solutions
-                                  that automate workflows and enhance business
-                                  operations.
-                                </p>
-                              </div>
-                            </div>
-                          </NavLink>
-
-                          {/* AI Development */}
-                          <NavLink
-                            to="/services/ai-development"
-                            className={({ isActive }) =>
-                              `py-5 rounded-lg px-3 cursor-pointer ${
-                                isActive
-                                  ? 'bg-gray-300'
-                                  : 'hover:bg-gray-200 text-gray-800'
-                              }`
-                            }
-                          >
-                            <div>
-                              <div className="bg-orange-200/30 rounded-lg w-12 h-12 p-2.5 mb-1">
-                                <img
-                                  src={ai}
-                                  alt=""
-                                  className="w-full h-full"
-                                />
-                              </div>
-                              <div>
-                                <h4 className="font-semibold text-md text-orange-600 mb-1">
-                                  AI Development
-                                </h4>
-                                <p className="text-gray-800 text-sm">
-                                  Leverage AI with intelligent automation,
-                                  predictive analytics, and ML-driven apps.
-                                </p>
-                              </div>
-                            </div>
-                          </NavLink>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </NavLink>
                 </li>
+
                 <li>
                   <NavLink
                     to="/careers"
@@ -325,7 +181,7 @@ export default function Navbar() {
                         : ''
                     }
                   >
-                    Join
+                    Join Us
                   </NavLink>
                 </li>
                 <li>

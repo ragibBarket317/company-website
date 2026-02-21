@@ -22,6 +22,8 @@ import {
   Layers,
   Users,
 } from 'lucide-react'
+import { use } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 // const capabilities = [
 //   {
@@ -237,6 +239,7 @@ const capabilities = [
 ]
 
 export default function CapabilitiesSection() {
+  const navigate = useNavigate()
   return (
     <section id="services" className="text-white py-20">
       <div className="container mx-auto space-y-16">
@@ -296,7 +299,7 @@ export default function CapabilitiesSection() {
 
                 {/* Learn More */}
                 <div className="mt-auto pt-6">
-                  <span className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400 group-hover:cursor-pointer">
+                  <span onClick={() => navigate('/expertise#details')} className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400 group-hover:cursor-pointer">
                     LEARN MORE
                     <span className="transition-transform duration-300 group-hover:translate-x-2 ">
                       →
