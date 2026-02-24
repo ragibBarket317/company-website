@@ -22,7 +22,6 @@ import {
   Layers,
   Users,
 } from 'lucide-react'
-import { use } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // const capabilities = [
@@ -109,6 +108,7 @@ const capabilities = [
     tag: 'FINTECH',
     color: 'text-blue-400',
     hoverBg: 'group-hover:bg-blue-500',
+    id: 'fintech',
   },
   {
     title: 'Healthcare & HealthTech',
@@ -118,6 +118,7 @@ const capabilities = [
     tag: 'HEALTHTECH',
     color: 'text-green-400',
     hoverBg: 'group-hover:bg-green-500',
+    id: 'healthtech',
   },
   {
     title: 'Government & Public Sector',
@@ -172,6 +173,7 @@ const capabilities = [
     tag: 'ENERGY',
     color: 'text-orange-400',
     hoverBg: 'group-hover:bg-orange-500',
+    id: 'energy',
   },
   // {
   //   title: 'Manufacturing & Industrial Automation',
@@ -245,12 +247,12 @@ export default function CapabilitiesSection() {
       <div className="container mx-auto space-y-16">
         {/* Top Header */}
         <div className="">
-          <p className="text-[10px] tracking-[0.3em] text-cyan-400 mb-4 uppercase">
+          <p className="text-xs tracking-[0.3em] text-cyan-400 mb-4 uppercase">
             OUR CAPABILITIES
           </p>
 
           <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6">
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+            <h2 className="text-xl md:text-2xl lg:text-5xl font-bold leading-tight">
               Technical excellence across <br />
               every touchpoint.
             </h2>
@@ -299,7 +301,10 @@ export default function CapabilitiesSection() {
 
                 {/* Learn More */}
                 <div className="mt-auto pt-6">
-                  <span onClick={() => navigate('/expertise#details')} className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400 group-hover:cursor-pointer">
+                  <span
+                    onClick={() => navigate(`/expertise#${item.id}`)}
+                    className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400 group-hover:cursor-pointer"
+                  >
                     LEARN MORE
                     <span className="transition-transform duration-300 group-hover:translate-x-2 ">
                       →

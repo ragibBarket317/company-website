@@ -8,16 +8,18 @@ export default function WhatSetsUsApart() {
       <div className="container mx-auto space-y-12">
         {/* Top Heading */}
         <div>
-          <p className="text-[10px] tracking-[0.3em] text-cyan-400 mb-4 uppercase">
+          <p className="text-xs tracking-[0.3em] text-cyan-400 mb-4 uppercase">
             Intexa
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold">What Sets Us Apart</h2>
+          <h2 className="text-xl md:text-2xl lg:text-5xl font-bold">
+            What Sets Us Apart
+          </h2>
         </div>
 
         <div className="grid lg:grid-cols-2 bg-[#0A1428] border border-[#13203B] rounded-3xl overflow-hidden">
           {/* LEFT SIDE */}
           <div className="p-10 space-y-10">
-            <p className="text-gray-400 max-w-lg leading-relaxed">
+            <p className="text-gray-400 max-w-3xl leading-relaxed">
               Engineering discipline, security-first delivery, and AI-native
               thinking — built for scale, complexity, and operational
               reliability.

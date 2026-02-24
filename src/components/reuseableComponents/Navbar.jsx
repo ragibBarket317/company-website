@@ -149,7 +149,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/about"
+                    to="/intexa"
                     className={({ isActive }) =>
                       isActive
                         ? ' border-cyan-600 border-b-2 pb-1 font-semibold'

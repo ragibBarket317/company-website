@@ -191,16 +191,19 @@ export default function Specialized() {
       <div className="container">
         {/* Heading */}
         <div className=" mb-20">
-          <p className="text-[10px] tracking-[0.3em] text-cyan-400 mb-2 uppercase">
+          <p className="text-xs tracking-[0.3em] text-cyan-400 mb-2 uppercase">
             our expertise
           </p>
-          <h2 className="text-xl md:text-4xl font-extrabold dark:text-white">
+          <h2 className="text-2xl md:text-2xl lg:text-5xl font-extrabold dark:text-white">
             Specialized in Scale.
           </h2>
-          <p className="text-gray-400 leading-relaxed">
-            We don't just build apps; we engineer vertical-specific ecosystems
-            that handle high traffic, strict compliance, and complex operational
-            logic.
+          <p className="text-gray-400 leading-relaxed text-justify max-w-3xl mt-2">
+            We do not approach projects as isolated applications. Instead, we
+            design and engineer vertically focused digital ecosystems that
+            manage scale, compliance, and operational complexity with
+            architectural precision. Our systems are built to handle sustained
+            traffic, structured governance requirements, and interconnected
+            workflows without compromising security or performance.
           </p>
         </div>
 

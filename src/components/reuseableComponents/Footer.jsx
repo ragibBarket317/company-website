@@ -29,7 +29,7 @@ const Footer = () => {
             <h2 className="text-3xl font-bold text-white mb-4">
               <img src={logo} alt="" className="w-32 h-10 md:w-36 md:h-10" />
             </h2>
-            <p className="text-sm md:text-md leading-relaxed">
+            <p className="text-sm md:text-md leading-relaxed text-justify">
               Global engineering firm specializing in enterprise-grade
               insfrastructure, secure software development, and transformative
               AI solutions. Keadquartered in Candana.
@@ -62,7 +62,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="z-10">
-            <h3 className="text-lg font-semibold text-white mb-4">SOLUTIONS</h3>
+            <h3 className="text-lg font-semibold text-white mb-4 capitalize">
+              Solutions
+            </h3>
             <ul className="space-y-2 text-md text-gray-400">
               <li>
                 <Link className="hover:text-cyan-500">Custom Engineering</Link>
@@ -82,44 +84,62 @@ const Footer = () => {
           </div>
 
           <div className="z-10">
-            <h3 className="text-lg font-semibold text-white mb-4 uppercase">
+            <h3 className="text-lg font-semibold text-white mb-4 capitalize">
               Comapany
             </h3>
             <ul className="space-y-2 text-md text-gray-400">
               <li>
-                <Link to="/">Overview</Link>
+                <Link to="/" className="hover:text-cyan-500">
+                  Overview
+                </Link>
               </li>
               <li>
-                <Link to="/about">Intexa</Link>
+                <Link to="/intexa" className="hover:text-cyan-500">
+                  Intexa
+                </Link>
               </li>
               <li>
-                <Link to="/">Expertise</Link>
+                <Link to="/expertise" className="hover:text-cyan-500">
+                  Expertise
+                </Link>
               </li>
               <li>
-                <Link to="/">Join us</Link>
+                <Link to="/careers" className="hover:text-cyan-500">
+                  Join us
+                </Link>
               </li>
               <li>
-                <Link to="/">Contact</Link>
+                <Link to="/contact" className="hover:text-cyan-500">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="z-10">
-            <h3 className="text-lg font-semibold text-white mb-4 uppercase">
+            <h3 className="text-lg font-semibold text-white mb-4 capitalize">
               Legal
             </h3>
             <ul className="space-y-2 text-md text-gray-400">
               <li>
-                <Link to="/">Privacy Policy</Link>
+                <Link to="/legal" className="hover:text-cyan-500">
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <Link to="/about">Terms of Service</Link>
+                <Link to="/legal" className="hover:text-cyan-500">
+                  Terms of Service
+                </Link>
               </li>
               <li>
-                <Link to="/">Governance</Link>
+                <Link to="/legal" className="hover:text-cyan-500">
+                  Governance
+                </Link>
               </li>
               <li>
-                <Link to="/">Compiliance</Link>
+                <Link to="/legal" className="hover:text-cyan-500">
+                  Compiliance
+                </Link>
               </li>
             </ul>
           </div>
@@ -200,7 +220,7 @@ const Footer = () => {
 
             <div className="flex gap-2 items-center">
               <MapPin className="text-cyan-500 w-4 h-4" />
-              <p className="text-xs text-gray-400">New York US</p>
+              <p className="text-xs text-gray-400">Bangladesh</p>
             </div>
 
             <div className="flex gap-2 items-center">

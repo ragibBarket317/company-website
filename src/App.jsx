@@ -15,6 +15,10 @@ import SoftwareDevelopmentPage from './pages/SoftwareDevelopmentPage'
 import WebDevelopmentPage from './pages/WebDevelopmentPage'
 import AIDevelopmentPage from './pages/AIDevelopmentPage'
 import Expertise from './pages/Expertise'
+import Intexa from './pages/Intexa'
+import Legal from './pages/Legal'
+import Impact from './pages/Impact'
+import Whitepaper from './pages/Whitepaper'
 
 function App() {
   return (
@@ -24,8 +28,11 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/intexa" element={<About />} />
+          <Route path="/intexa" element={<Intexa />} />
           <Route path="/expertise" element={<Expertise />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/impact" element={<Impact />} />
+          <Route path="/technical-whitepaper" element={<Whitepaper />} />
           {/* <Route
             path="/services/mobile-app-development"
             element={<MobileAppDevelopment />}

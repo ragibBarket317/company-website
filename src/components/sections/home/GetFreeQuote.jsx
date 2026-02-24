@@ -52,14 +52,14 @@ const GetFreeQuote = () => {
                 />
               </div> */}
 
-              <h2 className="text-xl w-[250px] md:w-full md:text-3xl lg:text-4xl font-head font-bold leading-snug">
-                Ready to Innovate Together? Let’s <br /> Connect
+              <h2 className="text-xl md:text-2xl lg:text-5xl w-[250px] md:w-full font-head font-bold leading-snug">
+                Ready to Innovate Together? Let’s Connect
               </h2>
 
-              <p className="mt-4 md:mt-5 text-[14px] md:text-base lg:text-lg">
+              <p className="mt-4 md:mt-5 text-[14px] md:text-base lg:text-lg text-justify">
                 We’re your one-stop destination for extensive web and mobile app
-                solutions. Let’s talk about how the iTechnoLabs team can assist
-                you in building your next big project. We’re here to turn your
+                solutions. Let’s talk about how the intexa team can assist you
+                in building your next big project. We’re here to turn your
                 visions into reality.
               </p>
             </div>

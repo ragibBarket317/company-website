@@ -20,7 +20,7 @@ gsap.registerPlugin(useGSAP)
 const Hero = () => {
   const titleRef = useRef(null)
 
-  const title = 'Engineering digital systems that bussinesses rely on'
+  const title = 'Engineering Digital Systems that Businesses Rely on'
 
   useGSAP(() => {
     const letters = titleRef.current.querySelectorAll('.letter')
@@ -56,7 +56,7 @@ const Hero = () => {
                   Engineering
                 </h1> */}
                 <div className="inline-block">
-                  <span className="flex gap-2 text-[10px] text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B]">
+                  <span className="flex gap-2 text-xs capitalize text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B]">
                     <Sparkles className="h-4 w-4" />
                     Enterprice grade delivery
                     <CircleSmall className="h-4 w-4 text-white" />
@@ -67,7 +67,7 @@ const Hero = () => {
                 </div>
                 <h1
                   ref={titleRef}
-                  className="text-2xl md:text-2xl lg:text-5xl text-white font-head font-extrabold leading-snug"
+                  className="text-xl md:text-2xl lg:text-5xl text-white font-head font-extrabold leading-snug"
                 >
                   {title.split(' ').map((word, i) => (
                     <span
@@ -82,10 +82,13 @@ const Hero = () => {
                     </span>
                   ))}
                 </h1>
-                <p className="text-gray-200 font-body text-[18px]">
-                  Proven experts in mobile, web, AI/ML, and blockchain
-                  engineering, delivering world-class digital products for over
-                  15 years through experienced teams and scalable solutions.
+                <p className="text-gray-200 font-body text-[18px] text-justify">
+                  With over 15 years of engineering experience, Intexa designs
+                  and delivers secure, scalable mobile, web, and artificial
+                  intelligence systems built for long term performance. Through
+                  disciplined architecture, experienced teams, and structured
+                  development processes, we create digital platforms that
+                  support sustainable enterprise growth.
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">

@@ -2,19 +2,20 @@ import React, { useEffect } from 'react'
 import fintechImg from './images/image1.jpg'
 import healthtechImg from './images/image2.jpg'
 import governmentImg from './images/image26.jpg'
-import logisticsImg from './images/image27.jpg'
 import ecommerceImg from './images/image28.jpg'
 import educationImg from './images/image29.jpg'
 import realestateImg from './images/image30.jpg'
 import energyImg from './images/image31.jpg'
 import manufacturingImg from './images/image32.jpg'
 import telecomImg from './images/image3.jpg'
-import mediaImg from './images/image5.png'
 import travelImg from './images/image6.jpg'
 import automotiveImg from './images/image7.png'
 import saasImg from './images/image8.jpg'
 import itservicesImg from './images/image9.png'
 import cybersecurityImg from './images/image10.png'
+import entertainment from './images/entertainment.jpg'
+import owner from './images/owner.png'
+
 import { useLocation } from 'react-router-dom'
 
 // Sample data (you can replace with your full JSON)
@@ -24,12 +25,14 @@ const sectors = [
     description:
       'Intexa designs secure, high-performance financial platforms built for transaction integrity, regulatory compliance, and scalability. We develop digital banking systems, payment infrastructures, lending engines, trading dashboards, and compliance automation platforms that operate in real time without performance degradation. Clients in this sector must prioritize uptime, auditability, encryption, and regulatory readiness. Our architecture integrates secure authentication layers, transaction monitoring systems, fraud detection modules, and high-availability cloud infrastructure. Whether serving retail banking customers or institutional investors, we engineer financial systems that can handle large transaction volumes with predictable performance and zero tolerance for security compromise.',
     image: fintechImg,
+    id: 'fintech',
   },
   {
     heading: 'Healthcare & HealthTech',
     description:
       'Intexa develops digital healthcare ecosystems designed for compliance, data protection, and clinical reliability. We build telemedicine platforms, hospital information systems, diagnostics dashboards, and pharmacy management software integrated with AI-driven decision support. Healthcare clients require secure patient data handling, system interoperability, and seamless workflows between practitioners and patients. Our systems incorporate encrypted medical records, real-time reporting, and AI-assisted analysis while aligning with global healthcare compliance standards. The focus is always on improving operational efficiency while maintaining patient privacy and data integrity.',
     image: healthtechImg,
+    id: 'healthtech',
   },
   {
     heading: 'Government & Public Sector',
@@ -41,7 +44,7 @@ const sectors = [
     heading: 'Logistics & Supply Chain',
     description:
       'Intexa builds logistics systems that provide full operational visibility from warehouse to final delivery. Our platforms integrate fleet tracking, warehouse automation, route optimization, and predictive analytics. Clients in this space require real-time monitoring, reduced operational costs, and predictive insight. We design scalable tracking systems, automated reporting modules, and intelligent forecasting tools that allow logistics operators to improve efficiency and minimize disruptions.',
-    image: logisticsImg,
+    image: owner,
   },
   {
     heading: 'E-commerce & Retail',
@@ -66,6 +69,7 @@ const sectors = [
     description:
       'We design digital monitoring systems for energy providers, integrating IoT dashboards, smart grid analytics, and predictive maintenance capabilities. Our solutions enhance operational efficiency and infrastructure resilience.',
     image: energyImg,
+    id: 'energy',
   },
   {
     heading: 'Manufacturing & Industrial Automation',
@@ -83,7 +87,7 @@ const sectors = [
     heading: 'Media & Entertainment',
     description:
       'Intexa builds scalable content platforms, streaming systems, and audience analytics tools designed for performance optimization and engagement tracking.',
-    image: mediaImg,
+    image: entertainment,
   },
   {
     heading: 'Travel & Hospitality',
@@ -133,6 +137,7 @@ const Details = () => {
       {sectors.map((sector, index) => (
         <div
           key={index}
+          id={sector.id ? sector.id : ''}
           className={`flex flex-col md:flex-row items-center mb-16 ${
             index % 2 !== 0 ? 'md:flex-row-reverse' : ''
           }`}

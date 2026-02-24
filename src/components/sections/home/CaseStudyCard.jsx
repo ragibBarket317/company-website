@@ -1,6 +1,8 @@
 import { Truck, Pill, Layers } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
-export default function CaseStudyCard({ title, subtitle, type }) {
+export default function CaseStudyCard({ title, subtitle, type, query }) {
+  const navigate = useNavigate()
   // Select icon based on type
   const getIcon = () => {
     switch (type) {
@@ -23,6 +25,7 @@ export default function CaseStudyCard({ title, subtitle, type }) {
 
   return (
     <div
+      onClick={() => navigate(`/impact#${query}`)}
       className="group relative p-6 rounded-2xl border border-white/10 
       bg-[#111827] cursor-pointer transition-all duration-300
       hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.25)]

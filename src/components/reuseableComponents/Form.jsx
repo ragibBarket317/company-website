@@ -5,7 +5,7 @@ const Form = () => {
     <div>
       <div>
         <div className=" mb-4">
-          <h3 className="text-md md:text-lg font-semibold text-center">
+          <h3 className="text-md md:text-lg text-cyan-400 font-semibold text-center">
             Get A Free Quote
           </h3>
           <p className="text-center text-[14px] ">

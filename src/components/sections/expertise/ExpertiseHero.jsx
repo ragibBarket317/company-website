@@ -57,7 +57,7 @@ const ExpertiseHero = () => {
                   Engineering
                 </h1> */}
                 <div className="inline-block">
-                  <span className="flex gap-2 text-[10px] text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B]">
+                  <span className="flex gap-2 text-xs text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B] capitalize">
                     <Sparkles className="h-4 w-4" />
                     Leading digtal engineering
                   </span>
@@ -79,10 +79,15 @@ const ExpertiseHero = () => {
                     </span>
                   ))}
                 </h1>
-                <p className="text-gray-200 font-body text-[18px]">
-                  Intexa delivers mission-critical software architectures,
-                  AI-driven automation, and high-performance digital products
-                  for global leaders.
+                <p className="text-gray-200 font-body text-[18px] text-justify">
+                  Intexa engineers mission critical software architectures,
+                  artificial intelligence driven automation systems, and
+                  high-performance digital platforms designed to withstand
+                  enterprise complexity. Our solutions are built on secure
+                  architectural foundations, scalable infrastructure strategies,
+                  and disciplined development governance to ensure stability,
+                  adaptability, and measurable business impact across global
+                  operations.
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">

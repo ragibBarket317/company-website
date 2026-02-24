@@ -71,32 +71,15 @@ const OurStory = () => {
           <div className="w-full lg:w-[50%]">
             <div className="h-full flex flex-col justify-center">
               <div className="space-y-5">
-                <p className="text-[10px] tracking-[0.3em] text-cyan-400 mb-4 uppercase">
+                <p className="text-xs tracking-[0.3em] text-cyan-400 mb-4 uppercase">
                   OUR digital journey
                 </p>
                 <h2
                   ref={headingRef}
-                  className="text-xl md:text-4xl font-extrabold dark:text-white"
+                  className="text-xl md:text-2xl lg:text-5xl font-extrabold dark:text-white"
                 >
                   Our Story
                 </h2>
-
-                {/* <p
-                  ref={textRef}
-                  className="text-[14px] md:text-[18px] font-body text-white leading-7"
-                >
-                  Our story began with a simple idea — to create digital
-                  solutions that solve real problems and deliver meaningful
-                  value. From the beginning, we focused on understanding people,
-                  not just projects. This mindset helped us build products that
-                  feel intuitive, purposeful, and aligned with our clients’
-                  long-term goals. Over the years, we expanded our expertise
-                  across web development, mobile apps, AI/ML, cloud systems, and
-                  enterprise platforms. Each new challenge strengthened our
-                  commitment to innovation and quality. But even as we evolve,
-                  our core belief remains unchanged: technology should empower
-                  businesses and create better experiences for users.
-                </p> */}
                 <p
                   ref={textRef}
                   className="text-[14px] md:text-[16px] font-body text-white leading-7 text-justify"

@@ -94,10 +94,10 @@ export default function PerformanceOverview() {
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
           <div>
-            <p className="text-[10px] tracking-[0.3em] text-cyan-400 mb-2 uppercase">
+            <p className="text-xs tracking-[0.3em] text-cyan-400 mb-2 uppercase">
               Real-time Analytics Dashboard
             </p>
-            <h2 className="text-xl md:text-4xl font-extrabold dark:text-white">
+            <h2 className="text-xl md:text-2xl lg:text-5xl font-extrabold dark:text-white">
               Performance Overview
             </h2>
           </div>
