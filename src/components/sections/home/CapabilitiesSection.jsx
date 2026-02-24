@@ -251,15 +251,19 @@ export default function CapabilitiesSection() {
             OUR CAPABILITIES
           </p>
 
-          <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6">
+          <div className="">
             <h2 className="text-xl md:text-2xl lg:text-5xl font-bold leading-tight">
               Technical excellence across <br />
               every touchpoint.
             </h2>
 
-            <p className="text-gray-400 max-w-md">
-              Every solution we deploy is built on a foundation of security,
-              scalability, and user-centric logic.
+            <p className="text-gray-400 leading-relaxed text-justify max-w-3xl mt-2">
+              Each platform we build is architected with security as a core
+              principle, scalability as a structural requirement, and user
+              experience as a functional discipline. We align system design with
+              governance frameworks, data protection standards, and performance
+              benchmarks to ensure technology investments remain sustainable and
+              future ready.
             </p>
           </div>
         </div>
