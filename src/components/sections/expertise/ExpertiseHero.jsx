@@ -57,7 +57,7 @@ const ExpertiseHero = () => {
                   Engineering
                 </h1> */}
                 <div className="inline-block">
-                  <span className="flex gap-2 text-xs text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B] capitalize">
+                  <span className="flex gap-2 text-xs text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B] uppercase">
                     <Sparkles className="h-4 w-4" />
                     Leading digtal engineering
                   </span>

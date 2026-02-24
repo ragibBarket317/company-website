@@ -6,7 +6,7 @@ export default function FounderPerspective() {
 
       <div className="relative container py-28">
         {/* Small Label */}
-        <p className="text-cyan-400 tracking-[0.25em] text-xs font-semibold uppercase mb-10">
+        <p className="text-cyan-400 tracking-[0.25em] text-xs uppercase mb-10">
           Founder’s Perspective
         </p>
 

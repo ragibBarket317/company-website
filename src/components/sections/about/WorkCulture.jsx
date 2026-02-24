@@ -55,7 +55,7 @@ export default function WorkCulture() {
       <div className="container mx-auto">
         <div className="mb-14 flex justify-between items-center gap-5">
           <div className="w-[50%]">
-            <p className="text-[10px] tracking-[0.3em] text-cyan-400 mb-4 uppercase">
+            <p className="text-xs tracking-[0.3em] text-cyan-400 mb-4 uppercase">
               Philosophy
             </p>
             <h2 className="text-xl md:text-2xl lg:text-5xl font-bold mb-4">
