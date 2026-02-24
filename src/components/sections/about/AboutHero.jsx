@@ -51,7 +51,7 @@ const AboutHero = () => {
                 <div className="inline-block">
                   <span className="flex gap-2 text-xs text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B] uppercase">
                     <Sparkles className="h-4 w-4" />
-                    Careers at intexa
+                    GLOBAL operations • Headquartered in canada
                   </span>
                 </div>
                 <h1
@@ -71,10 +71,11 @@ const AboutHero = () => {
                     </span>
                   ))}
                 </h1>
-                <p className="text-gray-200 font-body text-[18px] max-w-3xl">
-                  We're a digital engineering studio building production-grade
-                  web platforms and AI systems. We value clarity, tenchnical
-                  rigor, and zero-chaos delivery.
+                <p className="text-gray-200 font-body text-[18px] text-justify">
+                  Intexa is a global digital engineering firm. While
+                  headquartered in Canada, our reach is worldwide—building
+                  high-integrity systems for global enterprises and
+                  institutions.
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
@@ -82,16 +83,13 @@ const AboutHero = () => {
                   </button>
                   <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
                     <a
-                      href="#services"
+                      href="#culture"
                       className="hover:text-cyan-400 transition"
                     >
                       Our Culture
                     </a>
                   </button>
                 </div>
-                {/* <div className="mt-5">
-                  <TrustedClients />
-                </div> */}
               </div>
             </div>
           </div>

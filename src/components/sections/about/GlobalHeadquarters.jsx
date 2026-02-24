@@ -14,7 +14,7 @@ const GlobalHeadquarters = () => {
                 <h2 className="text-xl md:text-2xl lg:text-5xl font-extrabold dark:text-white">
                   Global Headquarter
                 </h2>
-                <p className="text-[14px] md:text-[16px] font-body text-white leading-7 text-justify">
+                <p className="text-[14px] md:text-[16px] text-gray-400 font-body  leading-7 text-justify">
                   Situated in the heart of Canada's tech corridor, our
                   headquarters serves as the strategic nervous system for
                   Intexa's global operations. It is here that we define the
@@ -28,7 +28,7 @@ const GlobalHeadquarters = () => {
                   ].map((point, i) => (
                     <li
                       key={i}
-                      className="flex items-start text-gray-300 text-sm"
+                      className="flex items-start text-sm text-gray-400"
                     >
                       <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                       {point}

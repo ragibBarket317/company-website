@@ -15,43 +15,47 @@ import {
   Layers,
   Users,
   ShieldCheck,
+  CodeXml,
+  ZapIcon,
+  UsersRound,
+  BriefcaseBusiness,
 } from 'lucide-react'
 import workCulture from '../../../assets/images/workCulture.jpg'
 
 const industries = [
   {
-    title: 'Financial Services & FinTech',
+    title: 'Engineering First',
     description:
-      'Banking, payments, digital wallets, lending platforms, trading systems, compliance tools.',
-    icon: <CreditCard className="w-6 h-6 text-blue-400" />,
-    bgColor: 'bg-blue-100/10',
-  },
-  {
-    title: 'Healthcare & HealthTech',
-    description:
-      'Telemedicine, hospital systems, diagnostics platforms, pharmacy systems, AI-assisted healthcare workflows.',
-    icon: <Stethoscope className="w-6 h-6  text-cyan-400" />,
+      'We value clean code and robust architecture over shortcuts. Technical debt is a choice we rarely make.',
+    icon: <CodeXml className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
   {
-    title: 'Government & Public Sector',
+    title: 'High Autonomy',
     description:
-      'E-governance platforms, citizen portals, data infrastructure, secure digital services.',
-    icon: <Shield className="w-6 h-6  text-cyan-400" />,
+      'We trust our teams to own the outcome. We provide the mission; you provide the methodology.',
+    icon: <ZapIcon className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
   {
-    title: 'Logistics & Supply Chain',
+    title: 'Extreme Candor',
     description:
-      'Fleet management, warehouse systems, tracking platforms, automation and analytics.',
-    icon: <Truck className="w-6 h-6  text-cyan-400" />,
+      'Peer reviews are rigorous. We challenge ideas, not people, to reach the best possible solution.',
+    icon: <UsersRound className="w-6 h-6 text-cyan-400" />,
+    bgColor: 'bg-cyan-500/10',
+  },
+  {
+    title: 'Global Growth',
+    description:
+      'Working across time zones on diverse stacks, our team is constantly evolving their global perspective.',
+    icon: <BriefcaseBusiness className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
 ]
 
 export default function WorkCulture() {
   return (
-    <div className="min-h-screen text-white py-16 px-6">
+    <div id="culture" className="min-h-screen text-white py-16 px-6">
       <div className="container mx-auto">
         <div className="mb-14 flex justify-between items-center gap-5">
           <div className="w-[50%]">
@@ -61,13 +65,13 @@ export default function WorkCulture() {
             <h2 className="text-xl md:text-2xl lg:text-5xl font-bold mb-4">
               Our Work Culture
             </h2>
-            <p className="text-gray-200 font-body text-[16px] text-justify">
+            <p className="text-gray-400 font-body text-[16px] text-justify">
               At Intexa, we don't just write code; we architect experiences. Our
               culture is built on the belief that the finest details determine
               the ultimate success of a project. We foster a collaborative
               environment where every engineer is an artisan.
             </p>
-            <div className="mt-2">
+            <div className="mt-2 text-gray-400">
               <i>
                 "Complexity is the enemy, clarity is the goal. We build for the
                 long term."

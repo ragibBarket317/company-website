@@ -18,35 +18,37 @@ import {
   Layers,
   Users,
   ShieldCheck,
+  CpuIcon,
+  ZapIcon,
+  Workflow,
 } from 'lucide-react'
 
 const industries = [
   {
-    title: 'Financial Services & FinTech',
+    title: 'Advanced R&D',
     description:
-      'Banking, payments, digital wallets, lending platforms, trading systems, compliance tools.',
-    icon: <CreditCard className="w-6 h-6 text-blue-400" />,
-    bgColor: 'bg-blue-100/10',
-  },
-  {
-    title: 'Healthcare & HealthTech',
-    description:
-      'Telemedicine, hospital systems, diagnostics platforms, pharmacy systems, AI-assisted healthcare workflows.',
-    icon: <Stethoscope className="w-6 h-6  text-cyan-400" />,
+      'Prototyping AI-driven automation and blockchain-based audit trails.',
+    icon: <CpuIcon className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
   {
-    title: 'Government & Public Sector',
+    title: 'SOC-Ready Ops',
     description:
-      'E-governance platforms, citizen portals, data infrastructure, secure digital services.',
-    icon: <Shield className="w-6 h-6  text-cyan-400" />,
+      'Continuous monitoring and secure deployment pipelines for global clients.',
+    icon: <ShieldCheck className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
   {
-    title: 'Logistics & Supply Chain',
+    title: 'Low-Latency Engineering',
+    description: 'Designing systems for ultra-fast, real-time performance.',
+    icon: <ZapIcon className="w-6 h-6 text-cyan-400" />,
+    bgColor: 'bg-cyan-500/10',
+  },
+  {
+    title: 'Automated QA Pipelines',
     description:
-      'Fleet management, warehouse systems, tracking platforms, automation and analytics.',
-    icon: <Truck className="w-6 h-6  text-cyan-400" />,
+      'Continuous testing to ensure reliable, production-ready code.',
+    icon: <Workflow className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
 ]
@@ -62,7 +64,7 @@ export default function DevelopmentCulture() {
           <h2 className="text-xl md:text-2xl lg:text-5xl font-bold mb-4">
             Our Development Centre
           </h2>
-          <p className="text-gray-200 font-body text-[16px] text-justify max-w-4xl">
+          <p className="text-gray-400 font-body text-[16px] text-justify max-w-3xl ">
             Our high-intensity development hub is where raw concepts are forged
             into enterprise-grade solutions. Equipped with state-of-the-art
             infrastructure, our engineers push the boundaries of what's possible

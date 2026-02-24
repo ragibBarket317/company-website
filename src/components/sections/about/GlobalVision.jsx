@@ -10,7 +10,7 @@ export default function GlobalVision() {
             <h2 className="text-xl md:text-2xl lg:text-5xl font-bold mb-4">
               Global Vision
             </h2>
-            <p className="text-gray-200 font-body text-[16px] text-justify">
+            <p className="text-gray-400 font-body text-[16px] text-justify max-w-3xl">
               At Intexa, we don't just write code; we architect experiences. Our
               culture is built on the belief that the finest details determine
               the ultimate success of a project. We foster a collaborative

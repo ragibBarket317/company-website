@@ -49,13 +49,6 @@ const ExpertiseHero = () => {
           <div className="md:w-[70%] z-10">
             <div className="h-[50vh] md:h-[80vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
-                {/* <h1
-                  ref={titleRef}
-                  className="text-2xl md:text-2xl lg:text-5xl text-white font-extrabold"
-                >
-                  Powering Organizations Worldwide with Advanced Digital
-                  Engineering
-                </h1> */}
                 <div className="inline-block">
                   <span className="flex gap-2 text-xs text-cyan-500 py-2 px-4 rounded-full bg-[#0A1428] border border-[#13203B] uppercase">
                     <Sparkles className="h-4 w-4" />

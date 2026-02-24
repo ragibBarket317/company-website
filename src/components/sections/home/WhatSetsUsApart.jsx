@@ -14,6 +14,15 @@ export default function WhatSetsUsApart() {
           <h2 className="text-xl md:text-2xl lg:text-5xl font-bold">
             What Sets Us Apart
           </h2>
+          <p className="text-gray-400 leading-relaxed text-justify max-w-3xl mt-2">
+            At Intexa, engineering discipline, security first delivery, and
+            artificial intelligence driven thinking guide every architectural
+            decision. We design systems to handle scale, complexity, and real
+            world operational demands, embedding governance, performance
+            optimization, and infrastructure resilience into every layer. The
+            result is technology that performs reliably, adapts confidently, and
+            sustains long term enterprise growth.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 bg-[#0A1428] border border-[#13203B] rounded-3xl overflow-hidden">

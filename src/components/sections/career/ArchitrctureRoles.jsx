@@ -3,60 +3,46 @@ import { ChevronDown } from 'lucide-react'
 
 const jobs = [
   {
-    id: 1,
-    title: 'Backend Engineering',
-    description: [
-      'Senior Backend Engineer',
-      'Backend Engineer',
-      'API Engineer',
-      'Microservices Engineer',
-    ],
-  },
-  {
     id: 2,
-    title: 'Frontend Engineering',
+    title: 'Architecture & Technical Leadership',
     description: [
-      'Senior Frontend Engineer',
-      'React / Next.js Engineer',
-      'UI Performance Engineerr',
+      'Solutions Architect',
+      'Enterprise Architect',
+      'Cloud Architect',
+      'AI Systems Architect',
+      'Technical Lead',
+      'Principal Engineer',
     ],
   },
   {
     id: 3,
-    title: 'Full Stack',
+    title: 'Quality & Reliability',
     description: [
-      'Senior Full Stack Engineer',
-      'Enterprise Application Developer',
+      'QA Engineer',
+      'Automation QA Engineer',
+      'Performance Testing Engineer',
+      'Security Testing Specialist',
     ],
   },
   {
     id: 4,
-    title: 'Cloud & DevOps',
+    title: 'Product & Strategy',
     description: [
-      'DevOps Engineer',
-      'Cloud Infrastructure Engineer',
-      'Site Reliability Engineer (SRE)',
-      'Platform Engineer',
+      'Product Manager',
+      'Technical Product Manager',
+      'Program Manager',
+      'Business Analyst',
+      'Technical Consultant',
     ],
   },
   {
     id: 5,
-    title: 'AI & Data',
+    title: 'Design & Experience',
     description: [
-      'AI / ML Engineer',
-      'Data Engineer',
-      'MLOps Engineer',
-      'Analytics Engineer',
-    ],
-  },
-  {
-    id: 6,
-    title: 'Cybersecurity',
-    description: [
-      'Security Engineer',
-      'Application Security Engineer',
-      'Cloud Security Engineer',
-      'SOC Analyst',
+      'UI/UX Designer',
+      'Product Designer',
+      'Interaction Designer',
+      'Design Systems Engineer',
     ],
   },
 ]

@@ -3,60 +3,46 @@ import { ChevronDown } from 'lucide-react'
 
 const jobs = [
   {
-    id: 1,
-    title: 'Backend Engineering',
-    description: [
-      'Senior Backend Engineer',
-      'Backend Engineer',
-      'API Engineer',
-      'Microservices Engineer',
-    ],
-  },
-  {
-    id: 2,
-    title: 'Frontend Engineering',
-    description: [
-      'Senior Frontend Engineer',
-      'React / Next.js Engineer',
-      'UI Performance Engineerr',
-    ],
-  },
-  {
-    id: 3,
-    title: 'Full Stack',
-    description: [
-      'Senior Full Stack Engineer',
-      'Enterprise Application Developer',
-    ],
-  },
-  {
-    id: 4,
-    title: 'Cloud & DevOps',
-    description: [
-      'DevOps Engineer',
-      'Cloud Infrastructure Engineer',
-      'Site Reliability Engineer (SRE)',
-      'Platform Engineer',
-    ],
-  },
-  {
-    id: 5,
-    title: 'AI & Data',
-    description: [
-      'AI / ML Engineer',
-      'Data Engineer',
-      'MLOps Engineer',
-      'Analytics Engineer',
-    ],
-  },
-  {
     id: 6,
-    title: 'Cybersecurity',
+    title: 'Governance, Risk & Compliance',
     description: [
-      'Security Engineer',
-      'Application Security Engineer',
-      'Cloud Security Engineer',
-      'SOC Analyst',
+      'Compliance Officer',
+      'Data Protection Officer',
+      'Risk & Governance Analyst',
+      'Internal Audit Specialist',
+      'IT Policy & Documentation Specialist',
+    ],
+  },
+  {
+    id: 7,
+    title: 'Operations & Delivery',
+    description: [
+      'Project Manager',
+      'Scrum Master',
+      'Delivery Manager',
+      'Implementation Specialist',
+    ],
+  },
+  {
+    id: 8,
+    title: 'Business & Growth',
+    description: [
+      'Enterprise Sales Manager',
+      'Solutions Consultant',
+      'Strategic Partnerships Manager',
+      'Account Manager',
+      'Business Development Executive',
+    ],
+  },
+  {
+    id: 9,
+    title: 'Corporate & Support',
+    description: [
+      'HR Manager',
+      'Talent Acquisition Specialist',
+      'Finance & Accounts Manager',
+      'Legal & Contract Manager',
+      'Procurement Officer',
     ],
   },
 ]
