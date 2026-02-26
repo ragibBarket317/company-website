@@ -109,6 +109,7 @@ const capabilities = [
     color: 'text-blue-400',
     hoverBg: 'group-hover:bg-blue-500',
     id: 'fintech',
+    route: 'financial-fintech',
   },
   {
     title: 'Healthcare & HealthTech',
@@ -119,6 +120,7 @@ const capabilities = [
     color: 'text-green-400',
     hoverBg: 'group-hover:bg-green-500',
     id: 'healthtech',
+    route: 'healthcare-healthtech',
   },
   {
     title: 'Government & Public Sector',
@@ -128,6 +130,7 @@ const capabilities = [
     tag: 'PUBLIC',
     color: 'text-yellow-400',
     hoverBg: 'group-hover:bg-yellow-500',
+    route: 'government-public-sector',
   },
   {
     title: 'Logistics & Supply Chain',
@@ -137,6 +140,7 @@ const capabilities = [
     tag: 'LOGISTICS',
     color: 'text-indigo-400',
     hoverBg: 'group-hover:bg-indigo-500',
+    route: 'logistics-supply-chain',
   },
   {
     title: 'E-commerce & Retail',
@@ -146,6 +150,7 @@ const capabilities = [
     tag: 'RETAIL',
     color: 'text-pink-400',
     hoverBg: 'group-hover:bg-pink-500',
+    route: 'ecommerce-retail',
   },
   {
     title: 'Education & EdTech',
@@ -155,6 +160,7 @@ const capabilities = [
     tag: 'EDTECH',
     color: 'text-purple-400',
     hoverBg: 'group-hover:bg-purple-500',
+    route: 'education-edtech',
   },
   {
     title: 'Real Estate & PropTech',
@@ -164,6 +170,7 @@ const capabilities = [
     tag: 'PROPTECH',
     color: 'text-red-400',
     hoverBg: 'group-hover:bg-red-500',
+    route: 'real-estate-proptech',
   },
   {
     title: 'Energy & Utilities',
@@ -174,6 +181,7 @@ const capabilities = [
     color: 'text-orange-400',
     hoverBg: 'group-hover:bg-orange-500',
     id: 'energy',
+    route: 'energy-utilities',
   },
   // {
   //   title: 'Manufacturing & Industrial Automation',
@@ -306,7 +314,7 @@ export default function CapabilitiesSection() {
                 {/* Learn More */}
                 <div className="mt-auto pt-6">
                   <span
-                    onClick={() => navigate(`/expertise#${item.id}`)}
+                    onClick={() => navigate(`/expertise#${item.route}`)}
                     className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400 group-hover:cursor-pointer"
                   >
                     LEARN MORE

@@ -15,10 +15,12 @@ import {
   Sparkles,
 } from 'lucide-react'
 import TrustedClients from './TrustedClients'
+import { useNavigate } from 'react-router-dom'
 
 gsap.registerPlugin(useGSAP)
 
 const ExpertiseHero = () => {
+  const navigate = useNavigate()
   const titleRef = useRef(null)
 
   const title = 'Building the Future of Enterprise.'
@@ -73,26 +75,24 @@ const ExpertiseHero = () => {
                   ))}
                 </h1>
                 <p className="text-gray-200 font-body text-[18px] text-justify">
-                  Intexa engineers mission critical software architectures,
-                  artificial intelligence driven automation systems, and
-                  high-performance digital platforms designed to withstand
-                  enterprise complexity. Our solutions are built on secure
-                  architectural foundations, scalable infrastructure strategies,
-                  and disciplined development governance to ensure stability,
-                  adaptability, and measurable business impact across global
-                  operations.
+                  Intexa engineers mission critical software, artificial
+                  intelligence driven automation, and resilient digital
+                  platforms built for enterprise scale. Our solutions combine
+                  secure architecture and scalable infrastructure to deliver
+                  stability and measurable impact.
                 </p>
                 <div className="flex gap-5">
-                  <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
+                  <button
+                    onClick={() => navigate('/contact')}
+                    className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg"
+                  >
                     Start Your Project
                   </button>
-                  <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
-                    <a
-                      href="#services"
-                      className="hover:text-cyan-400 transition"
-                    >
-                      Our Process
-                    </a>
+                  <button
+                    onClick={() => navigate('/careers#process')}
+                    class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white cursor-pointer"
+                  >
+                    Our Process
                   </button>
                 </div>
                 <div className="mt-5">

@@ -7,16 +7,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import logo from '../../assets/images/logo.png'
 import logo1 from '../../assets/images/N.png'
-import mobile from '../../assets/images/user-interface.png'
-import web from '../../assets/images/layout.png'
-import software from '../../assets/images/content.png'
-import ai from '../../assets/images/ai.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Navbar() {
   const location = useLocation()
-  const isServiceActive = location.pathname.startsWith('/services')
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
 
@@ -169,6 +164,18 @@ export default function Navbar() {
                     }
                   >
                     Expertise
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/impact"
+                    className={({ isActive }) =>
+                      isActive
+                        ? ' border-cyan-600 border-b-2 pb-1 font-semibold'
+                        : ''
+                    }
+                  >
+                    Impact
                   </NavLink>
                 </li>
 

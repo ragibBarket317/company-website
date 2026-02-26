@@ -33,6 +33,13 @@ const testimonials = [
       'Intexa’s AI-driven analytics platform reduced our infrastructure costs and improved system throughput significantly. Their execution velocity matched their architectural rigor.',
     author: 'Head of Infrastructure, Media Streaming Company (Germany)',
   },
+  {
+    title: 'Enterprise Stability, Engineered for Scale',
+    quote:
+      'Intexa transformed our fragmented legacy systems into a unified, high-performance architecture built for long-term regional and international growth. Their governance discipline, security-first approach, and architectural foresight enabled us to scale across the GCC with confidence and operational precision.',
+    author:
+      'Chief Information Officer, Diversified Investment Group (Dubai, UAE)',
+  },
 ]
 
 const ImpactClients = () => {

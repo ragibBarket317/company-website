@@ -83,12 +83,9 @@ const Hero = () => {
                   ))}
                 </h1>
                 <p className="text-gray-200 font-body text-[18px] text-justify">
-                  With over 15 years of engineering experience, Intexa designs
-                  and delivers secure, scalable mobile, web, and artificial
-                  intelligence systems built for long term performance. Through
-                  disciplined architecture, experienced teams, and structured
-                  development processes, we create digital platforms that
-                  support sustainable enterprise growth.
+                  With over 15 years of engineering experience, Intexa delivers
+                  secure and scalable mobile, web, and artificial intelligence
+                  systems built for long term enterprise performance and growth.
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">

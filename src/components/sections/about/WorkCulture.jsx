@@ -21,6 +21,8 @@ import {
   BriefcaseBusiness,
 } from 'lucide-react'
 import workCulture from '../../../assets/images/workCulture.jpg'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const industries = [
   {
@@ -54,6 +56,16 @@ const industries = [
 ]
 
 export default function WorkCulture() {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [location])
   return (
     <div id="culture" className="min-h-screen text-white py-16 px-6">
       <div className="container mx-auto">

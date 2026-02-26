@@ -18,35 +18,39 @@ import {
   Layers,
   Users,
   ShieldCheck,
+  Lock,
+  Globe,
+  Fingerprint,
+  Mail,
 } from 'lucide-react'
 
-const industries = [
+const privacyPolicy = [
   {
-    title: 'Financial Services & FinTech',
+    title: 'Information Collection',
     description:
-      'Banking, payments, digital wallets, lending platforms, trading systems, compliance tools.',
-    icon: <CreditCard className="w-6 h-6 text-blue-400" />,
-    bgColor: 'bg-blue-100/10',
-  },
-  {
-    title: 'Healthcare & HealthTech',
-    description:
-      'Telemedicine, hospital systems, diagnostics platforms, pharmacy systems, AI-assisted healthcare workflows.',
-    icon: <Stethoscope className="w-6 h-6  text-cyan-400" />,
+      'We collect personal and business information necessary to respond to inquiries, deliver engineering services, and maintain secure project communication.',
+    icon: <Lock className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
   {
-    title: 'Government & Public Sector',
+    title: 'Data Processing & Storage',
     description:
-      'E-governance platforms, citizen portals, data infrastructure, secure digital services.',
-    icon: <Shield className="w-6 h-6  text-cyan-400" />,
+      'Data is processed in secure cloud environments with role-based access. As a Canadian firm, we ensure cross-border transfers meet PIPEDA and GDPR equivalents.',
+    icon: <Globe className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
   {
-    title: 'Logistics & Supply Chain',
+    title: 'Security Measures',
     description:
-      'Fleet management, warehouse systems, tracking platforms, automation and analytics.',
-    icon: <Truck className="w-6 h-6  text-cyan-400" />,
+      'We apply encrypted communication (AES-256), multi-factor authentication, and secure development lifecycles. We never sell personal or client data.',
+    icon: <Fingerprint className="w-6 h-6 text-cyan-400" />,
+    bgColor: 'bg-cyan-500/10',
+  },
+  {
+    title: 'Rights & Access',
+    description:
+      'Users retain the right to access, correct, or request deletion of their data. Inquiries should be directed to our compliance team at hello@intexa.com.',
+    icon: <Mail className="w-6 h-6 text-cyan-400" />,
     bgColor: 'bg-cyan-500/10',
   },
 ]
@@ -64,7 +68,7 @@ export default function Privacy() {
         </div>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-          {industries.map((industry, index) => (
+          {privacyPolicy.map((industry, index) => (
             <div
               key={index}
               className="group bg-[#0B1220] border border-white/10 rounded-3xl p-10

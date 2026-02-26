@@ -1,4 +1,18 @@
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+
 export default function HiringProcess() {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [location])
+
   const steps = [
     {
       number: 'Step 1',
@@ -27,7 +41,7 @@ export default function HiringProcess() {
   ]
 
   return (
-    <section className=" py-24  text-white">
+    <section id="process" className=" py-24  text-white">
       <div className="max-w-6xl mx-auto">
         {/* Top Label */}
         <p className="text-cyan-400 text-xs tracking-[0.3em] mb-6">HIRING</p>

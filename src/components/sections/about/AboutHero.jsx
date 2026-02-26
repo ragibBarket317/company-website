@@ -14,10 +14,12 @@ import {
   ShieldCheck,
   Sparkles,
 } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 gsap.registerPlugin(useGSAP)
 
 const AboutHero = () => {
+  const navigate = useNavigate()
   const titleRef = useRef(null)
 
   const title = "Engineering the World's Digital Frontier"
@@ -78,7 +80,10 @@ const AboutHero = () => {
                   institutions.
                 </p>
                 <div className="flex gap-5">
-                  <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
+                  <button
+                    onClick={() => navigate('/contact')}
+                    className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg"
+                  >
                     Talk to Our Team
                   </button>
                   <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">

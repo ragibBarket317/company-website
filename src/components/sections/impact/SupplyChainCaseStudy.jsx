@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import caseStudy1 from '../../../assets/images/caseStudy1.png'
 import { useLocation } from 'react-router-dom'
+import { MapPin } from 'lucide-react'
 
 const SupplyChainCaseStudy = () => {
   const location = useLocation()
@@ -28,8 +29,8 @@ const SupplyChainCaseStudy = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left - Image */}
-          <div className="relative">
-            {/* Glow Background */}
+          {/* <div className="relative">
+
             <div className="absolute -inset-8 bg-cyan-500/10 blur-3xl rounded-3xl"></div>
 
             <div className="relative rounded-3xl overflow-hidden border border-white/10 ">
@@ -39,12 +40,37 @@ const SupplyChainCaseStudy = () => {
                 className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition duration-700"
               />
             </div>
+          </div> */}
+          <div className="relative">
+            {/* Glow Background */}
+            <div className="absolute -inset-8 bg-cyan-500/10 blur-3xl rounded-3xl"></div>
+
+            <div className="relative rounded-3xl overflow-hidden border border-white/10 group">
+              {/* Capsule Location Badge */}
+              <div className="absolute top-5 left-5 z-20">
+                <div
+                  className="flex items-center gap-2 px-4 py-1.5 rounded-full 
+                      bg-black/60 backdrop-blur-md border border-white/20
+                      text-white text-sm font-medium shadow-lg"
+                >
+                  <MapPin className="w-4 h-4 text-cyan-400" />
+                  <span>Toronto, Canada</span>
+                </div>
+              </div>
+
+              <img
+                src={caseStudy1}
+                alt="Medicine Distribution Case Study"
+                className="w-full h-[350px] md:h-[450px] object-cover 
+                 transition duration-700 group-hover:scale-105"
+              />
+            </div>
           </div>
           {/* Right - Content */}
           <div className="space-y-8">
             <div>
               <p className="text-xs tracking-[0.4em] text-cyan-400 uppercase mb-4">
-                Study 01
+                Case 01
               </p>
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">

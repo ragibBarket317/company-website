@@ -8,15 +8,15 @@ export default function CaseStudyCard({ title, subtitle, type, query }) {
     switch (type) {
       case 'logistics':
         return (
-          <Truck className="text-blue-400 group-hover:text-blue-300 transition" />
+          <Truck className="text-cyan-400 group-hover:text-blue-300 transition" />
         )
       case 'healthcare':
         return (
-          <Pill className="text-blue-400 group-hover:text-blue-300 transition" />
+          <Pill className="text-cyan-400 group-hover:text-blue-300 transition" />
         )
       case 'more':
         return (
-          <Layers className="text-blue-400 group-hover:text-blue-300 transition" />
+          <Layers className="text-cyan-400 group-hover:text-blue-300 transition" />
         )
       default:
         return null
@@ -44,11 +44,9 @@ export default function CaseStudyCard({ title, subtitle, type, query }) {
         <div>
           <h3 className="text-lg font-semibold text-white">{title}</h3>
 
-          {type !== 'more' && (
-            <p className="text-sm tracking-wide uppercase text-cyan-400">
-              {subtitle}
-            </p>
-          )}
+          <p className="text-sm tracking-wide uppercase text-cyan-400">
+            {subtitle}
+          </p>
         </div>
       </div>
     </div>

@@ -144,7 +144,12 @@ export default function PerformanceOverview() {
 
 function Card({ icon, title, label, subtitle }) {
   return (
-    <div className="bg-[#1e293b] border border-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
+    <div
+      className="bg-[#1e293b] border border-gray-800 rounded-2xl p-6 shadow-lg transition-all duration-300 ease-out
+    hover:border-cyan-400
+    hover:shadow-[0_0_25px_rgba(34,211,238,0.4)]
+    hover:scale-[1.03]"
+    >
       <div className="flex justify-between items-start mb-6">
         <div className="bg-gray-800 p-3 rounded-xl">{icon}</div>
         <span className="text-xs text-green-400 bg-green-500/10 px-2 py-1 rounded-md">

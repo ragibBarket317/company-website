@@ -4,7 +4,7 @@ import { Briefcase, MapPin, Clock, ArrowRight } from 'lucide-react'
 
 export default function CurrentOpenings() {
   return (
-    <section className="pt-20 pb-5 overflow-hidden">
+    <section id="roles" className="pt-20 pb-5 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6">
         <p className="text-xs tracking-[0.3em] text-cyan-400 mb-2 uppercase">
           Opportunities

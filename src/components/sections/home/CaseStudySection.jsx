@@ -63,6 +63,7 @@ export default function CaseStudySection() {
                 <CaseStudyCard
                   type="more"
                   title="Many More..."
+                  subtitle="successful Enterprises"
                   query="clients"
                 />
               </div>

@@ -19,6 +19,7 @@ import Intexa from './pages/Intexa'
 import Legal from './pages/Legal'
 import Impact from './pages/Impact'
 import Whitepaper from './pages/Whitepaper'
+import ScrollToTop from './components/reuseableComponents/ScrollToTop'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Navbar />
 
       <main className="flex-grow">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/intexa" element={<Intexa />} />

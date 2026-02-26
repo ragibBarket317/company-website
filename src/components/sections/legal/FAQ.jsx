@@ -2,26 +2,32 @@
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
+import { ShieldCheck, Gavel, FileCheck, Share2 } from 'lucide-react'
+
 const faqs = [
   {
-    question: 'Do you hire remote team members?',
+    question: 'How do you protect enterprise client data?',
     answer:
-      'Yes. Intexa is built to support talented people wherever they are. We believe meaningful work is driven by clarity, ownership, and discipline not geography. Our culture is async first, which gives you space for deep focus and thoughtful execution. While some roles may require occasional alignment across time zones, flexibility and trust remain at the core of how we operate.',
+      "We use a 'Zero Trust' architecture. Every data point is encrypted in transit and at rest, with access strictly logged and limited to project-essential personnel.",
+    icon: <ShieldCheck className="w-5 h-5 text-cyan-400" />,
   },
   {
-    question: 'What do you value most in candidates?',
+    question: 'Are your services governed by Canadian law?',
     answer:
-      'We value ownership, curiosity, and integrity.We look for individuals who think beyond tasks and care about outcomes. People who communicate clearly take responsibility for decisions, and approach challenges with structured thinking tend to thrive at Intexa.You do not need to know everything. What matters most is your willingness to learn, improve, and build systems that stand the test of real-world use.',
+      'Yes. Unless explicitly negotiated otherwise in an MSA, all legal disputes are subject to the jurisdiction of the courts in Canada.',
+    icon: <Gavel className="w-5 h-5 text-cyan-400" />,
   },
   {
-    question: 'Do you sponsor visas?',
+    question: "What is the 'Proof of Delivery' process?",
     answer:
-      'In select cases, yes.For senior professionals and long-term contributors who align strongly with our direction, we are open to exploring sponsorship opportunities. Each situation is reviewed thoughtfully and with long term perspective in mind.',
+      'PoD is our verification standard. Upon milestone completion, we provide a cryptographically hashed report or signed document that confirms all technical requirements were met.',
+    icon: <FileCheck className="w-5 h-5 text-cyan-400" />,
   },
   {
-    question: 'What is the best way to apply?',
+    question: 'Do you share data with third parties?',
     answer:
-      'If you find a role that aligns with your strengths and ambitions, apply directly. We genuinely look forward to learning about the people behind the applications.If you do not see a perfect match, you can still reach out with your CV, portfolio, GitHub, or any work you are proud of. We value initiative and are always open to conversations with exceptional talent.At Intexa, we are not just hiring roles.We are building a team that believes in quality, clarity, and long-term impact.',
+      'Only with vetted sub-processors essential for service delivery (e.g., cloud hosting), all of whom are bound by strict Data Processing Agreements (DPAs).',
+    icon: <Share2 className="w-5 h-5 text-cyan-400" />,
   },
 ]
 

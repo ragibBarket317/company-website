@@ -14,10 +14,12 @@ import {
   ShieldCheck,
   Sparkles,
 } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 gsap.registerPlugin(useGSAP)
 
 const ImpactHero = () => {
+  const navigate = useNavigate()
   const titleRef = useRef(null)
 
   const title = 'Engineering the Digital Backbone for Global Enterprise.'
@@ -85,13 +87,11 @@ const ImpactHero = () => {
                       View Testimonial
                     </a>
                   </button>
-                  <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
-                    <a
-                      href="#services"
-                      className="hover:text-cyan-400 transition"
-                    >
-                      Work with Us
-                    </a>
+                  <button
+                    onClick={() => navigate('/careers')}
+                    class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white"
+                  >
+                    Work with Us
                   </button>
                 </div>
                 {/* <div className="mt-5">

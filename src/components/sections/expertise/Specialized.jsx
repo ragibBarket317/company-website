@@ -21,6 +21,7 @@ const sectors = [
   {
     icon: Landmark,
     title: 'Financial Services & FinTech',
+    route: 'financial-fintech',
     desc: 'High-performance financial platforms designed for secure transactions and real-time analytics.',
     points: [
       'Digital banking systems',
@@ -32,6 +33,7 @@ const sectors = [
   {
     icon: HeartPulse,
     title: 'Healthcare & HealthTech',
+    route: 'healthcare-healthtech',
     desc: 'Digital health solutions focused on compliance, data security, and clinical efficiency.',
     points: [
       'Telemedicine platforms',
@@ -43,6 +45,7 @@ const sectors = [
   {
     icon: Building2,
     title: 'Government & Public Sector',
+    route: 'government-public-sector',
     desc: 'Secure digital infrastructure for public services and citizen engagement at scale.',
     points: [
       'E-governance portals',
@@ -54,6 +57,7 @@ const sectors = [
   {
     icon: Truck,
     title: 'Logistics & Supply Chain',
+    route: 'logistics-supply-chain',
     desc: 'Operational visibility from warehouse management to final delivery.',
     points: [
       'Fleet tracking',
@@ -65,6 +69,7 @@ const sectors = [
   {
     icon: ShoppingCart,
     title: 'E-commerce & Retail',
+    route: 'ecommerce-retail',
     desc: 'Scalable and high-conversion e-commerce platforms integrated with scale.',
     points: [
       'Inventory systems',
@@ -76,6 +81,7 @@ const sectors = [
   {
     icon: Home,
     title: 'Real Estate & PropTech',
+    route: 'real-estate-proptech',
     desc: 'Property operations, CRM, and analytics built for speed and clarity.',
     points: [
       'Property management',
@@ -87,6 +93,7 @@ const sectors = [
   {
     icon: Zap,
     title: 'Energy & Utilities',
+    route: 'energy-utilities',
     desc: 'Monitoring IoT dashboards and performance analytics for resilience.',
     points: [
       'Smart grid tools',
@@ -98,6 +105,7 @@ const sectors = [
   {
     icon: Factory,
     title: 'Manufacturing & Industrial Automation',
+    route: 'manufacturing-industrial-automation',
     desc: 'Digitize production with real-time visibility and predictive systems.',
     points: [
       'ERP & MES layers',
@@ -109,6 +117,7 @@ const sectors = [
   {
     icon: Radio,
     title: 'Telecommunications',
+    route: 'telecommunications',
     desc: 'High-scale systems for billing, customers, and data pipelines.',
     points: [
       'Billing platforms',
@@ -120,6 +129,7 @@ const sectors = [
   {
     icon: Film,
     title: 'Media & Entertainment',
+    route: 'media-entertainment',
     desc: 'Scalable content platforms and audience analytics tools built for performance and engagement.',
     points: [
       'Content streaming platforms',
@@ -131,6 +141,7 @@ const sectors = [
   {
     icon: Plane,
     title: 'Travel & Hospitality',
+    route: 'travel-hospitality',
     desc: 'Booking engines and operational dashboards tailored for seamless travel experiences.',
     points: [
       'Booking systems',
@@ -142,6 +153,7 @@ const sectors = [
   {
     icon: Car,
     title: 'Automotive & Mobility',
+    route: 'automotive-mobility',
     desc: 'Fleet intelligence and connected mobility systems with real-time automation.',
     points: [
       'Fleet tracking systems',
@@ -153,6 +165,7 @@ const sectors = [
   {
     icon: Cloud,
     title: 'SaaS & Enterprise Software',
+    route: 'saas-enterprise-software',
     desc: 'Cloud-native SaaS platforms engineered for scale, security, and enterprise reliability.',
     points: [
       'Multi-tenant architecture',
@@ -164,6 +177,7 @@ const sectors = [
   {
     icon: Users,
     title: 'IT Services & Staff Augmentation',
+    route: 'it-services-staff-augmentation',
     desc: 'Dedicated engineering teams and digital transformation expertise for rapid scaling.',
     points: [
       'Dedicated development teams',
@@ -175,6 +189,7 @@ const sectors = [
   {
     icon: ShieldCheck,
     title: 'Cybersecurity & Digital Risk Management',
+    route: 'cybersecurity-digital-risk',
     desc: 'Enterprise security systems protecting digital infrastructure and sensitive data.',
     points: [
       'Threat detection systems',
@@ -184,7 +199,6 @@ const sectors = [
     ],
   },
 ]
-
 export default function Specialized() {
   return (
     <section className=" text-white py-24 px-6">
@@ -254,7 +268,7 @@ export default function Specialized() {
 
                 {/* Deep Dive */}
                 <div className="mt-auto pt-6">
-                  <a href="#details">
+                  <a href={`#${item.route}`}>
                     <span className="inline-flex items-center gap-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-cyan-400 group-hover:cursor-pointer">
                       Deep Drive
                       <span className="transition-transform duration-300 group-hover:translate-x-2 ">

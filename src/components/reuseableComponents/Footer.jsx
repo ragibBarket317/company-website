@@ -1,5 +1,4 @@
 import React from 'react'
-import grid from '../../assets/images/grid.jpg'
 import {
   FaFacebookF,
   FaTwitter,
@@ -24,15 +23,18 @@ const Footer = () => {
   return (
     <footer className="relative bg-[#0C0D23]/50 text-gray-200 pt-16 px-6 md:px-16">
       <div className="mb-10">
-        <div className="container grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="container grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="z-10">
             <h2 className="text-3xl font-bold text-white mb-4">
               <img src={logo} alt="" className="w-32 h-10 md:w-36 md:h-10" />
             </h2>
-            <p className="text-sm md:text-md leading-relaxed text-justify">
+            {/* <p className="text-sm md:text-md leading-relaxed text-justify break-words">
               Global engineering firm specializing in enterprise-grade
-              insfrastructure, secure software development, and transformative
-              AI solutions. Keadquartered in Candana.
+              infrastructure, secure software development, and transformative AI
+              solutions. Headquartered in Canada.
+            </p> */}
+            <p className="text-sm md:text-md leading-relaxed text-justify break-words">
+              Empowering Intelligence
             </p>
             <div className="flex gap-3 mt-5">
               <a
@@ -61,7 +63,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="z-10">
+          {/* <div className="z-10">
             <h3 className="text-lg font-semibold text-white mb-4 capitalize">
               Solutions
             </h3>
@@ -81,35 +83,64 @@ const Footer = () => {
                 <Link className="hover:text-cyan-500">Security Audits</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="z-10">
-            <h3 className="text-lg font-semibold text-white mb-4 capitalize">
+            <h3 className="text-sm tracking-[0.3em] text-cyan-400 mb-2 uppercase">
               Comapany
             </h3>
-            <ul className="space-y-2 text-md text-gray-400">
+            <ul className="space-y-2 text-md text-gray-400 grid grid-cols-3">
               <li>
-                <Link to="/" className="hover:text-cyan-500">
+                <Link
+                  to="/"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Overview
                 </Link>
               </li>
               <li>
-                <Link to="/intexa" className="hover:text-cyan-500">
+                <Link
+                  to="/intexa"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Intexa
                 </Link>
               </li>
               <li>
-                <Link to="/expertise" className="hover:text-cyan-500">
+                <Link
+                  to="/expertise"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Expertise
                 </Link>
               </li>
               <li>
-                <Link to="/careers" className="hover:text-cyan-500">
+                <Link
+                  to="/impact"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
+                  Impact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/careers"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Join us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-cyan-500">
+                <Link
+                  to="/contact"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Contact
                 </Link>
               </li>
@@ -117,27 +148,43 @@ const Footer = () => {
           </div>
 
           <div className="z-10">
-            <h3 className="text-lg font-semibold text-white mb-4 capitalize">
+            <h3 className="text-sm tracking-[0.3em] text-cyan-400 mb-2 uppercase">
               Legal
             </h3>
-            <ul className="space-y-2 text-md text-gray-400">
+            <ul className="space-y-2 text-md text-gray-400 grid grid-cols-2">
               <li>
-                <Link to="/legal" className="hover:text-cyan-500">
+                <Link
+                  to="/legal"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/legal" className="hover:text-cyan-500">
+                <Link
+                  to="/legal"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link to="/legal" className="hover:text-cyan-500">
+                <Link
+                  to="/legal"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Governance
                 </Link>
               </li>
               <li>
-                <Link to="/legal" className="hover:text-cyan-500">
+                <Link
+                  to="/legal"
+                  className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
+                >
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
                   Compiliance
                 </Link>
               </li>
@@ -196,7 +243,7 @@ const Footer = () => {
 
       <div className="z-10 relative">
         {/* Global Delivery Section */}
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between gap-6 mt-12 border-t border-gray-800/50 pt-6">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between gap-6 mt-12 border-t border-gray-800/50 pt-6">
           <div className="flex gap-3">
             <span className="w-9 h-9 bg-slate-700 rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/20">
               <Globe className="w-4 h-4 text-cyan-500" />
@@ -216,6 +263,14 @@ const Footer = () => {
             <div className="flex gap-2 items-center">
               <MapPin className="text-cyan-500 w-4 h-4" />
               <p className="text-xs text-gray-400">Toronto CA</p>
+            </div>
+            <div className="flex gap-2 items-center">
+              <MapPin className="text-cyan-500 w-4 h-4" />
+              <p className="text-xs text-gray-400">United States</p>
+            </div>
+            <div className="flex gap-2 items-center">
+              <MapPin className="text-cyan-500 w-4 h-4" />
+              <p className="text-xs text-gray-400">UAE</p>
             </div>
 
             <div className="flex gap-2 items-center">

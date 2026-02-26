@@ -8,9 +8,9 @@ const Legal = () => {
   return (
     <div>
       <LegalHero />
-      {/* <Privacy />
+      <Privacy />
       <Terms />
-      <FAQ /> */}
+      <FAQ />
     </div>
   )
 }

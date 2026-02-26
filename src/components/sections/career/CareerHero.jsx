@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Lottie from 'lottie-react'
 import world from '../../../assets/animation/World.json'
+import code from '../../../assets/images/code.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import {
@@ -14,13 +15,15 @@ import {
   ShieldCheck,
   Sparkles,
 } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 gsap.registerPlugin(useGSAP)
 
 const CareerHero = () => {
+  const navigate = useNavigate()
   const titleRef = useRef(null)
 
-  const title = 'Building systems that matter with a team that ships.'
+  const title = 'Building Systems that Matter with a Team that Ships.'
 
   useGSAP(() => {
     const letters = titleRef.current.querySelectorAll('.letter')
@@ -45,7 +48,7 @@ const CareerHero = () => {
 
       <div className="container z-10">
         <div className="flex flex-col md:flex-row gap-5">
-          <div className="md:w-[70%] z-10">
+          <div className="md:w-[50%] z-10">
             <div className="h-[50vh] md:h-[80vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
                 <div className="inline-block">
@@ -72,27 +75,35 @@ const CareerHero = () => {
                   ))}
                 </h1>
                 <p className="text-gray-200 font-body text-[18px]">
-                  We\'re a digital engineering studio building production-grade
+                  We're a digital engineering studio building production-grade
                   web platforms and AI systems. We value clarity, tenchnical
                   rigor, and zero-chaos delivery.
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
-                    View Open Roles
+                    <a href="#roles">View Roles</a>
                   </button>
-                  <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
-                    <a
-                      href="#services"
-                      className="hover:text-cyan-400 transition"
-                    >
-                      General Application
-                    </a>
+                  <button
+                    onClick={() => navigate('/intexa#culture')}
+                    class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white cursor-pointer"
+                  >
+                    Our Culture
                   </button>
                 </div>
-                {/* <div className="mt-5">
-                  <TrustedClients />
-                </div> */}
               </div>
+            </div>
+          </div>
+          <div className="md:w-[50%] h-[60vh] md:h-[85vh] flex items-center justify-center relative">
+            {/* Glow Background */}
+            {/* <div className="absolute w-[80%] h-[80%] bg-cyan-500/20 blur-[120px] rounded-full"></div> */}
+
+            {/* Image Wrapper */}
+            <div className="relative w-full max-w-[550px]">
+              <img
+                src={code}
+                alt="code"
+                className="w-full h-full object-cover scale-105"
+              />
             </div>
           </div>
         </div>

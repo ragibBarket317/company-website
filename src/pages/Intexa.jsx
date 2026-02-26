@@ -6,13 +6,15 @@ import WorkCulture from '../components/sections/about/WorkCulture'
 import DevelopmentCulture from '../components/sections/about/DevelopmentCentre'
 import ReadyToConnect from '../components/reuseableComponents/ReadyToConnect'
 import GlobalVision from '../components/sections/about/GlobalVision'
+import EngineeringPrecision from '../components/sections/about/EngineeringPrecision'
 
 const Intexa = () => {
   return (
     <div>
       <AboutHero />
+      <EngineeringPrecision />
       <FounderPerspective />
-      <GlobalVision />
+      {/* <GlobalVision /> */}
       <GlobalHeadquarters />
       <DevelopmentCulture />
       <WorkCulture />

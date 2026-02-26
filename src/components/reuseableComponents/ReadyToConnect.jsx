@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom'
+
 export default function ReadyToConnect() {
+  const navigate = useNavigate()
   return (
     <section className="relative bg-[#050B1A] py-20 sm:py-28 overflow-hidden">
       <div className="container">
@@ -19,10 +22,16 @@ export default function ReadyToConnect() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-                <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
+                <button
+                  onClick={() => navigate('/contact')}
+                  className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg"
+                >
                   Talk to Our Team
                 </button>
-                <button class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white">
+                <button
+                  onClick={() => navigate('/impact')}
+                  class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white"
+                >
                   <a
                     href="#services"
                     className="hover:text-cyan-400 transition"
