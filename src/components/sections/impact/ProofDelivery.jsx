@@ -2,7 +2,7 @@ import { Gauge, MapPin, ShieldCheck } from 'lucide-react'
 
 export default function ProofDelivery() {
   return (
-    <div className="text-white py-20 px-6">
+    <div id="case" className="text-white py-20 px-6">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* LEFT SIDE */}

@@ -36,7 +36,7 @@ const termsAndConditions = [
 
 export default function Terms() {
   return (
-    <div className="min-h-screen text-white py-16 px-6">
+    <div id="terms-service" className="min-h-screen text-white py-16 px-6">
       <div className="container mx-auto">
         <div className="flex gap-2 items-center mb-10">
           <div className={`bg-cyan-500/10 p-3 rounded-xl mr-3`}>

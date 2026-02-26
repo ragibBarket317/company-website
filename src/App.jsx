@@ -20,6 +20,7 @@ import Legal from './pages/Legal'
 import Impact from './pages/Impact'
 import Whitepaper from './pages/Whitepaper'
 import ScrollToTop from './components/reuseableComponents/ScrollToTop'
+import HashLocation from './components/reuseableComponents/HashLocation'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
       <main className="flex-grow">
         <ScrollToTop />
+        <HashLocation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/intexa" element={<Intexa />} />

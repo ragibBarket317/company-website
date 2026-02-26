@@ -29,15 +29,10 @@ export default function ReadyToConnect() {
                   Talk to Our Team
                 </button>
                 <button
-                  onClick={() => navigate('/impact')}
-                  class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white"
+                  onClick={() => navigate('/impact#case')}
+                  class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white cursor-pointer"
                 >
-                  <a
-                    href="#services"
-                    className="hover:text-cyan-400 transition"
-                  >
-                    Request a Case Study
-                  </a>
+                  Request a Case Study
                 </button>
               </div>
             </div>

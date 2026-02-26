@@ -48,7 +48,7 @@ const CareerHero = () => {
 
       <div className="container z-10">
         <div className="flex flex-col md:flex-row gap-5">
-          <div className="md:w-[50%] z-10">
+          <div className="md:w-[70%] z-10">
             <div className="h-[50vh] md:h-[80vh] flex flex-col justify-center items-center gap-5">
               <div className="space-y-5">
                 <div className="inline-block">
@@ -93,11 +93,11 @@ const CareerHero = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-[50%] h-[60vh] md:h-[85vh] flex items-center justify-center relative">
-            {/* Glow Background */}
-            {/* <div className="absolute w-[80%] h-[80%] bg-cyan-500/20 blur-[120px] rounded-full"></div> */}
+          {/* <div className="md:w-[50%] h-[60vh] md:h-[85vh] flex items-center justify-center relative">
+            
+            <div className="absolute w-[80%] h-[80%] bg-cyan-500/20 blur-[120px] rounded-full"></div>
 
-            {/* Image Wrapper */}
+           
             <div className="relative w-full max-w-[550px]">
               <img
                 src={code}
@@ -105,7 +105,7 @@ const CareerHero = () => {
                 className="w-full h-full object-cover scale-105"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

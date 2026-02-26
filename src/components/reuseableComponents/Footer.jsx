@@ -154,7 +154,7 @@ const Footer = () => {
             <ul className="space-y-2 text-md text-gray-400 grid grid-cols-2">
               <li>
                 <Link
-                  to="/legal"
+                  to="/legal#privacy"
                   className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
                 >
                   <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
@@ -163,7 +163,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/legal"
+                  to="/legal#terms-service"
                   className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
                 >
                   <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>

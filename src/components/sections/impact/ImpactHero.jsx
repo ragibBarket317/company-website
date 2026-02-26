@@ -80,15 +80,10 @@ const ImpactHero = () => {
                 </p>
                 <div className="flex gap-5">
                   <button className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg">
-                    <a
-                      href="#clients"
-                      className="hover:text-cyan-400 transition"
-                    >
-                      View Testimonial
-                    </a>
+                    <a href="#clients">View Testimonial</a>
                   </button>
                   <button
-                    onClick={() => navigate('/careers')}
+                    onClick={() => navigate('/careers#roles')}
                     class="inset-ring-2 inset-ring-cyan-500 font-bold shadow-lg shadow-cyan-500/50 py-3 px-7 rounded-lg text-white"
                   >
                     Work with Us

@@ -3,7 +3,10 @@ import { Mail, Phone, MessageSquare, Building2 } from 'lucide-react'
 
 const StrategicHubsPortal = () => {
   return (
-    <div className="text-white px-6  md:px-12 md:pt-[10px] pb-24 font-sans ">
+    <div
+      id="contact-form"
+      className="text-white px-6  md:px-12 md:pt-[10px] pb-24 font-sans "
+    >
       {/* Main Content: Support & Form */}
       <div className="max-w-6xl mx-auto mt-10 flex flex-col lg:flex-row gap-12 bg-[#050a14] rounded-3xl overflow-hidden border border-white/5 shadow-2xl">
         {/* Left Side: Support Cards */}

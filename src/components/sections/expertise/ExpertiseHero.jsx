@@ -83,7 +83,7 @@ const ExpertiseHero = () => {
                 </p>
                 <div className="flex gap-5">
                   <button
-                    onClick={() => navigate('/contact')}
+                    onClick={() => navigate('/contact#contact-form')}
                     className="bg-cyan-500 shadow-lg font-bold shadow-cyan-500/50 py-3 px-7 rounded-lg"
                   >
                     Start Your Project

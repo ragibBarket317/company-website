@@ -84,7 +84,7 @@ const SupplyMedicineCaseStudy = () => {
 
             <div className="relative rounded-3xl overflow-hidden border border-white/10 group">
               {/* Capsule Location Badge */}
-              <div className="absolute top-5 left-5 z-20">
+              <div className="absolute top-5 right-5 z-20">
                 <div
                   className="flex items-center gap-2 px-4 py-1.5 rounded-full 
                       bg-black/60 backdrop-blur-md border border-white/20
