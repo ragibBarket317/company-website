@@ -172,7 +172,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/legal"
+                  to="/corporate-governance"
                   className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
                 >
                   <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>
@@ -181,7 +181,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/legal"
+                  to="/compliance"
                   className="hover:text-cyan-500 flex items-start text-gray-300 text-sm"
                 >
                   <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3"></span>

@@ -21,6 +21,8 @@ import Impact from './pages/Impact'
 import Whitepaper from './pages/Whitepaper'
 import ScrollToTop from './components/reuseableComponents/ScrollToTop'
 import HashLocation from './components/reuseableComponents/HashLocation'
+import Governance from './pages/Governance'
+import Compliance from './pages/Compliance'
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
           <Route path="/legal" element={<Legal />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/technical-whitepaper" element={<Whitepaper />} />
+          <Route path="/corporate-governance" element={<Governance />} />
+          <Route path="/compliance" element={<Compliance />} />
           {/* <Route
             path="/services/mobile-app-development"
             element={<MobileAppDevelopment />}
